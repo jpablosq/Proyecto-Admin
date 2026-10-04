@@ -206,9 +206,81 @@ Un enfoque exclusivamente predictivo dificultaría incorporar cambios descubiert
 
 **Condición del análisis:** el documento original no identifica una clínica concreta, presupuesto, proveedor ni calendario detallado. Estas decisiones y la disponibilidad de usuarios deben confirmarse antes de cerrar la planificación; las propuestas anteriores no constituyen acuerdos ya realizados.
 
+
+### Justificación del proyecto
+ 
+Las clínicas veterinarias suelen tener la información de clientes y mascotas dispersa en documentos físicos, hojas y otros medios. Esto dificulta consultar historiales, organizar citas y dar seguimiento a vacunas y tratamientos. VetCare se propone como un sistema web que centraliza esa información y le da a cada mascota su propio expediente.
+ 
+ 
+### Límites generales del proyecto
+ 
+| Incluye | No incluye |
+| --- | --- |
+| Registro y administración de clientes | Facturación y cobros |
+| Registro de varias mascotas por cliente | Inventario de medicamentos |
+| Gestión de citas | Aplicación móvil nativa |
+| Expediente médico por mascota | Integración con sistemas externos |
+| Consulta del historial por parte del cliente | Venta de productos en línea |
+| Niveles de acceso para clientes y médicos | |
+ 
+---
+ 
+## Definición del Scrum Team
+ 
+Como somos un equipo de dos personas, los dos actuamos como Developers y cada uno asume además un rol de Scrum.
+ 
+| Integrante | Rol Scrum | Responsabilidades |
+| --- | --- | --- |
+| Jose Pablo Soto Quesada | **Product Owner + Developer** | Mantener y priorizar el Product Backlog, definir criterios de aceptación y ser el enlace con la clínica y el profesor. |
+| Maikel Chaves Salas | **Scrum Master + Developer** | Facilitar el proceso, remover impedimentos y mantener el tablero actualizado. |
+ 
+### Roles adicionales para el futuro
+ 
+| Rol | Cuándo se necesita | Asignación propuesta |
+| --- | --- | --- |
+| Responsable de base de datos (DBA) | Diseño del modelo de datos y respaldos | Jose Pablo |
+| Responsable de pruebas (QA) | Pruebas funcionales y de permisos | Maikel |
+| Responsable de interfaz (UX/UI) | Prototipos y pruebas de usabilidad | Jose Pablo |
+| Responsable de despliegue (DevOps) | Alojamiento y puesta en línea | Maikel |
+| Responsable de documentación | Manual de usuario y actualización de este documento | Ambos, alternando |
+ 
+---
+ 
+## Análisis de Entorno
+ 
+### Factores Ambientales de la Empresa (EEFs)
+ 
+| Factor | Efecto en VetCare |
+| --- | --- |
+| Infraestructura tecnológica (hosting, base de datos, herramientas) | Define dónde se despliega el sistema y sus límites de uso |
+| Cultura organizacional de la clínica | Afecta la adopción del sistema frente a los registros físicos |
+| Normativa legal y de privacidad de datos | Obliga a controlar accesos y proteger la información |
+| Distribución del equipo (presencial o remoto) | Condiciona la coordinación entre los dos integrantes |
+| Disponibilidad de usuarios para pruebas | Afecta la calidad de la validación |
+| Calendario académico | Limita el tiempo y el alcance posible |
+ 
+
+ 
+### Lean Canvas
+ 
+| Bloque | Contenido |
+| --- | --- |
+| **Problema** | Información dispersa en papel y hojas de cálculo; dificultad para consultar historiales, organizar citas y seguir vacunas y tratamientos. |
+| **Segmentos de clientes** | Clínicas veterinarias; usuarios: médicos, recepción y propietarios de mascotas. |
+| **Propuesta de valor** | Un sistema web donde cada mascota tiene su expediente y cada cliente administra varias mascotas y sus citas. |
+| **Solución** | Módulos de clientes, mascotas, citas y expediente médico con acceso por tipo de usuario. |
+| **Canales** | Aplicación web desde navegador. |
+| **Fuentes de ingreso** | No aplica en el curso; se definiría con la clínica si se implementa. |
+| **Estructura de costos** | Alojamiento, base de datos y tiempo de desarrollo; montos por confirmar. |
+| **Métricas clave** | Citas gestionadas, expedientes creados y tiempo para consultar un historial. |
+| **Ventaja diferenciadora** | Relación cliente–varias mascotas y expediente individual validado con personal veterinario. |
+ 
+---
+
 ## Historial de actualizaciones
 
 | Versión | Fecha | Descripción de la actualización |
 | --- | --- | --- |
 | 1.0 | 29/09/2026 | Creación del documento inicial: problema, proyecto propuesto, valor esperado, objetivo general y objetivos específicos. |
 | 1.1 | 29/09/2026 | Incorporación del registro de interesados con necesidades, poder, interés, actitud y estrategias; justificación de valoraciones; mapa Poder–Interés; selección de tres interesados críticos y su involucramiento; definición y justificación del enfoque híbrido. |
+| 1.2 | 04/10/2026 | Incorporación del Acta de Inicio, la definición del Scrum Team y el Análisis de Entorno (EEFs y Lean Canvas). |
