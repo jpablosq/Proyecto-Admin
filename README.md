@@ -277,6 +277,136 @@ Como somos un equipo de tres personas, los tres actuamos como Developers. Ademá
 
 ---
 
+---
+
+## Sección 05: Backlog inicial, Sprint Backlog y mecanismo de seguimiento
+
+### Product Backlog inicial
+
+El Product Backlog reúne las historias de usuario identificadas para VetCare. Es gestionado y priorizado por el Product Owner (Jose Pablo Soto) y se ajustará después de cada Sprint Review según la retroalimentación recibida.
+
+**Escala de prioridad:** P1 = alta (indispensable para el funcionamiento básico), P2 = media (importante, pero el sistema puede operar sin ella al inicio), P3 = baja (deseable para futuras versiones).
+**Estimación:** puntos de historia (1, 2, 3, 5, 8), que representan el esfuerzo relativo.
+
+| ID | Módulo | Historia de usuario | Prioridad | Puntos |
+| --- | --- | --- | :---: | :---: |
+| HU-01 | Cuentas | Como cliente, quiero registrarme con mis datos personales y de contacto, para acceder al sistema. | P1 | 3 |
+| HU-02 | Cuentas | Como usuario, quiero iniciar sesión, para acceder a las funciones que corresponden a mi rol (cliente o médico veterinario). | P1 | 3 |
+| HU-03 | Mascotas | Como cliente, quiero registrar una o varias mascotas asociadas a mi cuenta, para que cada una tenga su propia información. | P1 | 5 |
+| HU-04 | Mascotas | Como cliente, quiero ver la lista de mis mascotas y editar su información, para mantener sus datos actualizados. | P1 | 3 |
+| HU-05 | Cuentas | Como administrador de la clínica, quiero registrar a los médicos veterinarios, para que puedan ingresar al sistema y atender citas. | P1 | 2 |
+| HU-06 | Citas | Como cliente, quiero agendar una cita para una de mis mascotas eligiendo una fecha y hora disponibles, para recibir atención sin tener que llamar. | P1 | 5 |
+| HU-07 | Citas | Como cliente, quiero que el sistema solo me muestre horarios disponibles, para evitar que dos citas queden en el mismo espacio. | P1 | 3 |
+| HU-08 | Citas | Como médico veterinario, quiero ver mis citas del día, para organizar mi jornada. | P1 | 3 |
+| HU-09 | Expediente | Como médico veterinario, quiero registrar una consulta con su motivo, diagnóstico, tratamiento y observaciones en el expediente de la mascota, para documentar la atención. | P1 | 5 |
+| HU-10 | Expediente | Como médico veterinario, quiero consultar el historial completo de una mascota, para conocer sus atenciones anteriores antes de atenderla. | P1 | 3 |
+| HU-11 | Cuentas | Como cliente, quiero actualizar mis datos personales y de contacto, para que la clínica pueda comunicarse conmigo. | P2 | 2 |
+| HU-12 | Citas | Como cliente, quiero cancelar o reprogramar una cita, para ajustarla si no puedo asistir. | P2 | 3 |
+| HU-13 | Citas | Como recepcionista, quiero ver todas las citas programadas de la clínica, para organizar la atención del día. | P2 | 3 |
+| HU-14 | Expediente | Como médico veterinario, quiero registrar las vacunas aplicadas y la fecha de la próxima dosis, para dar seguimiento al plan de vacunación. | P2 | 3 |
+| HU-15 | Expediente | Como cliente, quiero consultar el historial de atención y las vacunas de mis mascotas, para conocer su estado de salud. | P2 | 3 |
+| HU-16 | Notificaciones | Como cliente, quiero recibir recordatorios de citas y de próximas vacunas, para no olvidarlas. | P3 | 5 |
+| HU-17 | Reportes | Como dirección de la clínica, quiero ver un panel con el resumen de citas y atenciones, para conocer el movimiento de la clínica. | P3 | 5 |
+| HU-18 | Calidad del servicio | Como cliente, quiero calificar la atención recibida, para que la clínica pueda mejorar su servicio. | P3 | 2 |
+
+### Sprint Backlog — Sprint 1
+
+| Elemento | Detalle |
+| --- | --- |
+| **Duración** | 2 semanas (DD/MM/2026 al DD/MM/2026) |
+| **Sprint Goal** | Que un cliente pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre clientes y médicos veterinarios. |
+| **Historias seleccionadas** | HU-01, HU-02, HU-03, HU-04 y HU-05 |
+| **Total de puntos** | 16 |
+
+**¿Por qué estas historias primero?** Son la base de todo el sistema: sin cuentas, roles, clientes y mascotas registrados no es posible agendar citas ni llevar un expediente. Además, permiten validar desde el inicio el modelo de datos más importante del proyecto, la relación de un cliente con varias mascotas.
+
+#### Tareas del Sprint 1
+
+| ID | Historia | Tarea | Responsable | Horas estimadas |
+| --- | --- | --- | --- | :---: |
+| T-01 | General | Diseñar el modelo de datos inicial (usuarios, roles, clientes y mascotas). | Jose Pablo Soto | 4 |
+| T-02 | General | Configurar el repositorio, la estructura del proyecto y la base de datos. | Maikel Chaves | 3 |
+| T-03 | HU-01 | Diseñar e implementar la interfaz de registro de clientes. | Jose Pablo Soto | 3 |
+| T-04 | HU-01 | Implementar el registro de clientes con validación de datos obligatorios. | Maikel Chaves | 4 |
+| T-05 | HU-01 | Probar el registro de clientes. | Eliam Araya | 2 |
+| T-06 | HU-02 | Implementar el inicio de sesión y el manejo de la sesión. | Maikel Chaves | 4 |
+| T-07 | HU-02 | Implementar el control de acceso según el rol del usuario. | Eliam Araya | 3 |
+| T-08 | HU-02 | Probar el inicio de sesión y los permisos por rol. | Jose Pablo Soto | 2 |
+| T-09 | HU-03 | Diseñar e implementar el formulario de registro de mascotas. | Jose Pablo Soto | 3 |
+| T-10 | HU-03 | Implementar el registro de mascotas asociadas al cliente. | Eliam Araya | 4 |
+| T-11 | HU-03 | Probar el registro de una y de varias mascotas por cliente. | Maikel Chaves | 2 |
+| T-12 | HU-04 | Implementar la lista de mascotas del cliente y la edición de sus datos. | Eliam Araya | 4 |
+| T-13 | HU-04 | Probar la lista y la edición de mascotas. | Jose Pablo Soto | 2 |
+| T-14 | HU-05 | Implementar el registro de médicos veterinarios por parte del administrador. | Maikel Chaves | 3 |
+| T-15 | HU-05 | Probar el registro de médicos y su acceso al sistema. | Eliam Araya | 2 |
+| T-16 | General | Actualizar la documentación del proyecto con los resultados del Sprint. | Eliam Araya | 2 |
+
+**Carga por integrante:** Jose Pablo Soto, 14 horas; Maikel Chaves, 16 horas; Eliam Araya, 17 horas.
+
+Como práctica de calidad, ninguna funcionalidad es probada únicamente por quien la desarrolló.
+
+### Mecanismo de seguimiento
+
+El seguimiento del Sprint corresponde al grupo de procesos de **Monitoreo y Control**: permite comparar el avance real con lo planificado y tomar decisiones a tiempo.
+
+#### 1. Tablero de tareas
+
+Se utilizará un tablero en GitHub Projects con las siguientes columnas:
+
+| Columna | Significado |
+| --- | --- |
+| **Por hacer** | Tareas del Sprint que aún no se han iniciado. |
+| **En progreso** | Tareas en las que un integrante está trabajando. |
+| **En pruebas** | Tareas terminadas que están siendo probadas por otro integrante. |
+| **Terminado** | Tareas que cumplen la Definición de Terminado. |
+
+Cada integrante mueve sus tareas en el tablero apenas cambia su estado, de modo que todo el equipo vea el avance real (transparencia). Para evitar dejar muchas tareas a medias, cada integrante tendrá como máximo dos tareas en progreso al mismo tiempo.
+
+#### 2. Daily Scrum
+
+Se realizará tres veces por semana (lunes, miércoles y viernes), de forma presencial o por mensaje en el grupo del equipo, con una duración máxima de 15 minutos. Cada integrante responde:
+
+- ¿Qué avancé desde la última Daily?
+- ¿Qué voy a hacer hasta la próxima?
+- ¿Tengo algún impedimento?
+
+#### 3. Gráfico de avance (Burndown)
+
+El Scrum Master registrará las horas de trabajo pendientes al final de cada Daily y las comparará con el avance ideal. Si el avance real queda por encima del ideal durante dos registros seguidos, el equipo revisará qué está frenando el trabajo y, de ser necesario, conversará con el Product Owner para ajustar el alcance del Sprint.
+
+| Registro | Día del Sprint | Horas pendientes ideales | Horas pendientes reales |
+| --- | :---: | :---: | :---: |
+| Inicio | 0 | 47 | 47 |
+| Daily 1 | 2 | 38 | |
+| Daily 2 | 4 | 28 | |
+| Daily 3 | 6 | 19 | |
+| Daily 4 | 8 | 9 | |
+| Cierre | 10 | 0 | |
+
+#### 4. Registro de impedimentos
+
+El Scrum Master registra los impedimentos detectados y da seguimiento hasta resolverlos.
+
+| Fecha | Impedimento | Responsable | Acción | Estado |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+#### 5. Definición de Terminado (Definition of Done)
+
+Una historia se considera terminada cuando:
+
+- cumple todos sus criterios de aceptación;
+- el código está en la rama principal del repositorio;
+- fue probada por un integrante distinto de quien la desarrolló, incluyendo las pruebas de permisos cuando aplique;
+- no tiene errores conocidos sin resolver;
+- está documentada en este documento o en el repositorio.
+
+#### 6. Cierre del Sprint
+
+- **Sprint Review:** al final del Sprint se presenta el incremento al profesor y, cuando sea posible, a un representante de la clínica. La retroalimentación se usa para ajustar el Product Backlog.
+- **Sprint Retrospective:** después de la Review, el equipo identifica qué funcionó, qué no y qué mejorar en el Sprint 2.
+- **Métricas registradas:** puntos de historia completados (velocidad del equipo) y porcentaje de tareas terminadas, que servirán para planificar de forma más realista los siguientes Sprints.
+
 ## Historial de actualizaciones
 
 | Versión | Fecha | Descripción de la actualización |
@@ -285,3 +415,4 @@ Como somos un equipo de tres personas, los tres actuamos como Developers. Ademá
 | 1.1 | 29/09/2026 | Incorporación del registro de interesados con necesidades, poder, interés, actitud y estrategias; justificación de valoraciones; mapa Poder–Interés; selección de tres interesados críticos y su involucramiento; definición y justificación del enfoque híbrido. |
 | 1.2 | 04/10/2026 | Incorporación del Acta de Inicio, la definición del Scrum Team y el Análisis de Entorno (EEFs y Lean Canvas). |
 | 1.3 | 13/10/2026 | Incorporación de Edgar Eliam Araya Alvarado al equipo: actualización de estudiantes, interesado I5, Scrum Team, roles adicionales, enfoque de gestión y factores ambientales para un equipo de tres integrantes. |
+| 1.4 | 14/10/2026 | Incorporación de la Sección 05: Product Backlog inicial, Sprint Backlog del Sprint 1 con tareas y responsables, y mecanismo de seguimiento (tablero, Daily Scrum, burndown, impedimentos y Definición de Terminado). |
