@@ -8,7 +8,7 @@
 
 **Profesor:** Deiver Cubero Molina
 
-**Estudiantes:** Jose Pablo Soto Quesada y Maikel Chaves Salas
+**Estudiantes:** Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado
 
 **Fecha:** Septiembre 2026
 
@@ -57,7 +57,7 @@ El análisis se realiza para VetCare, el sistema web de gestión de atención ve
 | I2. Médicos veterinarios | Consultar y registrar expedientes, diagnósticos, vacunas y tratamientos con rapidez. | 4 | 5 | Favorable |
 | I3. Recepción / administración | Organizar citas y datos de clientes y mascotas; evitar duplicaciones. | 3 | 5 | Neutral |
 | I4. Clientes / propietarios de mascotas | Registrar varias mascotas, gestionar citas y consultar información autorizada. | 2 | 5 | Favorable |
-| I5. Equipo desarrollador: Jose Pablo Soto y Maikel Chaves | Disponer de requisitos claros, acceso a usuarios y tiempo para implementar y probar. | 4 | 5 | Favorable |
+| I5. Equipo desarrollador: Jose Pablo Soto, Maikel Chaves y Eliam Araya | Disponer de requisitos claros, acceso a usuarios y tiempo para implementar y probar. | 4 | 5 | Favorable |
 | I6. Profesor: Deiver Cubero Molina | Evaluar la coherencia del proyecto, las evidencias y el cumplimiento académico. | 5 | 4 | Favorable |
 | I7. Proveedor de alojamiento y base de datos | Contar con requisitos técnicos definidos y condiciones de uso y pago claras. | 4 | 2 | Neutral |
 | I8. Responsable de soporte tecnológico de la clínica | Mantener disponibilidad, accesos, respaldos y resolver incidentes. | 3 | 4 | Neutral |
@@ -170,9 +170,9 @@ Se seleccionan la dirección, los médicos veterinarios y el equipo desarrollado
 
 **Por qué es crítico:** transforma los requisitos en software, gestiona las restricciones y comprueba el funcionamiento.
 
-**Cómo involucrarlo:** planificación semanal, distribución de tareas entre Jose Pablo Soto y Maikel Chaves, revisión de código y demostración quincenal de funcionalidades.
+**Cómo involucrarlo:** planificación semanal, distribución de tareas entre Jose Pablo Soto, Maikel Chaves y Eliam Araya, revisión de código y demostración quincenal de funcionalidades.
 
-**Responsable:** ambos integrantes, con responsabilidades acordadas por módulo.
+**Responsable:** los tres integrantes, con responsabilidades acordadas por módulo.
 
 **Evidencia:** tablero actualizado, versiones del sistema y resultados de pruebas.
 
@@ -186,7 +186,7 @@ Las frecuencias indicadas son propuestas. Se ajustarán al calendario del curso 
 
 ### Elementos predictivos
 
-Se definirán al inicio el alcance base, los objetivos, los entregables, las responsabilidades y un cronograma ajustado a las fechas que establezca el curso. También se acordarán el modelo inicial de datos, los niveles de acceso, los criterios de aceptación y los riesgos. Estos elementos permiten controlar el trabajo de un equipo de dos estudiantes y comprobar el cumplimiento académico.
+Se definirán al inicio el alcance base, los objetivos, los entregables, las responsabilidades y un cronograma ajustado a las fechas que establezca el curso. También se acordarán el modelo inicial de datos, los niveles de acceso, los criterios de aceptación y los riesgos. Estos elementos permiten controlar el trabajo de un equipo de tres estudiantes y comprobar el cumplimiento académico.
 
 ### Elementos adaptativos
 
@@ -208,12 +208,12 @@ Un enfoque exclusivamente predictivo dificultaría incorporar cambios descubiert
 
 
 ### Justificación del proyecto
- 
+
 Las clínicas veterinarias suelen tener la información de clientes y mascotas dispersa en documentos físicos, hojas y otros medios. Esto dificulta consultar historiales, organizar citas y dar seguimiento a vacunas y tratamientos. VetCare se propone como un sistema web que centraliza esa información y le da a cada mascota su propio expediente.
- 
- 
+
+
 ### Límites generales del proyecto
- 
+
 | Incluye | No incluye |
 | --- | --- |
 | Registro y administración de clientes | Facturación y cobros |
@@ -222,47 +222,47 @@ Las clínicas veterinarias suelen tener la información de clientes y mascotas d
 | Expediente médico por mascota | Integración con sistemas externos |
 | Consulta del historial por parte del cliente | Venta de productos en línea |
 | Niveles de acceso para clientes y médicos | |
- 
+
 ---
- 
+
 ## Definición del Scrum Team
- 
-Como somos un equipo de dos personas, los dos actuamos como Developers y cada uno asume además un rol de Scrum.
- 
+
+Como somos un equipo de tres personas, los tres actuamos como Developers. Además, dos integrantes asumen los roles de Product Owner y Scrum Master, y el tercero se enfoca en el desarrollo y en las áreas de calidad y documentación. Se evita que una misma persona sea Product Owner y Scrum Master a la vez, para no mezclar la priorización del producto con la protección de la capacidad del equipo.
+
 | Integrante | Rol Scrum | Responsabilidades |
 | --- | --- | --- |
 | Jose Pablo Soto Quesada | **Product Owner + Developer** | Mantener y priorizar el Product Backlog, definir criterios de aceptación y ser el enlace con la clínica y el profesor. |
 | Maikel Chaves Salas | **Scrum Master + Developer** | Facilitar el proceso, remover impedimentos y mantener el tablero actualizado. |
- 
+| Edgar Eliam Araya Alvarado | **Developer** | Desarrollar las funcionalidades del Sprint, liderar las pruebas funcionales y de permisos, y mantener actualizada la documentación del proyecto. |
+
 ### Roles adicionales para el futuro
- 
+
 | Rol | Cuándo se necesita | Asignación propuesta |
 | --- | --- | --- |
 | Responsable de base de datos (DBA) | Diseño del modelo de datos y respaldos | Jose Pablo |
-| Responsable de pruebas (QA) | Pruebas funcionales y de permisos | Maikel |
+| Responsable de pruebas (QA) | Pruebas funcionales y de permisos | Eliam |
 | Responsable de interfaz (UX/UI) | Prototipos y pruebas de usabilidad | Jose Pablo |
 | Responsable de despliegue (DevOps) | Alojamiento y puesta en línea | Maikel |
-| Responsable de documentación | Manual de usuario y actualización de este documento | Ambos, alternando |
- 
+| Responsable de documentación | Manual de usuario y actualización de este documento | Eliam, con apoyo de los demás |
+
 ---
- 
+
 ## Análisis de Entorno
- 
+
 ### Factores Ambientales de la Empresa (EEFs)
- 
+
 | Factor | Efecto en VetCare |
 | --- | --- |
 | Infraestructura tecnológica (hosting, base de datos, herramientas) | Define dónde se despliega el sistema y sus límites de uso |
 | Cultura organizacional de la clínica | Afecta la adopción del sistema frente a los registros físicos |
 | Normativa legal y de privacidad de datos | Obliga a controlar accesos y proteger la información |
-| Distribución del equipo (presencial o remoto) | Condiciona la coordinación entre los dos integrantes |
+| Distribución del equipo (presencial o remoto) | Condiciona la coordinación entre los tres integrantes |
 | Disponibilidad de usuarios para pruebas | Afecta la calidad de la validación |
 | Calendario académico | Limita el tiempo y el alcance posible |
- 
 
- 
+
 ### Lean Canvas
- 
+
 | Bloque | Contenido |
 | --- | --- |
 | **Problema** | Información dispersa en papel y hojas de cálculo; dificultad para consultar historiales, organizar citas y seguir vacunas y tratamientos. |
@@ -274,7 +274,7 @@ Como somos un equipo de dos personas, los dos actuamos como Developers y cada un
 | **Estructura de costos** | Alojamiento, base de datos y tiempo de desarrollo; montos por confirmar. |
 | **Métricas clave** | Citas gestionadas, expedientes creados y tiempo para consultar un historial. |
 | **Ventaja diferenciadora** | Relación cliente–varias mascotas y expediente individual validado con personal veterinario. |
- 
+
 ---
 
 ## Historial de actualizaciones
@@ -284,3 +284,4 @@ Como somos un equipo de dos personas, los dos actuamos como Developers y cada un
 | 1.0 | 29/09/2026 | Creación del documento inicial: problema, proyecto propuesto, valor esperado, objetivo general y objetivos específicos. |
 | 1.1 | 29/09/2026 | Incorporación del registro de interesados con necesidades, poder, interés, actitud y estrategias; justificación de valoraciones; mapa Poder–Interés; selección de tres interesados críticos y su involucramiento; definición y justificación del enfoque híbrido. |
 | 1.2 | 04/10/2026 | Incorporación del Acta de Inicio, la definición del Scrum Team y el Análisis de Entorno (EEFs y Lean Canvas). |
+| 1.3 | 13/10/2026 | Incorporación de Edgar Eliam Araya Alvarado al equipo: actualización de estudiantes, interesado I5, Scrum Team, roles adicionales, enfoque de gestión y factores ambientales para un equipo de tres integrantes. |
