@@ -47,6 +47,19 @@ Desarrollar un sistema web para la gestión de una clínica veterinaria que perm
 9. Implementar diferentes niveles de acceso para clientes y médicos veterinarios, de acuerdo con las funciones que corresponden a cada tipo de usuario.
 10. Realizar pruebas del sistema para verificar el correcto funcionamiento de sus principales módulos y garantizar que la información sea gestionada de manera adecuada.
 
+## Visión a futuro: modelo de negocio
+
+Como visión a largo plazo, la plataforma podría ofrecerse como un servicio en la nube por suscripción (SaaS) para clínicas veterinarias, con los siguientes planes:
+
+| Plan | Precio mensual | Enfoque |
+| --- | --- | --- |
+| **Essential** | ₡29.900 | Consultorios y clínicas pequeñas con un veterinario. |
+| **Professional** | ₡59.900 | Clínicas en crecimiento, hasta 3 veterinarios. |
+| **Clinic** | ₡99.900 | Clínicas con varias sucursales, hasta 8 veterinarios. |
+| **Enterprise** | Personalizado | Organizaciones con múltiples compañías y regiones. |
+
+Esta visión se menciona únicamente como referencia. El proyecto desarrollado en el curso corresponde a una versión inicial con fines académicos, enfocada en las funcionalidades base descritas en los requerimientos.
+
 ## Gestión de interesados
 
 El análisis se realiza para VetCare, el sistema web de gestión de atención veterinaria presentado en la Lección 1. Se consideran los actores que pueden influir en el proyecto o verse afectados por sus resultados. Los roles operativos son propuestos y deberán confirmarse al seleccionar la clínica; las actitudes son estimaciones iniciales, no resultados de entrevistas.
@@ -64,6 +77,62 @@ El análisis se realiza para VetCare, el sistema web de gestión de atención ve
 | I9. Personal auxiliar veterinario | Consultar los datos necesarios para apoyar la atención según su autorización. | 2 | 3 | Neutral |
 
 Poder: capacidad de influir en decisiones, recursos, aceptación o continuidad. Interés: grado de atención y afectación por el resultado. Escala: 1 = muy bajo; 2 = bajo; 3 = medio; 4 = alto; 5 = muy alto.
+
+---
+
+---
+
+## Requerimientos del proyecto
+
+Los requerimientos corresponden a una versión inicial del sistema con fines académicos, ajustada al tiempo disponible en el curso.
+
+### Requerimientos funcionales
+
+#### Usuarios y acceso
+
+| ID | Requerimiento |
+| --- | --- |
+| RF-01 | El sistema debe permitir que los propietarios de mascotas se registren con sus datos personales y de contacto. |
+| RF-02 | El sistema debe permitir iniciar y cerrar sesión. |
+| RF-03 | El sistema debe mostrar a cada usuario solo las funciones de su rol: propietario, médico veterinario o administrador. |
+| RF-04 | El administrador debe poder registrar a los médicos veterinarios. |
+
+#### Mascotas
+
+| ID | Requerimiento |
+| --- | --- |
+| RF-05 | El propietario debe poder registrar una o varias mascotas con su nombre, especie, raza, sexo, fecha de nacimiento y peso. |
+| RF-06 | El propietario debe poder consultar y editar la información de sus mascotas. |
+
+#### Citas
+
+| ID | Requerimiento |
+| --- | --- |
+| RF-07 | El propietario debe poder agendar una cita para una de sus mascotas, eligiendo un veterinario y una fecha y hora disponibles. |
+| RF-08 | El propietario debe poder cancelar una cita programada. |
+| RF-09 | El médico veterinario debe poder consultar sus citas programadas. |
+| RF-10 | El médico veterinario debe poder cambiar el estado de una cita a atendida. |
+
+#### Expediente clínico
+
+| ID | Requerimiento |
+| --- | --- |
+| RF-11 | El médico veterinario debe poder registrar una consulta en el expediente de la mascota, con motivo, diagnóstico, tratamiento y observaciones. |
+| RF-12 | El médico veterinario debe poder registrar las vacunas aplicadas y la fecha de la próxima dosis. |
+| RF-13 | El médico veterinario debe poder consultar el historial completo de una mascota. |
+| RF-14 | El propietario debe poder consultar el historial de atención y las vacunas de sus mascotas. |
+
+### Requerimientos no funcionales
+
+| ID | Categoría | Requerimiento |
+| --- | --- | --- |
+| RNF-01 | Usabilidad | El sistema debe ser una aplicación web responsive, utilizable desde computadoras y teléfonos. |
+| RNF-02 | Usabilidad | La interfaz debe estar en español y ser sencilla de usar. |
+| RNF-03 | Seguridad | Las contraseñas deben almacenarse cifradas. |
+| RNF-04 | Seguridad | Cada usuario solo debe acceder a la información permitida por su rol; un propietario solo puede ver sus propias mascotas. |
+| RNF-05 | Integridad | El sistema debe validar los datos obligatorios antes de guardarlos. |
+| RNF-06 | Mantenibilidad | El código debe gestionarse en un repositorio de GitHub con control de versiones. |
+| RNF-07 | Privacidad | Durante el desarrollo y las pruebas se utilizarán únicamente datos ficticios. |
 
 ## Registro: estrategias de involucramiento
 
@@ -212,16 +281,15 @@ Un enfoque exclusivamente predictivo dificultaría incorporar cambios descubiert
 Las clínicas veterinarias suelen tener la información de clientes y mascotas dispersa en documentos físicos, hojas y otros medios. Esto dificulta consultar historiales, organizar citas y dar seguimiento a vacunas y tratamientos. VetCare se propone como un sistema web que centraliza esa información y le da a cada mascota su propio expediente.
 
 
-### Límites generales del proyecto
-
 | Incluye | No incluye |
 | --- | --- |
-| Registro y administración de clientes | Facturación y cobros |
-| Registro de varias mascotas por cliente | Inventario de medicamentos |
-| Gestión de citas | Aplicación móvil nativa |
-| Expediente médico por mascota | Integración con sistemas externos |
-| Consulta del historial por parte del cliente | Venta de productos en línea |
-| Niveles de acceso para clientes y médicos | |
+| Registro e inicio de sesión de usuarios | Facturación, cobros y suscripciones |
+| Acceso según rol: propietario, veterinario y administrador | Inventario de medicamentos y productos |
+| Registro de varias mascotas por propietario | Laboratorio, imágenes clínicas y hospitalización |
+| Agendar, cancelar y consultar citas | Recordatorios automáticos y notificaciones |
+| Expediente clínico con consultas y vacunas | Reportes y dashboards administrativos |
+| Consulta del historial por parte del propietario | Varias clínicas o sucursales |
+| | Aplicación móvil nativa e integraciones externas |
 
 ---
 
@@ -283,59 +351,65 @@ Como somos un equipo de tres personas, los tres actuamos como Developers. Ademá
 
 ### Product Backlog inicial
 
-El Product Backlog reúne las historias de usuario identificadas para VetCare. Es gestionado y priorizado por el Product Owner (Jose Pablo Soto) y se ajustará después de cada Sprint Review según la retroalimentación recibida.
+El Product Backlog reúne las historias de usuario de VetCare. Cada historia se deriva de uno o más requerimientos funcionales (columna **RF**). Es gestionado y priorizado por el Product Owner (Jose Pablo Soto) y se ajustará después de cada Sprint Review según la retroalimentación recibida.
 
-**Escala de prioridad:** P1 = alta (indispensable para el funcionamiento básico), P2 = media (importante, pero el sistema puede operar sin ella al inicio), P3 = baja (deseable para futuras versiones).
+**Escala de prioridad:** P1 = alta (indispensable para el funcionamiento básico), P2 = media (importante, pero el sistema puede operar sin ella en las primeras versiones).
 **Estimación:** puntos de historia (1, 2, 3, 5, 8), que representan el esfuerzo relativo.
 
-| ID | Módulo | Historia de usuario | Prioridad | Puntos |
-| --- | --- | --- | :---: | :---: |
-| HU-01 | Cuentas | Como cliente, quiero registrarme con mis datos personales y de contacto, para acceder al sistema. | P1 | 3 |
-| HU-02 | Cuentas | Como usuario, quiero iniciar sesión, para acceder a las funciones que corresponden a mi rol (cliente o médico veterinario). | P1 | 3 |
-| HU-03 | Mascotas | Como cliente, quiero registrar una o varias mascotas asociadas a mi cuenta, para que cada una tenga su propia información. | P1 | 5 |
-| HU-04 | Mascotas | Como cliente, quiero ver la lista de mis mascotas y editar su información, para mantener sus datos actualizados. | P1 | 3 |
-| HU-05 | Cuentas | Como administrador de la clínica, quiero registrar a los médicos veterinarios, para que puedan ingresar al sistema y atender citas. | P1 | 2 |
-| HU-06 | Citas | Como cliente, quiero agendar una cita para una de mis mascotas eligiendo una fecha y hora disponibles, para recibir atención sin tener que llamar. | P1 | 5 |
-| HU-07 | Citas | Como cliente, quiero que el sistema solo me muestre horarios disponibles, para evitar que dos citas queden en el mismo espacio. | P1 | 3 |
-| HU-08 | Citas | Como médico veterinario, quiero ver mis citas del día, para organizar mi jornada. | P1 | 3 |
-| HU-09 | Expediente | Como médico veterinario, quiero registrar una consulta con su motivo, diagnóstico, tratamiento y observaciones en el expediente de la mascota, para documentar la atención. | P1 | 5 |
-| HU-10 | Expediente | Como médico veterinario, quiero consultar el historial completo de una mascota, para conocer sus atenciones anteriores antes de atenderla. | P1 | 3 |
-| HU-11 | Cuentas | Como cliente, quiero actualizar mis datos personales y de contacto, para que la clínica pueda comunicarse conmigo. | P2 | 2 |
-| HU-12 | Citas | Como cliente, quiero cancelar o reprogramar una cita, para ajustarla si no puedo asistir. | P2 | 3 |
-| HU-13 | Citas | Como recepcionista, quiero ver todas las citas programadas de la clínica, para organizar la atención del día. | P2 | 3 |
-| HU-14 | Expediente | Como médico veterinario, quiero registrar las vacunas aplicadas y la fecha de la próxima dosis, para dar seguimiento al plan de vacunación. | P2 | 3 |
-| HU-15 | Expediente | Como cliente, quiero consultar el historial de atención y las vacunas de mis mascotas, para conocer su estado de salud. | P2 | 3 |
-| HU-16 | Notificaciones | Como cliente, quiero recibir recordatorios de citas y de próximas vacunas, para no olvidarlas. | P3 | 5 |
-| HU-17 | Reportes | Como dirección de la clínica, quiero ver un panel con el resumen de citas y atenciones, para conocer el movimiento de la clínica. | P3 | 5 |
-| HU-18 | Calidad del servicio | Como cliente, quiero calificar la atención recibida, para que la clínica pueda mejorar su servicio. | P3 | 2 |
+| ID | Módulo | Historia de usuario | RF | Prioridad | Puntos |
+| --- | --- | --- | :---: | :---: | :---: |
+| HU-01 | Usuarios | Como propietario, quiero registrarme con mis datos personales y de contacto, para acceder al sistema. | RF-01 | P1 | 3 |
+| HU-02 | Usuarios | Como usuario, quiero iniciar y cerrar sesión, para acceder únicamente a las funciones de mi rol (propietario, médico veterinario o administrador). | RF-02, RF-03 | P1 | 3 |
+| HU-03 | Mascotas | Como propietario, quiero registrar una o varias mascotas con su nombre, especie, raza, sexo, fecha de nacimiento y peso, para que cada una tenga su propia información. | RF-05 | P1 | 5 |
+| HU-04 | Mascotas | Como propietario, quiero ver la lista de mis mascotas y editar su información, para mantener sus datos actualizados. | RF-06 | P1 | 3 |
+| HU-05 | Usuarios | Como administrador, quiero registrar a los médicos veterinarios, para que puedan ingresar al sistema y atender citas. | RF-04 | P1 | 2 |
+| HU-06 | Citas | Como propietario, quiero agendar una cita para una de mis mascotas eligiendo un veterinario y una fecha y hora disponibles, para recibir atención sin tener que llamar. | RF-07 | P1 | 8 |
+| HU-07 | Citas | Como propietario, quiero cancelar una cita programada, para liberarla si no puedo asistir. | RF-08 | P2 | 2 |
+| HU-08 | Citas | Como médico veterinario, quiero consultar mis citas programadas, para organizar mi jornada. | RF-09 | P1 | 3 |
+| HU-09 | Citas | Como médico veterinario, quiero marcar una cita como atendida, para llevar el control de las citas realizadas. | RF-10 | P2 | 2 |
+| HU-10 | Expediente | Como médico veterinario, quiero registrar una consulta con su motivo, diagnóstico, tratamiento y observaciones en el expediente de la mascota, para documentar la atención. | RF-11 | P1 | 5 |
+| HU-11 | Expediente | Como médico veterinario, quiero registrar las vacunas aplicadas y la fecha de la próxima dosis, para dar seguimiento al plan de vacunación. | RF-12 | P2 | 3 |
+| HU-12 | Expediente | Como médico veterinario, quiero consultar el historial completo de una mascota, para conocer sus atenciones anteriores antes de atenderla. | RF-13 | P1 | 3 |
+| HU-13 | Expediente | Como propietario, quiero consultar el historial de atención y las vacunas de mis mascotas, para conocer su estado de salud. | RF-14 | P2 | 3 |
+| | | | | **Total** | **45** |
+
+### Plan de Sprints
+
+Con base en las prioridades y en la dependencia entre módulos, el Product Backlog se distribuye en tres Sprints de dos semanas. Este plan es una referencia y se ajustará según la velocidad real del equipo.
+
+| Sprint | Enfoque | Historias | Puntos |
+| --- | --- | --- | :---: |
+| Sprint 1 | Usuarios, roles y mascotas | HU-01, HU-02, HU-03, HU-04, HU-05 | 16 |
+| Sprint 2 | Citas | HU-06, HU-07, HU-08, HU-09 | 15 |
+| Sprint 3 | Expediente clínico | HU-10, HU-11, HU-12, HU-13 | 14 |
 
 ### Sprint Backlog — Sprint 1
 
 | Elemento | Detalle |
 | --- | --- |
 | **Duración** | 2 semanas (DD/MM/2026 al DD/MM/2026) |
-| **Sprint Goal** | Que un cliente pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre clientes y médicos veterinarios. |
+| **Sprint Goal** | Que un propietario pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre propietarios, médicos veterinarios y administrador. |
 | **Historias seleccionadas** | HU-01, HU-02, HU-03, HU-04 y HU-05 |
 | **Total de puntos** | 16 |
 
-**¿Por qué estas historias primero?** Son la base de todo el sistema: sin cuentas, roles, clientes y mascotas registrados no es posible agendar citas ni llevar un expediente. Además, permiten validar desde el inicio el modelo de datos más importante del proyecto, la relación de un cliente con varias mascotas.
+**¿Por qué estas historias primero?** Son la base de todo el sistema: sin usuarios, roles, propietarios y mascotas registrados no es posible agendar citas ni llevar un expediente. Además, permiten validar desde el inicio el modelo de datos más importante del proyecto, la relación de un propietario con varias mascotas.
 
 #### Tareas del Sprint 1
 
 | ID | Historia | Tarea | Responsable | Horas estimadas |
 | --- | --- | --- | --- | :---: |
-| T-01 | General | Diseñar el modelo de datos inicial (usuarios, roles, clientes y mascotas). | Jose Pablo Soto | 4 |
+| T-01 | General | Diseñar el modelo de datos inicial (usuarios, roles, propietarios y mascotas). | Jose Pablo Soto | 4 |
 | T-02 | General | Configurar el repositorio, la estructura del proyecto y la base de datos. | Maikel Chaves | 3 |
-| T-03 | HU-01 | Diseñar e implementar la interfaz de registro de clientes. | Jose Pablo Soto | 3 |
-| T-04 | HU-01 | Implementar el registro de clientes con validación de datos obligatorios. | Maikel Chaves | 4 |
-| T-05 | HU-01 | Probar el registro de clientes. | Eliam Araya | 2 |
-| T-06 | HU-02 | Implementar el inicio de sesión y el manejo de la sesión. | Maikel Chaves | 4 |
+| T-03 | HU-01 | Diseñar e implementar la interfaz de registro de propietarios. | Jose Pablo Soto | 3 |
+| T-04 | HU-01 | Implementar el registro de propietarios con validación de datos obligatorios. | Maikel Chaves | 4 |
+| T-05 | HU-01 | Probar el registro de propietarios. | Eliam Araya | 2 |
+| T-06 | HU-02 | Implementar el inicio y cierre de sesión. | Maikel Chaves | 4 |
 | T-07 | HU-02 | Implementar el control de acceso según el rol del usuario. | Eliam Araya | 3 |
 | T-08 | HU-02 | Probar el inicio de sesión y los permisos por rol. | Jose Pablo Soto | 2 |
 | T-09 | HU-03 | Diseñar e implementar el formulario de registro de mascotas. | Jose Pablo Soto | 3 |
-| T-10 | HU-03 | Implementar el registro de mascotas asociadas al cliente. | Eliam Araya | 4 |
-| T-11 | HU-03 | Probar el registro de una y de varias mascotas por cliente. | Maikel Chaves | 2 |
-| T-12 | HU-04 | Implementar la lista de mascotas del cliente y la edición de sus datos. | Eliam Araya | 4 |
+| T-10 | HU-03 | Implementar el registro de mascotas asociadas al propietario. | Eliam Araya | 4 |
+| T-11 | HU-03 | Probar el registro de una y de varias mascotas por propietario. | Maikel Chaves | 2 |
+| T-12 | HU-04 | Implementar la lista de mascotas del propietario y la edición de sus datos. | Eliam Araya | 4 |
 | T-13 | HU-04 | Probar la lista y la edición de mascotas. | Jose Pablo Soto | 2 |
 | T-14 | HU-05 | Implementar el registro de médicos veterinarios por parte del administrador. | Maikel Chaves | 3 |
 | T-15 | HU-05 | Probar el registro de médicos y su acceso al sistema. | Eliam Araya | 2 |
@@ -396,16 +470,269 @@ El Scrum Master registra los impedimentos detectados y da seguimiento hasta reso
 Una historia se considera terminada cuando:
 
 - cumple todos sus criterios de aceptación;
-- el código está en la rama principal del repositorio;
-- fue probada por un integrante distinto de quien la desarrolló, incluyendo las pruebas de permisos cuando aplique;
+- el código está integrado en la rama principal del repositorio;
+- fue probada con datos ficticios por un integrante distinto de quien la desarrolló, incluyendo las pruebas de permisos cuando aplique;
 - no tiene errores conocidos sin resolver;
 - está documentada en este documento o en el repositorio.
 
 #### 6. Cierre del Sprint
 
-- **Sprint Review:** al final del Sprint se presenta el incremento al profesor y, cuando sea posible, a un representante de la clínica. La retroalimentación se usa para ajustar el Product Backlog.
-- **Sprint Retrospective:** después de la Review, el equipo identifica qué funcionó, qué no y qué mejorar en el Sprint 2.
+- **Sprint Review:** al final del Sprint se presenta el incremento al profesor. La retroalimentación se usa para ajustar el Product Backlog.
+- **Sprint Retrospective:** después de la Review, el equipo identifica qué funcionó, qué no y qué mejorar en el siguiente Sprint.
 - **Métricas registradas:** puntos de historia completados (velocidad del equipo) y porcentaje de tareas terminadas, que servirán para planificar de forma más realista los siguientes Sprints.
+
+### Detalle de historias de usuario
+
+La plantilla sigue la regla de las tres C (card, conversation, confirmation) que Ron Jeffries describió en 2001. Los criterios de aceptación usan el formato Dado que, cuando, entonces, propuesto por Dan North en 2006 dentro del desarrollo guiado por comportamiento (BDD). La revisión de calidad aplica el criterio INVEST de Bill Wake (2003). Las reglas de negocio de cada historia son propuestas del equipo y no provienen de una clínica real; el Product Owner puede ajustarlas antes de cada Sprint Planning.
+
+Cada historia indica los requerimientos funcionales (RF) y no funcionales (RNF) con los que se relaciona.
+
+#### HU-01: Registro de propietarios
+
+Requerimientos relacionados: RF-01, RNF-03 y RNF-05.
+
+> Como propietario de mascotas, quiero registrarme con mi nombre, teléfono, correo electrónico y una contraseña, para acceder al sistema y administrar la información de mis mascotas.
+
+Criterios de aceptación:
+
+1. Dado que el visitante completa todos los datos obligatorios, cuando presiona "Registrarse", entonces el sistema crea la cuenta con el rol de propietario y muestra un mensaje de confirmación.
+2. Dado que el visitante deja vacío algún dato obligatorio, cuando intenta registrarse, entonces el sistema no crea la cuenta y señala los campos faltantes.
+3. Dado que el correo ya está registrado, cuando el visitante intenta registrarse, entonces el sistema indica que el correo está en uso.
+4. Dado que la contraseña tiene menos de 8 caracteres, cuando el visitante intenta registrarse, entonces el sistema muestra un mensaje de error.
+5. Dado que la cuenta fue creada, cuando se guarda en la base de datos, entonces la contraseña queda almacenada cifrada.
+
+Prioridad P1. Estimación de 3 puntos. Sprint 1.
+
+No depende de otras historias. El rol de propietario se asigna de forma automática y ningún visitante puede registrarse como veterinario o administrador. El mínimo de 8 caracteres para la contraseña es una decisión del equipo. El wireframe del formulario está pendiente.
+
+#### HU-02: Inicio y cierre de sesión con acceso por rol
+
+Requerimientos relacionados: RF-02, RF-03 y RNF-04.
+
+> Como usuario del sistema, quiero iniciar y cerrar sesión, para acceder solo a las funciones de mi rol (propietario, médico veterinario o administrador).
+
+Criterios de aceptación:
+
+1. Dado que el usuario está registrado, cuando ingresa su correo y contraseña correctos, entonces el sistema inicia la sesión y lo lleva a la pantalla principal de su rol.
+2. Dado que el usuario ingresa un correo o una contraseña incorrectos, cuando intenta iniciar sesión, entonces el sistema muestra un mensaje genérico de credenciales inválidas, sin indicar cuál dato falló.
+3. Dado que el usuario tiene la sesión iniciada, cuando presiona "Cerrar sesión", entonces el sistema finaliza la sesión y lo devuelve a la pantalla de inicio de sesión.
+4. Dado que un propietario tiene la sesión iniciada, cuando intenta entrar a una función de veterinario o de administrador, entonces el sistema le niega el acceso.
+
+Prioridad P1. Estimación de 3 puntos. Sprint 1.
+
+Depende de la HU-01. El control de acceso se valida en el servidor y no solo ocultando opciones en la interfaz. El wireframe de la pantalla de inicio de sesión está pendiente.
+
+#### HU-03: Registro de mascotas del propietario
+
+Requerimientos relacionados: RF-05 y RNF-05.
+
+> Como propietario de mascotas, quiero registrar una o varias mascotas asociadas a mi cuenta con su nombre, especie, raza, sexo, fecha de nacimiento y peso, para que cada una tenga su propia información.
+
+Criterios de aceptación:
+
+1. Dado que el propietario inició sesión, cuando completa los datos obligatorios y presiona "Guardar", entonces el sistema registra la mascota, la asocia a su cuenta y muestra un mensaje de confirmación.
+2. Dado que el propietario deja vacío el nombre, la especie o el sexo, cuando intenta guardar, entonces el sistema no registra la mascota y señala los campos faltantes.
+3. Dado que el propietario ingresa una fecha de nacimiento posterior a la fecha actual o un peso menor o igual a cero, cuando intenta guardar, entonces el sistema muestra un mensaje de error.
+4. Dado que el propietario ya tiene una mascota registrada, cuando registra otra, entonces ambas aparecen en su lista con información independiente.
+5. Dado que un usuario no inició sesión, cuando intenta entrar al registro de mascotas, entonces el sistema lo envía a la página de inicio de sesión.
+
+Prioridad P1. Estimación de 5 puntos. Sprint 1.
+
+Depende de la HU-02, porque la mascota se asocia al propietario autenticado. Un propietario puede tener muchas mascotas y cada mascota pertenece a un solo propietario. La raza y la fecha de nacimiento son opcionales. El wireframe del formulario está pendiente.
+
+#### HU-04: Consulta y edición de mascotas
+
+Requerimientos relacionados: RF-06, RNF-04 y RNF-05.
+
+> Como propietario de mascotas, quiero ver la lista de mis mascotas y editar su información, para mantener sus datos actualizados.
+
+Criterios de aceptación:
+
+1. Dado que el propietario tiene mascotas registradas, cuando entra a "Mis mascotas", entonces el sistema muestra el nombre, la especie y la raza de cada una.
+2. Dado que el propietario no tiene mascotas, cuando entra a "Mis mascotas", entonces el sistema muestra un mensaje y la opción de registrar una.
+3. Dado que el propietario edita los datos de una mascota con información válida, cuando presiona "Guardar", entonces el sistema actualiza los datos y muestra un mensaje de confirmación.
+4. Dado que el propietario deja un campo obligatorio vacío o ingresa un dato inválido, cuando intenta guardar, entonces el sistema aplica las mismas validaciones de la HU-03.
+5. Dado que un propietario intenta ver o editar una mascota ajena, cuando accede a ella, entonces el sistema le niega el acceso.
+
+Prioridad P1. Estimación de 3 puntos. Sprint 1.
+
+Depende de la HU-03. El formulario de edición puede reutilizar el de registro. El wireframe de la lista está pendiente.
+
+#### HU-05: Registro de médicos veterinarios
+
+Requerimientos relacionados: RF-03, RF-04 y RNF-03.
+
+> Como administrador de la clínica, quiero registrar a los médicos veterinarios con su nombre, correo electrónico y una contraseña inicial, para que puedan ingresar al sistema y atender citas.
+
+Criterios de aceptación:
+
+1. Dado que el administrador inició sesión, cuando completa los datos del veterinario y presiona "Guardar", entonces el sistema crea la cuenta con el rol de médico veterinario.
+2. Dado que el correo ya está registrado, cuando el administrador intenta guardar, entonces el sistema indica que el correo está en uso.
+3. Dado que el veterinario fue registrado, cuando inicia sesión, entonces el sistema le muestra las funciones de su rol.
+4. Dado que un usuario que no es administrador intenta entrar al registro de veterinarios, cuando accede a esa opción, entonces el sistema le niega el acceso.
+
+Prioridad P1. Estimación de 2 puntos. Sprint 1.
+
+Depende de la HU-02. La cuenta del administrador se crea con datos iniciales al instalar el sistema y no existe un registro público de administradores. El wireframe del panel está pendiente.
+
+#### HU-06: Agendar una cita para una mascota
+
+Requerimientos relacionados: RF-07 y RNF-05.
+
+> Como propietario de mascotas, quiero agendar una cita para una de mis mascotas eligiendo un veterinario y una fecha y hora disponibles, para recibir atención sin llamar a la clínica.
+
+Criterios de aceptación:
+
+1. Dado que el propietario tiene al menos una mascota registrada, cuando selecciona la mascota, el veterinario, la fecha y una hora disponible y confirma, entonces el sistema registra la cita con estado "Programada" y muestra un resumen.
+2. Dado que el propietario eligió un veterinario y una fecha, cuando el sistema muestra los horarios, entonces solo aparecen las horas libres de ese veterinario.
+3. Dado que dos propietarios intentan reservar el mismo veterinario a la misma hora, cuando el segundo confirma, entonces el sistema le indica que el horario ya no está disponible.
+4. Dado que el propietario selecciona una fecha anterior a la actual, cuando intenta continuar, entonces el sistema no lo permite.
+5. Dado que el propietario no tiene mascotas registradas, cuando entra a agendar una cita, entonces el sistema le indica que primero debe registrar una.
+
+Prioridad P1. Estimación de 8 puntos. Sprint 2.
+
+Depende de la HU-03 y de la HU-05. Antes del Sprint 2 el Product Owner debe definir el horario de atención y la duración de cada cita; el equipo propone 30 minutos como valor inicial, sin una fuente que lo respalde. El wireframe de la pantalla de agendamiento está pendiente.
+
+#### HU-07: Cancelar una cita
+
+Requerimientos relacionados: RF-08 y RNF-04.
+
+> Como propietario de mascotas, quiero cancelar una cita programada, para liberar el espacio si no puedo asistir.
+
+Criterios de aceptación:
+
+1. Dado que el propietario tiene una cita "Programada" en una fecha futura, cuando presiona "Cancelar" y confirma, entonces el sistema cambia el estado a "Cancelada" y el horario queda libre.
+2. Dado que el sistema pide confirmar la cancelación, cuando el propietario desiste, entonces la cita no cambia.
+3. Dado que la cita está "Atendida" o "Cancelada", cuando el propietario la consulta, entonces la opción de cancelar no aparece.
+4. Dado que un propietario intenta cancelar una cita ajena, cuando realiza la acción, entonces el sistema le niega el acceso.
+
+Prioridad P2. Estimación de 2 puntos. Sprint 2.
+
+Depende de la HU-06. La cita cancelada se conserva con su estado para mantener el historial. El wireframe está pendiente.
+
+#### HU-08: Consulta de citas del veterinario
+
+Requerimientos relacionados: RF-09 y RNF-04.
+
+> Como médico veterinario, quiero consultar mis citas programadas, para organizar mi jornada.
+
+Criterios de aceptación:
+
+1. Dado que el veterinario inició sesión, cuando entra a "Mis citas", entonces el sistema muestra sus citas ordenadas por fecha y hora, con el nombre y la especie de la mascota y el nombre del propietario.
+2. Dado que el veterinario selecciona una fecha, cuando filtra la agenda, entonces el sistema muestra solo las citas de ese día.
+3. Dado que el veterinario no tiene citas en la fecha elegida, cuando consulta la agenda, entonces el sistema muestra un mensaje.
+4. Dado que existen citas de otros veterinarios, cuando el veterinario consulta su agenda, entonces solo ve las suyas.
+
+Prioridad P1. Estimación de 3 puntos. Sprint 2.
+
+Depende de la HU-06. Por defecto se muestran las citas del día actual. El wireframe de la agenda está pendiente.
+
+#### HU-09: Marcar una cita como atendida
+
+Requerimientos relacionados: RF-10 y RNF-04.
+
+> Como médico veterinario, quiero marcar una cita como atendida, para llevar el control de las citas realizadas.
+
+Criterios de aceptación:
+
+1. Dado que el veterinario tiene una cita "Programada" para el día actual, cuando presiona "Marcar como atendida", entonces el estado cambia a "Atendida".
+2. Dado que la cita está "Cancelada", cuando el veterinario la consulta, entonces la opción no aparece.
+3. Dado que la cita es de una fecha futura, cuando el veterinario intenta marcarla, entonces el sistema no lo permite.
+4. Dado que la cita pertenece a otro veterinario, cuando intenta modificarla, entonces el sistema le niega el acceso.
+
+Prioridad P2. Estimación de 2 puntos. Sprint 2.
+
+Depende de la HU-08. Al marcar la cita, el sistema puede ofrecer un acceso directo al registro de la consulta de la HU-10. El wireframe está pendiente.
+
+#### HU-10: Registro de consultas en el expediente
+
+Requerimientos relacionados: RF-11, RNF-04 y RNF-05.
+
+> Como médico veterinario, quiero registrar una consulta con su motivo, diagnóstico, tratamiento y observaciones en el expediente de la mascota, para documentar la atención.
+
+Criterios de aceptación:
+
+1. Dado que el veterinario seleccionó una mascota, cuando completa el motivo, el diagnóstico y el tratamiento y presiona "Guardar", entonces el sistema registra la consulta con la fecha actual y su nombre.
+2. Dado que el veterinario deja vacío el motivo, el diagnóstico o el tratamiento, cuando intenta guardar, entonces el sistema señala los campos faltantes.
+3. Dado que la consulta fue registrada, cuando se abre el expediente de la mascota, entonces la consulta aparece en el historial.
+4. Dado que un propietario intenta registrar una consulta, cuando accede a esa función, entonces el sistema le niega el acceso.
+
+Prioridad P1. Estimación de 5 puntos. Sprint 3.
+
+Depende de la HU-03 y de la HU-05. Las observaciones son opcionales. Una consulta registrada no se elimina. El wireframe del formulario está pendiente.
+
+#### HU-11: Registro de vacunas
+
+Requerimientos relacionados: RF-12 y RNF-05.
+
+> Como médico veterinario, quiero registrar las vacunas aplicadas a una mascota y la fecha de la próxima dosis, para dar seguimiento a su vacunación.
+
+Criterios de aceptación:
+
+1. Dado que el veterinario seleccionó una mascota, cuando ingresa el nombre de la vacuna y la fecha de aplicación y presiona "Guardar", entonces el sistema registra la vacuna en el expediente.
+2. Dado que la fecha de próxima dosis es anterior o igual a la de aplicación, cuando el veterinario intenta guardar, entonces el sistema muestra un mensaje de error.
+3. Dado que la vacuna no requiere otra dosis, cuando el veterinario deja vacío ese campo, entonces el sistema guarda el registro sin próxima dosis.
+4. Dado que la vacuna fue registrada, cuando se abre el expediente, entonces aparece con su fecha de aplicación y su próxima dosis.
+
+Prioridad P2. Estimación de 3 puntos. Sprint 3.
+
+Depende de la HU-03 y de la HU-05. El nombre de la vacuna se escribe como texto libre; un catálogo de vacunas queda fuera del alcance del curso. El wireframe está pendiente.
+
+#### HU-12: Consulta del historial clínico por el veterinario
+
+Requerimientos relacionados: RF-13 y RNF-04.
+
+> Como médico veterinario, quiero consultar el historial completo de una mascota, para conocer sus atenciones anteriores antes de atenderla.
+
+Criterios de aceptación:
+
+1. Dado que el veterinario busca una mascota, cuando abre su expediente, entonces el sistema muestra los datos de la mascota y del propietario, las consultas y las vacunas.
+2. Dado que la mascota tiene varias consultas, cuando el veterinario abre el historial, entonces aparecen de la más reciente a la más antigua.
+3. Dado que la mascota no tiene consultas, cuando el veterinario abre el expediente, entonces el sistema muestra un mensaje.
+4. Dado que el veterinario está atendiendo una cita, cuando la selecciona en su agenda, entonces puede abrir el expediente de la mascota.
+
+Prioridad P1. Estimación de 3 puntos. Sprint 3.
+
+Depende de la HU-10 y de la HU-11. Como el sistema atiende una sola clínica, cualquier veterinario puede consultar el expediente de cualquier mascota. El wireframe del expediente está pendiente.
+
+#### HU-13: Consulta del historial por el propietario
+
+Requerimientos relacionados: RF-14 y RNF-04.
+
+> Como propietario de mascotas, quiero consultar el historial de atención y las vacunas de mis mascotas, para conocer su estado de salud.
+
+Criterios de aceptación:
+
+1. Dado que el propietario inició sesión, cuando abre el historial de una de sus mascotas, entonces el sistema muestra las consultas y vacunas de la más reciente a la más antigua.
+2. Dado que una vacuna tiene próxima dosis, cuando el propietario consulta el historial, entonces ve esa fecha.
+3. Dado que el propietario consulta el historial, cuando visualiza la información, entonces solo puede leerla.
+4. Dado que el propietario intenta consultar una mascota ajena, cuando accede a ella, entonces el sistema le niega el acceso.
+
+Prioridad P2. Estimación de 3 puntos. Sprint 3.
+
+Depende de la HU-10 y de la HU-11. Puede reutilizar la vista de la HU-12 sin las opciones de edición. El wireframe está pendiente.
+
+#### Verificación INVEST
+
+La tabla registra las dependencias y el tamaño de cada historia, que son los dos criterios de INVEST (Wake, 2003) más fáciles de incumplir. Todas las historias tienen criterios de aceptación comprobables con datos ficticios y sus reglas pueden negociarse con el Product Owner.
+
+| Historia | Depende de | Puntos | Sprint |
+| --- | --- | :---: | :---: |
+| HU-01 | Ninguna | 3 | 1 |
+| HU-02 | HU-01 | 3 | 1 |
+| HU-03 | HU-02 | 5 | 1 |
+| HU-04 | HU-03 | 3 | 1 |
+| HU-05 | HU-02 | 2 | 1 |
+| HU-06 | HU-03, HU-05 | 8 | 2 |
+| HU-07 | HU-06 | 2 | 2 |
+| HU-08 | HU-06 | 3 | 2 |
+| HU-09 | HU-08 | 2 | 2 |
+| HU-10 | HU-03, HU-05 | 5 | 3 |
+| HU-11 | HU-03, HU-05 | 3 | 3 |
+| HU-12 | HU-10, HU-11 | 3 | 3 |
+| HU-13 | HU-10, HU-11 | 3 | 3 |
+
+Ninguna historia depende de trabajo asignado a un Sprint posterior. La HU-06 es la más grande, con 8 puntos.
 
 ## Historial de actualizaciones
 
@@ -416,3 +743,5 @@ Una historia se considera terminada cuando:
 | 1.2 | 04/10/2026 | Incorporación del Acta de Inicio, la definición del Scrum Team y el Análisis de Entorno (EEFs y Lean Canvas). |
 | 1.3 | 13/10/2026 | Incorporación de Edgar Eliam Araya Alvarado al equipo: actualización de estudiantes, interesado I5, Scrum Team, roles adicionales, enfoque de gestión y factores ambientales para un equipo de tres integrantes. |
 | 1.4 | 14/10/2026 | Incorporación de la Sección 05: Product Backlog inicial, Sprint Backlog del Sprint 1 con tareas y responsables, y mecanismo de seguimiento (tablero, Daily Scrum, burndown, impedimentos y Definición de Terminado). |
+| 1.5 | 14/10/2026 | Ajuste del alcance a una versión académica: visión a futuro con los planes de suscripción, requerimientos funcionales y no funcionales, actualización de los límites del proyecto y adaptación del Product Backlog, con plan de Sprints y relación de cada historia con sus requerimientos. |
+| 1.6 | 20/10/2026 | Incorporación del detalle de las 13 historias de usuario con la plantilla del curso: historia, requerimientos relacionados, criterios de aceptación en formato Dado que, cuando, entonces, prioridad, estimación, dependencias y verificación INVEST. |
