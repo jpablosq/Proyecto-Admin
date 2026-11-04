@@ -393,16 +393,24 @@ El seguimiento del Sprint corresponde al grupo de procesos de monitoreo y contro
 
 #### 1. Tablero de tareas
 
-El tablero está en GitHub Projects. El enlace está pendiente de agregar.
+El tablero está en Jira Software (plan gratuito), en el espacio Scrum VetCare, con clave VET.
 
-| Columna | Límite WIP | Significado |
-| --- | :---: | --- |
-| Por hacer | Sin límite | Tareas del Sprint que aún no se han iniciado. |
-| En progreso | 3 | Tareas en las que un integrante está trabajando. Cada integrante tiene una tarea activa a la vez. |
-| En pruebas | 2 | Código integrado, pendiente de verificación por otro integrante. |
-| Terminado | Sin límite | Tareas que cumplen la Definición de Terminado. Solo las mueve quien prueba, no quien desarrolló. |
+Enlace: https://josepablonet.atlassian.net/jira/software/c/projects/VET/boards/2
+
+| Columna | Límite WIP | Significado | Justificación del límite |
+| --- | :---: | --- | --- |
+| Por hacer | Sin límite | Tareas del Sprint que aún no se han iniciado. | Ahí está todo el Sprint Backlog al empezar. |
+| En progreso | 3 | Tareas en las que un integrante está trabajando. Cada integrante tiene una tarea activa a la vez. | Somos tres y cada uno trabaja una tarea a la vez. |
+| En pruebas | 2 | Código integrado en la rama principal, pendiente de verificación por otro integrante. | Si hay dos tareas esperando, alguien termina lo suyo y prueba antes de empezar otra cosa. |
+| Terminado | Sin límite | Tareas que cumplen la Definición de Terminado. Solo las mueve quien prueba, no quien desarrolló. | Es el final del flujo. |
+
+Los límites se configuraron en Jira con la restricción por número de incidencias, que también cuenta las subtareas.
 
 Cada tarjeta tiene una sola tarea y un solo responsable, con el formato "HU-01 · T-03 Interfaz de registro". Cada integrante mueve sus tareas apenas cambia su estado, para que el equipo vea el avance real.
+
+En Jira, las historias HU-01 a HU-05 se cargaron como elementos de tipo Historia, con sus puntos y sus criterios de aceptación. Las tareas T-03 a T-15 son subtareas de su historia, y T-01, T-02 y T-16 son tareas generales. Cada tarea tiene a su responsable en el campo Persona asignada y sus horas en el campo Estimación original. El Sprint 1 va del 22/10/2026 al 04/11/2026 y tiene como objetivo el Sprint Goal de este documento.
+
+Regla para mover una tarjeta a Terminado: solo la mueve quien la probó, nunca quien la desarrolló, y antes revisa que cumpla los cinco puntos de la Definición de Terminado (apartado 5). Es un acuerdo del equipo y no está configurado como restricción en Jira.
 
 #### 2. Daily Scrum
 
@@ -761,3 +769,4 @@ Un impedimento técnico se plantea en la Daily Scrum. Si no se resuelve en 24 ho
 | 1.5 | 14/10/2026 | Ajuste del alcance a una versión académica: visión a futuro con los planes de suscripción, requerimientos funcionales y no funcionales, actualización de los límites del proyecto y adaptación del Product Backlog, con plan de Sprints y relación de cada historia con sus requerimientos. |
 | 1.6 | 20/10/2026 | Incorporación del detalle de las 13 historias de usuario con la plantilla del curso: historia, requerimientos relacionados, criterios de aceptación en formato Dado que, cuando, entonces, prioridad, estimación, dependencias y verificación INVEST. |
 | 1.7 | 04/11/2026 | Revisión de redacción de todo el documento: títulos, formato y fuentes de los datos. Se agregan las fechas del Sprint 1, la velocidad inicial, los límites WIP del tablero, los votos de planning poker de HU-03 a HU-13 y la Sección 07 de comunicaciones. |
+| 1.8 | 04/11/2026 | Cambio del tablero de GitHub Projects a Jira: enlace al tablero del espacio VetCare, justificación de los límites WIP, carga de las historias y tareas del Sprint 1 y regla para mover una tarjeta a Terminado. |
