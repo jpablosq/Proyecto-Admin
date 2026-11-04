@@ -1,20 +1,22 @@
 # VetCare
 
-## Sistema de Gestión de Atención Veterinaria
+## Sistema de gestión de atención veterinaria
 
-**Universidad Técnica Nacional — Sede San Carlos**
+Universidad Técnica Nacional, Sede San Carlos
 
-**Curso:** Administración de Proyectos Informáticos, III-26, SC-02
+Curso: Administración de Proyectos Informáticos, III-26, SC-02
 
-**Profesor:** Deiver Cubero Molina
+Profesor: Deiver Cubero Molina
 
-**Estudiantes:** Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado
+Estudiantes: Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado
 
-**Fecha:** Septiembre 2026
+Fecha: septiembre de 2026
 
 ## Problema
 
 Las clínicas veterinarias necesitan administrar información de diferentes clientes y sus mascotas, pero en algunos casos estos datos pueden encontrarse registrados en documentos físicos, hojas de cálculo o diferentes medios de comunicación. Esto puede dificultar el acceso y control de la información. Además, un mismo cliente puede tener varias mascotas, por lo que es necesario mantener organizada la información de cada una de ellas de manera independiente. También puede ser complicado para los médicos veterinarios consultar rápidamente el historial de una mascota, sus consultas anteriores, vacunas, tratamientos y próximas citas. La falta de un sistema centralizado puede generar pérdida de información, dificultades para organizar las citas y mayor tiempo para consultar los datos de los pacientes.
+
+Este planteamiento se basa en lo que el equipo conoce del trabajo en clínicas veterinarias. No proviene de un estudio ni de una clínica en particular.
 
 ## Proyecto propuesto
 
@@ -22,17 +24,11 @@ Desarrollar un sistema web para la gestión de una clínica veterinaria, dirigid
 
 ## Valor esperado
 
-Se espera que el sistema permita mejorar la organización y administración de la información de la clínica veterinaria, facilitando tanto el trabajo de los médicos como la gestión de los clientes.
-
-El proyecto busca:
-
-- Centralizar la información de clientes y mascotas. Permitir que un cliente pueda registrar y administrar varias mascotas. Mantener un expediente independiente para cada mascota. Facilitar a los médicos veterinarios el acceso al historial de sus pacientes. Mejorar la gestión y organización de las citas. Facilitar el seguimiento de vacunas y tratamientos. Reducir la dependencia de documentos físicos y registros dispersos.
-- Permitir que los clientes puedan consultar información relacionada con sus mascotas.
-- Mejorar el control y seguimiento de la atención brindada a cada paciente.
+Con el sistema, la información de clientes y mascotas queda en un solo lugar. Cada cliente puede registrar y administrar varias mascotas, y cada mascota tiene su propio expediente con consultas, tratamientos y vacunas. Los médicos veterinarios consultan el historial de sus pacientes desde el sistema y las citas se registran y consultan en línea. Los clientes pueden ver la información y el historial de atención de sus mascotas. Se busca reducir la dependencia de documentos físicos y registros dispersos, y llevar un mejor control de la atención de cada paciente.
 
 ## Objetivo general
 
-Desarrollar un sistema web para la gestión de una clínica veterinaria que permita administrar la información de clientes, mascotas, médicos veterinarios, citas e historiales médicos, facilitando el seguimiento y control de la atención de cada mascota.
+Desarrollar un sistema web para la gestión de una clínica veterinaria que permita administrar la información de clientes, mascotas, médicos veterinarios, citas e historiales médicos, y dar seguimiento a la atención de cada mascota.
 
 ## Objetivos específicos
 
@@ -45,24 +41,24 @@ Desarrollar un sistema web para la gestión de una clínica veterinaria que perm
 7. Desarrollar funcionalidades para que los médicos veterinarios puedan consultar el historial médico de sus pacientes y registrar nueva información durante las consultas.
 8. Permitir que los clientes puedan consultar la información y el historial de atención de sus mascotas.
 9. Implementar diferentes niveles de acceso para clientes y médicos veterinarios, de acuerdo con las funciones que corresponden a cada tipo de usuario.
-10. Realizar pruebas del sistema para verificar el correcto funcionamiento de sus principales módulos y garantizar que la información sea gestionada de manera adecuada.
+10. Realizar pruebas del sistema para verificar el correcto funcionamiento de sus principales módulos y que la información se gestione de manera adecuada.
 
 ## Visión a futuro: modelo de negocio
 
-Como visión a largo plazo, la plataforma podría ofrecerse como un servicio en la nube por suscripción (SaaS) para clínicas veterinarias, con los siguientes planes:
+A largo plazo, la plataforma podría ofrecerse como un servicio en la nube por suscripción (SaaS) para clínicas veterinarias, con estos planes:
 
 | Plan | Precio mensual | Enfoque |
 | --- | --- | --- |
-| **Essential** | ₡29.900 | Consultorios y clínicas pequeñas con un veterinario. |
-| **Professional** | ₡59.900 | Clínicas en crecimiento, hasta 3 veterinarios. |
-| **Clinic** | ₡99.900 | Clínicas con varias sucursales, hasta 8 veterinarios. |
-| **Enterprise** | Personalizado | Organizaciones con múltiples compañías y regiones. |
+| Essential | ₡29.900 | Consultorios y clínicas pequeñas con un veterinario. |
+| Professional | ₡59.900 | Clínicas en crecimiento, hasta 3 veterinarios. |
+| Clinic | ₡99.900 | Clínicas con varias sucursales, hasta 8 veterinarios. |
+| Enterprise | Personalizado | Organizaciones con varias compañías y regiones. |
 
-Esta visión se menciona únicamente como referencia. El proyecto desarrollado en el curso corresponde a una versión inicial con fines académicos, enfocada en las funcionalidades base descritas en los requerimientos.
+Los precios son una estimación del equipo y no se basan en un estudio de mercado. Esta visión queda solo como referencia. El proyecto del curso es una versión inicial con fines académicos, limitada a las funcionalidades descritas en los requerimientos.
 
 ## Gestión de interesados
 
-El análisis se realiza para VetCare, el sistema web de gestión de atención veterinaria presentado en la Lección 1. Se consideran los actores que pueden influir en el proyecto o verse afectados por sus resultados. Los roles operativos son propuestos y deberán confirmarse al seleccionar la clínica; las actitudes son estimaciones iniciales, no resultados de entrevistas.
+El análisis se hace para VetCare, el sistema presentado en la Lección 1, y usa el registro de interesados y la matriz poder-interés de la Guía del PMBOK, 6.ª edición (PMI, 2017). Se incluyen los actores que pueden influir en el proyecto o verse afectados por sus resultados. Los roles operativos son propuestos y deben confirmarse al seleccionar la clínica. Las actitudes son estimaciones iniciales y no salen de entrevistas.
 
 | ID / Interesado | Necesidad principal | Poder | Interés | Actitud estimada |
 | --- | --- | --- | --- | --- |
@@ -76,9 +72,7 @@ El análisis se realiza para VetCare, el sistema web de gestión de atención ve
 | I8. Responsable de soporte tecnológico de la clínica | Mantener disponibilidad, accesos, respaldos y resolver incidentes. | 3 | 4 | Neutral |
 | I9. Personal auxiliar veterinario | Consultar los datos necesarios para apoyar la atención según su autorización. | 2 | 3 | Neutral |
 
-Poder: capacidad de influir en decisiones, recursos, aceptación o continuidad. Interés: grado de atención y afectación por el resultado. Escala: 1 = muy bajo; 2 = bajo; 3 = medio; 4 = alto; 5 = muy alto.
-
----
+Poder es la capacidad de influir en decisiones, recursos, aceptación o continuidad. Interés es el grado de atención y afectación por el resultado. La escala va de 1 a 5: 1 = muy bajo, 2 = bajo, 3 = medio, 4 = alto y 5 = muy alto.
 
 ---
 
@@ -150,21 +144,21 @@ Los requerimientos corresponden a una versión inicial del sistema con fines aca
 
 ## Justificación de valoraciones discutibles
 
-**I2 - Poder 4:** los médicos no necesariamente autorizan el presupuesto, pero su validación del expediente y su adopción pueden condicionar la aceptación del sistema. No se asigna 5 porque la aprobación global corresponde a la dirección.
+I2, poder 4. Los médicos no necesariamente autorizan el presupuesto, pero su validación del expediente y su adopción pueden condicionar la aceptación del sistema. No se asigna 5 porque la aprobación global corresponde a la dirección.
 
-**I3 - Poder 3:** recepción influye en los procesos diarios y en la calidad de los datos, aunque no decide la inversión. Su interés es 5 por el uso frecuente de las citas. Si este rol no existe, sus responsabilidades se asignarán al actor que las ejecute.
+I3, poder 3. Recepción influye en los procesos diarios y en la calidad de los datos, aunque no decide la inversión. Su interés es 5 por el uso frecuente de las citas. Si este rol no existe, sus responsabilidades se asignarán al actor que las ejecute.
 
-**I6 - Poder 5 e interés 4:** el profesor determina la evaluación y aceptación académica; su poder se limita a ese contexto. Su interés es alto, aunque no utilizará el sistema en la operación de la clínica.
+I6, poder 5 e interés 4. El profesor determina la evaluación y la aceptación académica, y su poder se limita a ese contexto. Su interés es alto, aunque no usará el sistema en la operación de la clínica.
 
-**I7 - Poder 4 e interés 2:** una interrupción o una limitación técnica puede impedir el despliegue; sin embargo, el proyecto es solo un servicio más para el proveedor. Esta dependencia deberá revisarse según el alojamiento elegido.
+I7, poder 4 e interés 2. Una interrupción o una limitación técnica del proveedor puede impedir el despliegue. Para el proveedor, en cambio, el proyecto es un servicio más. Esta dependencia se revisará según el alojamiento que se elija.
 
-## Mapa Poder-Interés
+## Mapa poder-interés
 
-Se utiliza poder en el eje vertical e interés en el horizontal. Para decidir la estrategia, las puntuaciones 1 y 2 se consideran bajas y las puntuaciones 3, 4 y 5 se consideran medias o altas. El valor 3 se incluye en la gestión activa por su influencia operativa; no implica que su poder sea igual al de la dirección.
+El poder va en el eje vertical y el interés en el horizontal. Para decidir la estrategia, las puntuaciones 1 y 2 se toman como bajas y las puntuaciones 3, 4 y 5 como medias o altas. El valor 3 se incluye en la gestión activa por su influencia operativa, aunque eso no lo iguala al poder de la dirección.
 
 ### Coordenadas del mapa
 
-Cada fila representa una posición exacta del mapa. El eje horizontal corresponde al interés y el vertical al poder.
+Cada fila es una posición exacta del mapa. El eje horizontal corresponde al interés y el vertical al poder.
 
 | Interesado | Interés (X) | Poder (Y) |
 | --- | --- | --- |
@@ -196,7 +190,7 @@ quadrantChart
     "I9": [0.55, 0.25]
 ```
 
-*El diagrama ubica las puntuaciones 3 a 5 en la mitad alta y 1 a 2 en la mitad baja. La tabla anterior conserva los valores exactos de 1 a 5.*
+El diagrama ubica las puntuaciones 3 a 5 en la mitad alta y 1 a 2 en la mitad baja. La tabla anterior conserva los valores exactos de 1 a 5.
 
 | Cuadrante | Interesados |
 | --- | --- |
@@ -205,81 +199,55 @@ quadrantChart
 | Mantener informados | I4 e I9 |
 | Monitorear | Sin interesados con poder e interés bajos en esta valoración inicial. |
 
-I2 e I5 comparten la coordenada (interés 5, poder 4). I9 se mantendrá informado en los hitos relevantes por su participación todavía indirecta; si requiere acceso directo al sistema, se revisará su interés y estrategia.
+I2 e I5 comparten la coordenada (interés 5, poder 4). I9 se mantendrá informado en los hitos relevantes porque su participación todavía es indirecta. Si llega a necesitar acceso directo al sistema, se revisarán su interés y su estrategia.
 
 ## Tres interesados críticos
 
-Se seleccionan la dirección, los médicos veterinarios y el equipo desarrollador por su influencia directa en la autorización, utilidad clínica y ejecución de VetCare. El profesor también se gestionará de cerca por su papel en la aceptación académica.
+Se seleccionan la dirección, los médicos veterinarios y el equipo desarrollador porque intervienen de forma directa en la autorización, la utilidad clínica y la ejecución de VetCare. El profesor también se gestiona de cerca por su papel en la aceptación académica.
 
 ### 1. Dirección de la clínica (I1)
 
-**Por qué es crítica:** autoriza recursos, define prioridades y decide la puesta en uso.
-
-**Cómo involucrarla:** reunión inicial para acordar alcance y criterios de éxito; revisión quincenal con el equipo y aprobación al cierre de cada entrega.
-
-**Responsable:** equipo desarrollador, con un integrante como enlace.
-
-**Evidencia:** minuta de decisiones, lista priorizada y aceptación documentada.
-
-**Resultado esperado:** alcance viable y decisiones oportunas sobre cambios y piloto.
+Autoriza recursos, define prioridades y decide la puesta en uso. Con ella se hace una reunión inicial para acordar el alcance y los criterios de éxito, y una revisión quincenal con aprobación al cierre de cada entrega. El responsable es el equipo desarrollador, con Jose Pablo Soto como enlace. Como evidencia quedan la minuta de decisiones, la lista priorizada y la aceptación documentada. Se espera llegar a un alcance viable y a decisiones a tiempo sobre cambios y sobre el piloto.
 
 ### 2. Médicos veterinarios (I2)
 
-**Por qué son críticos:** determinan si el expediente refleja la atención real y si el sistema resulta útil durante las consultas.
-
-**Cómo involucrarlos:** entrevista y observación inicial; revisión de prototipos y pruebas cada dos semanas con casos ficticios de consultas, vacunas y tratamientos.
-
-**Responsable:** equipo desarrollador y un médico representante elegido por la clínica.
-
-**Evidencia:** comentarios registrados, incidencias y lista de criterios clínicos aprobados.
-
-**Resultado esperado:** validar que puedan consultar el historial y registrar una atención completa con los permisos correctos.
+Determinan si el expediente refleja la atención real y si el sistema les sirve durante las consultas. Se propone una entrevista y una observación inicial, y después revisiones de prototipos y pruebas cada dos semanas con casos ficticios de consultas, vacunas y tratamientos. Participan el equipo desarrollador y un médico representante elegido por la clínica. La evidencia son los comentarios registrados, las incidencias y la lista de criterios clínicos aprobados. El objetivo es validar que puedan consultar el historial y registrar una atención completa con los permisos correctos.
 
 ### 3. Equipo desarrollador (I5)
 
-**Por qué es crítico:** transforma los requisitos en software, gestiona las restricciones y comprueba el funcionamiento.
+Convierte los requisitos en software, gestiona las restricciones y comprueba el funcionamiento. Trabaja con planificación semanal, reparto de tareas entre Jose Pablo Soto, Maikel Chaves y Eliam Araya, revisión de código y demostración quincenal de funcionalidades. Los tres integrantes son responsables, cada uno de los módulos que se le asignen. La evidencia es el tablero actualizado, las versiones del sistema y los resultados de pruebas. Se espera tener entregas funcionales, obstáculos visibles y correcciones antes de cada evaluación.
 
-**Cómo involucrarlo:** planificación semanal, distribución de tareas entre Jose Pablo Soto, Maikel Chaves y Eliam Araya, revisión de código y demostración quincenal de funcionalidades.
-
-**Responsable:** los tres integrantes, con responsabilidades acordadas por módulo.
-
-**Evidencia:** tablero actualizado, versiones del sistema y resultados de pruebas.
-
-**Resultado esperado:** entregas funcionales, obstáculos visibles y correcciones antes de cada evaluación.
-
-Las frecuencias indicadas son propuestas. Se ajustarán al calendario del curso y a la disponibilidad de la clínica. El registro y el mapa se revisarán al finalizar cada iteración o cuando cambien actores, responsabilidades o condiciones del proyecto.
+Las frecuencias indicadas son propuestas y se ajustarán al calendario del curso y a la disponibilidad de la clínica. El registro y el mapa se revisan al final de cada iteración o cuando cambian los actores, las responsabilidades o las condiciones del proyecto.
 
 ## Enfoque de gestión del proyecto
 
-**Decisión: enfoque híbrido.** VetCare combina objetivos y módulos definidos desde la Lección 1 con necesidades de uso que deberán validarse con clientes y personal veterinario. Por ello, se propone planificar los compromisos generales y desarrollar el producto mediante iteraciones.
+Se elige un enfoque híbrido. Los objetivos y módulos de VetCare están definidos desde la Lección 1, pero las necesidades de uso deben validarse con clientes y personal veterinario. Por eso se planifican los compromisos generales y el producto se desarrolla en iteraciones.
 
 ### Elementos predictivos
 
-Se definirán al inicio el alcance base, los objetivos, los entregables, las responsabilidades y un cronograma ajustado a las fechas que establezca el curso. También se acordarán el modelo inicial de datos, los niveles de acceso, los criterios de aceptación y los riesgos. Estos elementos permiten controlar el trabajo de un equipo de tres estudiantes y comprobar el cumplimiento académico.
+Al inicio se definen el alcance base, los objetivos, los entregables, las responsabilidades y un cronograma ajustado a las fechas del curso. También se acuerdan el modelo inicial de datos, los niveles de acceso, los criterios de aceptación y los riesgos. Con estos elementos un equipo de tres estudiantes puede controlar el trabajo y comprobar el cumplimiento académico.
 
 ### Elementos adaptativos
 
-Los flujos de citas, la consulta del historial, la presentación de vacunas y el registro de varias mascotas pueden cambiar tras las pruebas con usuarios. Se trabajará con una lista priorizada de requisitos e iteraciones propuestas de dos semanas. Cada ciclo incluirá diseño, implementación, pruebas y demostración para incorporar retroalimentación antes de continuar.
+Los flujos de citas, la consulta del historial, la presentación de vacunas y el registro de varias mascotas pueden cambiar después de las pruebas con usuarios. Se trabaja con una lista priorizada de requisitos e iteraciones de dos semanas. Cada ciclo incluye diseño, implementación, pruebas y demostración, para incorporar la retroalimentación antes de continuar.
 
 ### Aplicación en VetCare
 
-Primero se validarán requisitos y relaciones entre clientes, mascotas, médicos y citas. Después se propone implementar: (1) cuentas, permisos y registro de clientes y mascotas; (2) gestión de citas; (3) expediente, consultas, diagnósticos, tratamientos y vacunas; y (4) consulta autorizada para clientes y pruebas integrales. El orden y la cantidad de iteraciones se ajustarán al calendario real.
+Primero se validan los requisitos y las relaciones entre clientes, mascotas, médicos y citas. Después se implementan, en este orden: (1) cuentas, permisos y registro de clientes y mascotas; (2) gestión de citas; (3) expediente, consultas, diagnósticos, tratamientos y vacunas; y (4) consulta autorizada para clientes y pruebas integrales. El orden y la cantidad de iteraciones se ajustan al calendario real.
 
 ### Control de cambios y calidad
 
-Los ajustes de interfaz o de flujo que no alteren los compromisos se priorizarán para la siguiente iteración. Si un cambio afecta alcance, tiempo o recursos, el equipo documentará su impacto y lo revisará con la dirección y, cuando corresponda, con el profesor. Cada entrega deberá superar pruebas funcionales y de permisos antes de considerarse terminada.
+Los ajustes de interfaz o de flujo que no alteran los compromisos se priorizan para la siguiente iteración. Si un cambio afecta el alcance, el tiempo o los recursos, el equipo documenta su impacto y lo revisa con la dirección y, cuando corresponda, con el profesor. Cada entrega debe pasar pruebas funcionales y de permisos antes de considerarse terminada.
 
 ### Justificación frente a otros enfoques
 
-Un enfoque exclusivamente predictivo dificultaría incorporar cambios descubiertos al probar el sistema con usuarios. Uno exclusivamente adaptativo ofrecería menos estructura para los compromisos académicos y el alcance ya definido. El enfoque híbrido permite mantener una planificación verificable y aprender durante el desarrollo, reduciendo el riesgo de entregar funciones que no respondan a la operación real.
+Un enfoque solo predictivo haría difícil incorporar los cambios que aparezcan al probar el sistema con usuarios. Uno solo adaptativo daría menos estructura para los compromisos académicos y el alcance ya definido. El híbrido mantiene una planificación verificable y deja espacio para ajustar el producto durante el desarrollo.
 
-**Condición del análisis:** el documento original no identifica una clínica concreta, presupuesto, proveedor ni calendario detallado. Estas decisiones y la disponibilidad de usuarios deben confirmarse antes de cerrar la planificación; las propuestas anteriores no constituyen acuerdos ya realizados.
+El documento original no identifica una clínica concreta, un presupuesto, un proveedor ni un calendario detallado. Estas decisiones y la disponibilidad de usuarios deben confirmarse antes de cerrar la planificación. Lo descrito en esta sección son propuestas y no acuerdos ya tomados.
 
+## Justificación y alcance
 
-### Justificación del proyecto
-
-Las clínicas veterinarias suelen tener la información de clientes y mascotas dispersa en documentos físicos, hojas y otros medios. Esto dificulta consultar historiales, organizar citas y dar seguimiento a vacunas y tratamientos. VetCare se propone como un sistema web que centraliza esa información y le da a cada mascota su propio expediente.
-
+Las clínicas veterinarias suelen tener la información de clientes y mascotas dispersa en documentos físicos, hojas de cálculo y otros medios. Esto dificulta consultar historiales, organizar citas y dar seguimiento a vacunas y tratamientos. VetCare se propone como un sistema web que centraliza esa información y le da a cada mascota su propio expediente. Para la versión del curso, el alcance queda así:
 
 | Incluye | No incluye |
 | --- | --- |
@@ -295,13 +263,13 @@ Las clínicas veterinarias suelen tener la información de clientes y mascotas d
 
 ## Definición del Scrum Team
 
-Como somos un equipo de tres personas, los tres actuamos como Developers. Además, dos integrantes asumen los roles de Product Owner y Scrum Master, y el tercero se enfoca en el desarrollo y en las áreas de calidad y documentación. Se evita que una misma persona sea Product Owner y Scrum Master a la vez, para no mezclar la priorización del producto con la protección de la capacidad del equipo.
+Los roles siguen la Guía de Scrum (Schwaber y Sutherland, 2020). Como el equipo es de tres personas, los tres actúan como Developers. Dos integrantes asumen además los roles de Product Owner y Scrum Master, y el tercero se enfoca en el desarrollo, la calidad y la documentación. Se evita que una misma persona sea Product Owner y Scrum Master a la vez, para no mezclar la priorización del producto con la protección de la capacidad del equipo.
 
 | Integrante | Rol Scrum | Responsabilidades |
 | --- | --- | --- |
-| Jose Pablo Soto Quesada | **Product Owner + Developer** | Mantener y priorizar el Product Backlog, definir criterios de aceptación y ser el enlace con la clínica y el profesor. |
-| Maikel Chaves Salas | **Scrum Master + Developer** | Facilitar el proceso, remover impedimentos y mantener el tablero actualizado. |
-| Edgar Eliam Araya Alvarado | **Developer** | Desarrollar las funcionalidades del Sprint, liderar las pruebas funcionales y de permisos, y mantener actualizada la documentación del proyecto. |
+| Jose Pablo Soto Quesada | Product Owner + Developer | Mantener y priorizar el Product Backlog, definir criterios de aceptación y ser el enlace con la clínica y el profesor. |
+| Maikel Chaves Salas | Scrum Master + Developer | Facilitar el proceso, remover impedimentos y mantener el tablero actualizado. |
+| Edgar Eliam Araya Alvarado | Developer | Desarrollar las funcionalidades del Sprint, liderar las pruebas funcionales y de permisos, y mantener actualizada la documentación del proyecto. |
 
 ### Roles adicionales para el futuro
 
@@ -315,9 +283,11 @@ Como somos un equipo de tres personas, los tres actuamos como Developers. Ademá
 
 ---
 
-## Análisis de Entorno
+## Análisis de entorno
 
-### Factores Ambientales de la Empresa (EEFs)
+### Factores ambientales de la empresa (EEF)
+
+La Guía del PMBOK (PMI, 2017) llama factores ambientales de la empresa a las condiciones que el equipo no controla y que afectan al proyecto. Para VetCare se identifican los siguientes.
 
 | Factor | Efecto en VetCare |
 | --- | --- |
@@ -328,33 +298,31 @@ Como somos un equipo de tres personas, los tres actuamos como Developers. Ademá
 | Disponibilidad de usuarios para pruebas | Afecta la calidad de la validación |
 | Calendario académico | Limita el tiempo y el alcance posible |
 
-
 ### Lean Canvas
+
+La tabla usa la plantilla Lean Canvas de Ash Maurya (2012).
 
 | Bloque | Contenido |
 | --- | --- |
-| **Problema** | Información dispersa en papel y hojas de cálculo; dificultad para consultar historiales, organizar citas y seguir vacunas y tratamientos. |
-| **Segmentos de clientes** | Clínicas veterinarias; usuarios: médicos, recepción y propietarios de mascotas. |
-| **Propuesta de valor** | Un sistema web donde cada mascota tiene su expediente y cada cliente administra varias mascotas y sus citas. |
-| **Solución** | Módulos de clientes, mascotas, citas y expediente médico con acceso por tipo de usuario. |
-| **Canales** | Aplicación web desde navegador. |
-| **Fuentes de ingreso** | No aplica en el curso; se definiría con la clínica si se implementa. |
-| **Estructura de costos** | Alojamiento, base de datos y tiempo de desarrollo; montos por confirmar. |
-| **Métricas clave** | Citas gestionadas, expedientes creados y tiempo para consultar un historial. |
-| **Ventaja diferenciadora** | Relación cliente–varias mascotas y expediente individual validado con personal veterinario. |
+| Problema | Información dispersa en papel y hojas de cálculo; dificultad para consultar historiales, organizar citas y seguir vacunas y tratamientos. |
+| Segmentos de clientes | Clínicas veterinarias; usuarios: médicos, recepción y propietarios de mascotas. |
+| Propuesta de valor | Un sistema web donde cada mascota tiene su expediente y cada cliente administra varias mascotas y sus citas. |
+| Solución | Módulos de clientes, mascotas, citas y expediente médico con acceso por tipo de usuario. |
+| Canales | Aplicación web desde navegador. |
+| Fuentes de ingreso | No aplica en el curso; se definiría con la clínica si se implementa. |
+| Estructura de costos | Alojamiento, base de datos y tiempo de desarrollo; montos por confirmar. |
+| Métricas clave | Citas gestionadas, expedientes creados y tiempo para consultar un historial. |
+| Ventaja diferenciadora | Relación de un cliente con varias mascotas y expediente individual validado con personal veterinario. |
 
 ---
 
----
-
-## Sección 05: Backlog inicial, Sprint Backlog y mecanismo de seguimiento
+## Sección 05: backlog inicial, Sprint Backlog y mecanismo de seguimiento
 
 ### Product Backlog inicial
 
-El Product Backlog reúne las historias de usuario de VetCare. Cada historia se deriva de uno o más requerimientos funcionales (columna **RF**). Es gestionado y priorizado por el Product Owner (Jose Pablo Soto) y se ajustará después de cada Sprint Review según la retroalimentación recibida.
+El Product Backlog reúne las historias de usuario de VetCare. Cada historia sale de uno o más requerimientos funcionales (columna RF). Lo gestiona y prioriza el Product Owner, Jose Pablo Soto, y se ajusta después de cada Sprint Review según la retroalimentación recibida.
 
-**Escala de prioridad:** P1 = alta (indispensable para el funcionamiento básico), P2 = media (importante, pero el sistema puede operar sin ella en las primeras versiones).
-**Estimación:** puntos de historia (1, 2, 3, 5, 8), que representan el esfuerzo relativo.
+La prioridad tiene dos niveles. P1 es alta y se usa para lo indispensable en el funcionamiento básico. P2 es media y se usa para lo importante que puede esperar a versiones posteriores. La estimación se hace en puntos de historia (1, 2, 3, 5 y 8), que miden el esfuerzo relativo, y se vota con planning poker, la técnica que describió James Grenning en 2002.
 
 | ID | Módulo | Historia de usuario | RF | Prioridad | Puntos |
 | --- | --- | --- | :---: | :---: | :---: |
@@ -371,28 +339,30 @@ El Product Backlog reúne las historias de usuario de VetCare. Cada historia se 
 | HU-11 | Expediente | Como médico veterinario, quiero registrar las vacunas aplicadas y la fecha de la próxima dosis, para dar seguimiento al plan de vacunación. | RF-12 | P2 | 3 |
 | HU-12 | Expediente | Como médico veterinario, quiero consultar el historial completo de una mascota, para conocer sus atenciones anteriores antes de atenderla. | RF-13 | P1 | 3 |
 | HU-13 | Expediente | Como propietario, quiero consultar el historial de atención y las vacunas de mis mascotas, para conocer su estado de salud. | RF-14 | P2 | 3 |
-| | | | | **Total** | **45** |
+| | | | | Total | 45 |
 
 ### Plan de Sprints
 
-Con base en las prioridades y en la dependencia entre módulos, el Product Backlog se distribuye en tres Sprints de dos semanas. Este plan es una referencia y se ajustará según la velocidad real del equipo.
+El Product Backlog se reparte en tres Sprints de dos semanas, según las prioridades y la dependencia entre módulos.
 
-| Sprint | Enfoque | Historias | Puntos |
-| --- | --- | --- | :---: |
-| Sprint 1 | Usuarios, roles y mascotas | HU-01, HU-02, HU-03, HU-04, HU-05 | 16 |
-| Sprint 2 | Citas | HU-06, HU-07, HU-08, HU-09 | 15 |
-| Sprint 3 | Expediente clínico | HU-10, HU-11, HU-12, HU-13 | 14 |
+| Sprint | Fechas | Enfoque | Historias | Puntos |
+| --- | --- | --- | --- | :---: |
+| Sprint 1 | 22/10/2026 al 04/11/2026 | Usuarios, roles y mascotas | HU-01, HU-02, HU-03, HU-04, HU-05 | 16 |
+| Sprint 2 | 05/11/2026 al 18/11/2026 | Citas | HU-06, HU-07, HU-08, HU-09 | 15 |
+| Sprint 3 | 19/11/2026 al 02/12/2026 | Expediente clínico | HU-10, HU-11, HU-12, HU-13 | 14 |
 
-### Sprint Backlog — Sprint 1
+La velocidad inicial es de 15 puntos por Sprint, con un rango de 12 a 18. Es un supuesto del equipo, porque todavía no hay Sprints terminados, y se reemplaza con los puntos que cumplan la Definición de Terminado al cerrar cada Sprint. Si la velocidad real queda por debajo de 15 puntos, se usa un Sprint 4, del 03/12/2026 al 16/12/2026. El costo estimado es de 47 horas por Sprint entre los tres integrantes; no hay una tarifa definida.
+
+### Sprint Backlog del Sprint 1
 
 | Elemento | Detalle |
 | --- | --- |
-| **Duración** | 2 semanas (DD/MM/2026 al DD/MM/2026) |
-| **Sprint Goal** | Que un propietario pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre propietarios, médicos veterinarios y administrador. |
-| **Historias seleccionadas** | HU-01, HU-02, HU-03, HU-04 y HU-05 |
-| **Total de puntos** | 16 |
+| Duración | 2 semanas (22/10/2026 al 04/11/2026) |
+| Sprint Goal | Que un propietario pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre propietarios, médicos veterinarios y administrador. |
+| Historias seleccionadas | HU-01, HU-02, HU-03, HU-04 y HU-05 |
+| Total de puntos | 16 |
 
-**¿Por qué estas historias primero?** Son la base de todo el sistema: sin usuarios, roles, propietarios y mascotas registrados no es posible agendar citas ni llevar un expediente. Además, permiten validar desde el inicio el modelo de datos más importante del proyecto, la relación de un propietario con varias mascotas.
+Estas historias van primero porque son la base del sistema. Sin usuarios, roles, propietarios y mascotas registrados no se pueden agendar citas ni llevar un expediente. También permiten validar desde el inicio la relación de un propietario con varias mascotas, que es la parte central del modelo de datos.
 
 #### Tareas del Sprint 1
 
@@ -415,38 +385,36 @@ Con base en las prioridades y en la dependencia entre módulos, el Product Backl
 | T-15 | HU-05 | Probar el registro de médicos y su acceso al sistema. | Eliam Araya | 2 |
 | T-16 | General | Actualizar la documentación del proyecto con los resultados del Sprint. | Eliam Araya | 2 |
 
-**Carga por integrante:** Jose Pablo Soto, 14 horas; Maikel Chaves, 16 horas; Eliam Araya, 17 horas.
-
-Como práctica de calidad, ninguna funcionalidad es probada únicamente por quien la desarrolló.
+La carga queda así: Jose Pablo Soto, 14 horas; Maikel Chaves, 16 horas; Eliam Araya, 17 horas. En total son 47 horas. Ninguna funcionalidad la prueba solo quien la desarrolló.
 
 ### Mecanismo de seguimiento
 
-El seguimiento del Sprint corresponde al grupo de procesos de **Monitoreo y Control**: permite comparar el avance real con lo planificado y tomar decisiones a tiempo.
+El seguimiento del Sprint corresponde al grupo de procesos de monitoreo y control de la Guía del PMBOK (PMI, 2017). Sirve para comparar el avance real con lo planificado y tomar decisiones a tiempo.
 
 #### 1. Tablero de tareas
 
-Se utilizará un tablero en GitHub Projects con las siguientes columnas:
+El tablero está en GitHub Projects. El enlace está pendiente de agregar.
 
-| Columna | Significado |
-| --- | --- |
-| **Por hacer** | Tareas del Sprint que aún no se han iniciado. |
-| **En progreso** | Tareas en las que un integrante está trabajando. |
-| **En pruebas** | Tareas terminadas que están siendo probadas por otro integrante. |
-| **Terminado** | Tareas que cumplen la Definición de Terminado. |
+| Columna | Límite WIP | Significado |
+| --- | :---: | --- |
+| Por hacer | Sin límite | Tareas del Sprint que aún no se han iniciado. |
+| En progreso | 3 | Tareas en las que un integrante está trabajando. Cada integrante tiene una tarea activa a la vez. |
+| En pruebas | 2 | Código integrado, pendiente de verificación por otro integrante. |
+| Terminado | Sin límite | Tareas que cumplen la Definición de Terminado. Solo las mueve quien prueba, no quien desarrolló. |
 
-Cada integrante mueve sus tareas en el tablero apenas cambia su estado, de modo que todo el equipo vea el avance real (transparencia). Para evitar dejar muchas tareas a medias, cada integrante tendrá como máximo dos tareas en progreso al mismo tiempo.
+Cada tarjeta tiene una sola tarea y un solo responsable, con el formato "HU-01 · T-03 Interfaz de registro". Cada integrante mueve sus tareas apenas cambia su estado, para que el equipo vea el avance real.
 
 #### 2. Daily Scrum
 
-Se realizará tres veces por semana (lunes, miércoles y viernes), de forma presencial o por mensaje en el grupo del equipo, con una duración máxima de 15 minutos. Cada integrante responde:
+Se hace los lunes, miércoles y viernes, en persona o por mensaje en el grupo del equipo, con un máximo de 15 minutos. Cada integrante responde:
 
 - ¿Qué avancé desde la última Daily?
 - ¿Qué voy a hacer hasta la próxima?
 - ¿Tengo algún impedimento?
 
-#### 3. Gráfico de avance (Burndown)
+#### 3. Gráfico de avance (burndown)
 
-El Scrum Master registrará las horas de trabajo pendientes al final de cada Daily y las comparará con el avance ideal. Si el avance real queda por encima del ideal durante dos registros seguidos, el equipo revisará qué está frenando el trabajo y, de ser necesario, conversará con el Product Owner para ajustar el alcance del Sprint.
+El Scrum Master registra las horas de trabajo pendientes al final de cada Daily y las compara con el avance ideal. Si el avance real queda por encima del ideal en dos registros seguidos, el equipo revisa qué está frenando el trabajo y, si hace falta, conversa con el Product Owner para ajustar el alcance del Sprint.
 
 | Registro | Día del Sprint | Horas pendientes ideales | Horas pendientes reales |
 | --- | :---: | :---: | :---: |
@@ -459,27 +427,27 @@ El Scrum Master registrará las horas de trabajo pendientes al final de cada Dai
 
 #### 4. Registro de impedimentos
 
-El Scrum Master registra los impedimentos detectados y da seguimiento hasta resolverlos.
+El Scrum Master registra los impedimentos detectados y les da seguimiento hasta resolverlos.
 
 | Fecha | Impedimento | Responsable | Acción | Estado |
 | --- | --- | --- | --- | --- |
 | | | | | |
 
-#### 5. Definición de Terminado (Definition of Done)
+#### 5. Definición de terminado
 
 Una historia se considera terminada cuando:
 
-- cumple todos sus criterios de aceptación;
-- el código está integrado en la rama principal del repositorio;
-- fue probada con datos ficticios por un integrante distinto de quien la desarrolló, incluyendo las pruebas de permisos cuando aplique;
-- no tiene errores conocidos sin resolver;
-- está documentada en este documento o en el repositorio.
+1. cumple todos sus criterios de aceptación;
+2. el código está integrado en la rama principal del repositorio;
+3. fue probada con datos ficticios por un integrante distinto de quien la desarrolló, incluyendo las pruebas de permisos cuando aplique;
+4. no tiene errores conocidos sin resolver;
+5. está documentada en este documento o en el repositorio.
+
+Una historia está terminada o no lo está. Lo que no cumple la Definición de Terminado no se presenta como terminado en la Sprint Review ni cuenta en la velocidad.
 
 #### 6. Cierre del Sprint
 
-- **Sprint Review:** al final del Sprint se presenta el incremento al profesor. La retroalimentación se usa para ajustar el Product Backlog.
-- **Sprint Retrospective:** después de la Review, el equipo identifica qué funcionó, qué no y qué mejorar en el siguiente Sprint.
-- **Métricas registradas:** puntos de historia completados (velocidad del equipo) y porcentaje de tareas terminadas, que servirán para planificar de forma más realista los siguientes Sprints.
+En la Sprint Review se presenta el incremento al profesor y a los representantes de la clínica (I1, I2 e I3), y la retroalimentación se usa para ajustar el Product Backlog. Después, en la Sprint Retrospective, el equipo revisa qué funcionó, qué no y qué cambiar para el siguiente Sprint. Al cierre se registran los puntos de historia completados, que dan la velocidad del equipo, y el porcentaje de tareas terminadas.
 
 ### Detalle de historias de usuario
 
@@ -488,6 +456,8 @@ La plantilla sigue la regla de las tres C (card, conversation, confirmation) que
 Cada historia indica los requerimientos funcionales (RF) y no funcionales (RNF) con los que se relaciona.
 
 La dificultad de cada criterio de aceptación la asignó cada integrante en escala 1, 2, 3 y 5, donde JP es Jose Pablo Soto, MC es Maikel Chaves y EA es Eliam Araya. Jose Pablo tiene más experiencia en desarrollo web y bases de datos, por eso sus valores suelen ser más bajos. La dificultad por criterio es distinta de los puntos de historia: la primera muestra qué parte le cuesta más a cada integrante y los puntos miden el tamaño de toda la historia.
+
+Los votos de planning poker que acompañan cada estimación son los de la primera ronda. Cuando no coincidieron, el equipo conversó las diferencias y acordó el valor de la estimación. Jose Pablo suele votar más bajo por su experiencia; Maikel y Eliam votan igual o más alto.
 
 #### HU-01: Registro de propietarios
 
@@ -526,7 +496,7 @@ El criterio 4 fue el de mayor dificultad, porque el control de acceso se valida 
 
 Prioridad P1. Estimación de 3 puntos por planning poker (JP 3, MC 3, EA 3). Sprint 1, del 22/10/2026 al 04/11/2026.
 
-Depende de la HU-01. El control de acceso se valida en el servidor y no solo ocultando opciones en la interfaz. El wireframe de la pantalla de inicio de sesión está pendiente.
+Depende de la HU-01. El control de acceso se valida en el servidor, además de ocultar las opciones en la interfaz. El wireframe de la pantalla de inicio de sesión está pendiente.
 
 #### HU-03: Registro de mascotas del propietario
 
@@ -544,7 +514,7 @@ Criterios de aceptación:
 
 El criterio 1 fue el de mayor dificultad, porque requiere la relación entre propietario y mascota en la base de datos.
 
-Prioridad P1. Estimación de 5 puntos por planning poker (JP _, MC _, EA _). Sprint 1, del 22/10/2026 al 04/11/2026.
+Prioridad P1. Estimación de 5 puntos por planning poker (JP 3, MC 5, EA 5). Sprint 1, del 22/10/2026 al 04/11/2026.
 
 Depende de la HU-02, porque la mascota se asocia al propietario autenticado. Un propietario puede tener muchas mascotas y cada mascota pertenece a un solo propietario. La raza y la fecha de nacimiento son opcionales. El wireframe del formulario está pendiente.
 
@@ -564,7 +534,7 @@ Criterios de aceptación:
 
 El criterio 5 fue el de mayor dificultad, porque cada consulta debe verificar que la mascota pertenezca al propietario.
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP _, MC _, EA _). Sprint 1, del 22/10/2026 al 04/11/2026.
+Prioridad P1. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 1, del 22/10/2026 al 04/11/2026.
 
 Depende de la HU-03. El formulario de edición puede reutilizar el de registro. El wireframe de la lista está pendiente.
 
@@ -583,7 +553,7 @@ Criterios de aceptación:
 
 Los criterios tienen una dificultad parecida, porque reutilizan el registro de la HU-01 y el control de acceso de la HU-02.
 
-Prioridad P1. Estimación de 2 puntos por planning poker (JP _, MC _, EA _). Sprint 1, del 22/10/2026 al 04/11/2026.
+Prioridad P1. Estimación de 2 puntos por planning poker (JP 1, MC 2, EA 2). Sprint 1, del 22/10/2026 al 04/11/2026.
 
 Depende de la HU-02. La cuenta del administrador se crea con datos iniciales al instalar el sistema y no existe un registro público de administradores. El wireframe del panel está pendiente.
 
@@ -603,7 +573,7 @@ Criterios de aceptación:
 
 Los criterios 2 y 3 fueron los de mayor dificultad, porque requieren calcular los horarios libres y evitar que dos citas ocupen el mismo espacio.
 
-Prioridad P1. Estimación de 8 puntos por planning poker (JP _, MC _, EA _). Sprint 2, del 05/11/2026 al 18/11/2026.
+Prioridad P1. Estimación de 8 puntos por planning poker (JP 5, MC 8, EA 8). Sprint 2, del 05/11/2026 al 18/11/2026.
 
 Depende de la HU-03 y de la HU-05. Antes del Sprint 2 el Product Owner debe definir el horario de atención y la duración de cada cita; el equipo propone 30 minutos como valor inicial, sin una fuente que lo respalde. El wireframe de la pantalla de agendamiento está pendiente.
 
@@ -622,7 +592,7 @@ Criterios de aceptación:
 
 Los criterios tienen una dificultad baja, porque reutilizan el control de acceso y los estados de la HU-06.
 
-Prioridad P2. Estimación de 2 puntos por planning poker (JP _, MC _, EA _). Sprint 2, del 05/11/2026 al 18/11/2026.
+Prioridad P2. Estimación de 2 puntos por planning poker (JP 1, MC 2, EA 2). Sprint 2, del 05/11/2026 al 18/11/2026.
 
 Depende de la HU-06. La cita cancelada se conserva con su estado para mantener el historial. El wireframe está pendiente.
 
@@ -641,7 +611,7 @@ Criterios de aceptación:
 
 El criterio 1 fue el de mayor dificultad, porque la consulta une datos de citas, mascotas y propietarios.
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP _, MC _, EA _). Sprint 2, del 05/11/2026 al 18/11/2026.
+Prioridad P1. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 5). Sprint 2, del 05/11/2026 al 18/11/2026.
 
 Depende de la HU-06. Por defecto se muestran las citas del día actual. El wireframe de la agenda está pendiente.
 
@@ -660,7 +630,7 @@ Criterios de aceptación:
 
 Los criterios tienen una dificultad baja, porque se trata de un cambio de estado con validaciones simples.
 
-Prioridad P2. Estimación de 2 puntos por planning poker (JP _, MC _, EA _). Sprint 2, del 05/11/2026 al 18/11/2026.
+Prioridad P2. Estimación de 2 puntos por planning poker (JP 1, MC 2, EA 3). Sprint 2, del 05/11/2026 al 18/11/2026.
 
 Depende de la HU-08. Al marcar la cita, el sistema puede ofrecer un acceso directo al registro de la consulta de la HU-10. El wireframe está pendiente.
 
@@ -679,7 +649,7 @@ Criterios de aceptación:
 
 El criterio 1 fue el de mayor dificultad, porque crea la estructura del expediente que usan la HU-12 y la HU-13.
 
-Prioridad P1. Estimación de 5 puntos por planning poker (JP _, MC _, EA _). Sprint 3, del 19/11/2026 al 02/12/2026.
+Prioridad P1. Estimación de 5 puntos por planning poker (JP 3, MC 5, EA 5). Sprint 3, del 19/11/2026 al 02/12/2026.
 
 Depende de la HU-03 y de la HU-05. Las observaciones son opcionales. Una consulta registrada no se elimina. El wireframe del formulario está pendiente.
 
@@ -698,7 +668,7 @@ Criterios de aceptación:
 
 Los criterios 1 y 2 fueron los de mayor dificultad para Maikel y Eliam, por el manejo de fechas.
 
-Prioridad P2. Estimación de 3 puntos por planning poker (JP _, MC _, EA _). Sprint 3, del 19/11/2026 al 02/12/2026.
+Prioridad P2. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 3, del 19/11/2026 al 02/12/2026.
 
 Depende de la HU-03 y de la HU-05. El nombre de la vacuna se escribe como texto libre; un catálogo de vacunas queda fuera del alcance del curso. El wireframe está pendiente.
 
@@ -717,7 +687,7 @@ Criterios de aceptación:
 
 El criterio 1 fue el de mayor dificultad, porque reúne datos de cuatro tablas en una sola vista.
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP _, MC _, EA _). Sprint 3, del 19/11/2026 al 02/12/2026.
+Prioridad P1. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 3, del 19/11/2026 al 02/12/2026.
 
 Depende de la HU-10 y de la HU-11. Como el sistema atiende una sola clínica, cualquier veterinario puede consultar el expediente de cualquier mascota. El wireframe del expediente está pendiente.
 
@@ -736,7 +706,7 @@ Criterios de aceptación:
 
 Los criterios tienen una dificultad baja, porque reutilizan la vista de la HU-12 y el control de acceso de la HU-04.
 
-Prioridad P2. Estimación de 3 puntos por planning poker (JP _, MC _, EA _). Sprint 3, del 19/11/2026 al 02/12/2026.
+Prioridad P2. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 3, del 19/11/2026 al 02/12/2026.
 
 Depende de la HU-10 y de la HU-11. Puede reutilizar la vista de la HU-12 sin las opciones de edición. El wireframe está pendiente.
 
@@ -762,19 +732,32 @@ La tabla registra las dependencias y el tamaño de cada historia, que son los do
 
 Ninguna historia depende de trabajo asignado a un Sprint posterior. La HU-06 es la más grande, con 8 puntos.
 
+---
 
+## Sección 07: comunicaciones
 
+La comunicación sigue las categorías del mapa poder-interés. La dirección de la clínica (I1), los médicos (I2), recepción (I3), el equipo (I5), el profesor (I6) y soporte tecnológico (I8) se gestionan de cerca. Los propietarios de mascotas (I4) y el personal auxiliar (I9) se mantienen informados. El proveedor de alojamiento y base de datos (I7) se mantiene satisfecho.
+
+| Canal | Participantes | Frecuencia | Uso |
+| --- | --- | --- | --- |
+| Sprint Review | I1, I2, I3 y el profesor | Cada dos semanas, al cierre del Sprint | Presentar el incremento y recoger retroalimentación |
+| Daily Scrum | Equipo | Lunes, miércoles y viernes, máximo 15 minutos | Avance, trabajo siguiente e impedimentos |
+| Chat del equipo | Equipo | Respuesta dentro de 24 horas en días hábiles | Avisos y coordinación |
+| Mensaje directo | Equipo | Respuesta el mismo día | Bloqueos urgentes |
+
+El alcance, las prioridades y las fechas se deciden con el Product Owner en la Sprint Planning o en las reuniones de seguimiento. Las asignaciones se acuerdan en la Daily Scrum. El chat sirve para avisar y no para decidir.
+
+Un impedimento técnico se plantea en la Daily Scrum. Si no se resuelve en 24 horas, el Scrum Master lo lleva al Product Owner. Un conflicto entre integrantes lo conversan primero las dos personas involucradas. Si no se resuelve en 48 horas, el Scrum Master lo lleva a la Daily, y si continúa se informa al profesor. Los plazos de 24 y 48 horas son acuerdos del equipo.
 
 ## Historial de actualizaciones
 
 | Versión | Fecha | Descripción de la actualización |
 | --- | --- | --- |
 | 1.0 | 29/09/2026 | Creación del documento inicial: problema, proyecto propuesto, valor esperado, objetivo general y objetivos específicos. |
-| 1.1 | 29/09/2026 | Incorporación del registro de interesados con necesidades, poder, interés, actitud y estrategias; justificación de valoraciones; mapa Poder–Interés; selección de tres interesados críticos y su involucramiento; definición y justificación del enfoque híbrido. |
-| 1.2 | 04/10/2026 | Incorporación del Acta de Inicio, la definición del Scrum Team y el Análisis de Entorno (EEFs y Lean Canvas). |
+| 1.1 | 29/09/2026 | Incorporación del registro de interesados con necesidades, poder, interés, actitud y estrategias; justificación de valoraciones; mapa poder-interés; selección de tres interesados críticos y su involucramiento; definición y justificación del enfoque híbrido. |
+| 1.2 | 04/10/2026 | Incorporación del Acta de Inicio, la definición del Scrum Team y el Análisis de Entorno (EEF y Lean Canvas). |
 | 1.3 | 13/10/2026 | Incorporación de Edgar Eliam Araya Alvarado al equipo: actualización de estudiantes, interesado I5, Scrum Team, roles adicionales, enfoque de gestión y factores ambientales para un equipo de tres integrantes. |
 | 1.4 | 14/10/2026 | Incorporación de la Sección 05: Product Backlog inicial, Sprint Backlog del Sprint 1 con tareas y responsables, y mecanismo de seguimiento (tablero, Daily Scrum, burndown, impedimentos y Definición de Terminado). |
 | 1.5 | 14/10/2026 | Ajuste del alcance a una versión académica: visión a futuro con los planes de suscripción, requerimientos funcionales y no funcionales, actualización de los límites del proyecto y adaptación del Product Backlog, con plan de Sprints y relación de cada historia con sus requerimientos. |
 | 1.6 | 20/10/2026 | Incorporación del detalle de las 13 historias de usuario con la plantilla del curso: historia, requerimientos relacionados, criterios de aceptación en formato Dado que, cuando, entonces, prioridad, estimación, dependencias y verificación INVEST. |
-
-
+| 1.7 | 04/11/2026 | Revisión de redacción de todo el documento: títulos, formato y fuentes de los datos. Se agregan las fechas del Sprint 1, la velocidad inicial, los límites WIP del tablero, los votos de planning poker de HU-03 a HU-13 y la Sección 07 de comunicaciones. |
