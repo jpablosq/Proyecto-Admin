@@ -408,7 +408,7 @@ Los límites se configuraron en Jira con la restricción por número de incidenc
 
 Cada tarjeta tiene una sola tarea y un solo responsable, con el formato "HU-01 · T-03 Interfaz de registro". Cada integrante mueve sus tareas apenas cambia su estado, para que el equipo vea el avance real.
 
-En Jira, las historias HU-01 a HU-05 se cargaron como elementos de tipo Historia, con sus puntos y sus criterios de aceptación. Las tareas T-03 a T-15 son subtareas de su historia, y T-01, T-02 y T-16 son tareas generales. Cada tarea tiene a su responsable en el campo Persona asignada y sus horas en el campo Estimación original. El Sprint 1 va del 22/10/2026 al 04/11/2026 y tiene como objetivo el Sprint Goal de este documento.
+En Jira, las historias HU-01 a HU-05 se cargaron como elementos de tipo Historia, con sus puntos, su prioridad y su descripción con la misma estructura de cinco partes del detalle de historias de usuario (título, estructura, criterios de aceptación, estimación y prioridad, y notas adicionales o anexos). Las tareas T-03 a T-15 son subtareas de su historia, y T-01, T-02 y T-16 son tareas generales. Cada tarea tiene a su responsable en el campo Persona asignada y sus horas en el campo Estimación original. El Sprint 1 va del 22/10/2026 al 04/11/2026 y tiene como objetivo el Sprint Goal de este documento.
 
 Regla para mover una tarjeta a Terminado: solo la mueve quien la probó, nunca quien la desarrolló, y antes revisa que cumpla los cinco puntos de la Definición de Terminado (apartado 5). Es un acuerdo del equipo y no está configurado como restricción en Jira.
 
@@ -461,7 +461,7 @@ En la Sprint Review se presenta el incremento al profesor y a los representantes
 
 La plantilla sigue la regla de las tres C (card, conversation, confirmation) que Ron Jeffries describió en 2001. Los criterios de aceptación usan el formato Dado que, cuando, entonces, propuesto por Dan North en 2006 dentro del desarrollo guiado por comportamiento (BDD). La revisión de calidad aplica el criterio INVEST de Bill Wake (2003). Las reglas de negocio de cada historia son propuestas del equipo y no provienen de una clínica real; el Product Owner puede ajustarlas antes de cada Sprint Planning.
 
-Cada historia indica los requerimientos funcionales (RF) y no funcionales (RNF) con los que se relaciona.
+Cada historia sigue la misma estructura de cinco partes: 1) título; 2) estructura, con el formato Como, quiero, para; 3) criterios de aceptación; 4) estimación y prioridad (metadata de gestión), y 5) notas adicionales o anexos, donde se indican los requerimientos funcionales (RF) y no funcionales (RNF) relacionados, las dependencias, las notas técnicas y los anexos pendientes. La prioridad P1 corresponde a Alta y la P2 a Media.
 
 La dificultad de cada criterio de aceptación la asignó cada integrante en escala 1, 2, 3 y 5, donde JP es Jose Pablo Soto, MC es Maikel Chaves y EA es Eliam Araya. Jose Pablo tiene más experiencia en desarrollo web y bases de datos, por eso sus valores suelen ser más bajos. La dificultad por criterio es distinta de los puntos de historia: la primera muestra qué parte le cuesta más a cada integrante y los puntos miden el tamaño de toda la historia.
 
@@ -469,254 +469,384 @@ Los votos de planning poker que acompañan cada estimación son los de la primer
 
 #### HU-01: Registro de propietarios
 
-Requerimientos relacionados: RF-01, RNF-03 y RNF-05.
+1. **Título** "Registro de propietarios"
 
-> Como propietario de mascotas, quiero registrarme con mi nombre, teléfono, correo electrónico y una contraseña, para acceder al sistema y administrar la información de mis mascotas.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como propietario de mascotas, quiero registrarme con mi nombre, teléfono, correo electrónico y una contraseña, para acceder al sistema y administrar la información de mis mascotas.
 
-1. Dado que el visitante completa todos los datos obligatorios, cuando presiona "Registrarse", entonces el sistema crea la cuenta con el rol de propietario y muestra un mensaje de confirmación. (JP 1, MC 2, EA 2)
-2. Dado que el visitante deja vacío algún dato obligatorio, cuando intenta registrarse, entonces el sistema no crea la cuenta y señala los campos faltantes. (JP 1, MC 1, EA 2)
-3. Dado que el correo ya está registrado, cuando el visitante intenta registrarse, entonces el sistema indica que el correo está en uso. (JP 1, MC 2, EA 2)
-4. Dado que la contraseña tiene menos de 8 caracteres, cuando el visitante intenta registrarse, entonces el sistema muestra un mensaje de error. (JP 1, MC 1, EA 1)
-5. Dado que la cuenta fue creada, cuando se guarda en la base de datos, entonces la contraseña queda almacenada cifrada. (JP 3, MC 5, EA 5)
+3. **Criterios de Aceptación**
 
-El criterio 5 fue el de mayor dificultad para los tres.
+   - Dado que el visitante completa todos los datos obligatorios, cuando presiona "Registrarse", entonces el sistema crea la cuenta con el rol de propietario y muestra un mensaje de confirmación. (JP 1, MC 2, EA 2)
+   - Dado que el visitante deja vacío algún dato obligatorio, cuando intenta registrarse, entonces el sistema no crea la cuenta y señala los campos faltantes. (JP 1, MC 1, EA 2)
+   - Dado que el correo ya está registrado, cuando el visitante intenta registrarse, entonces el sistema indica que el correo está en uso. (JP 1, MC 2, EA 2)
+   - Dado que la contraseña tiene menos de 8 caracteres, cuando el visitante intenta registrarse, entonces el sistema muestra un mensaje de error. (JP 1, MC 1, EA 1)
+   - Dado que la cuenta fue creada, cuando se guarda en la base de datos, entonces la contraseña queda almacenada cifrada. (JP 3, MC 5, EA 5)
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP 3, MC 3, EA 3). Sprint 1, del 22/10/2026 al 04/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-No depende de otras historias. El rol de propietario se asigna de forma automática y ningún visitante puede registrarse como veterinario o administrador. El mínimo de 8 caracteres para la contraseña es una decisión del equipo. El wireframe del formulario está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 3 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 3, MC 3, EA 3).
+   - **Dificultad por criterio:** El quinto criterio fue el de mayor dificultad para los tres.
+   - **Sprint:** Sprint 1, del 22/10/2026 al 04/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-01, RNF-03 y RNF-05.
+   - **Dependencias:** No depende de otras historias.
+   - **Notas Técnicas:** El rol de propietario se asigna de forma automática y ningún visitante puede registrarse como veterinario o administrador. El mínimo de 8 caracteres para la contraseña es una decisión del equipo.
+   - **Anexos:** El wireframe del formulario está pendiente.
 
 #### HU-02: Inicio y cierre de sesión con acceso por rol
 
-Requerimientos relacionados: RF-02, RF-03 y RNF-04.
+1. **Título** "Inicio y cierre de sesión con acceso por rol"
 
-> Como usuario del sistema, quiero iniciar y cerrar sesión, para acceder solo a las funciones de mi rol (propietario, médico veterinario o administrador).
+2. **Estructura**
 
-Criterios de aceptación:
+   Como usuario del sistema, quiero iniciar y cerrar sesión, para acceder solo a las funciones de mi rol (propietario, médico veterinario o administrador).
 
-1. Dado que el usuario está registrado, cuando ingresa su correo y contraseña correctos, entonces el sistema inicia la sesión y lo lleva a la pantalla principal de su rol. (JP 1, MC 2, EA 2)
-2. Dado que el usuario ingresa un correo o una contraseña incorrectos, cuando intenta iniciar sesión, entonces el sistema muestra un mensaje genérico de credenciales inválidas, sin indicar cuál dato falló. (JP 1, MC 1, EA 1)
-3. Dado que el usuario tiene la sesión iniciada, cuando presiona "Cerrar sesión", entonces el sistema finaliza la sesión y lo devuelve a la pantalla de inicio de sesión. (JP 1, MC 1, EA 1)
-4. Dado que un propietario tiene la sesión iniciada, cuando intenta entrar a una función de veterinario o de administrador, entonces el sistema le niega el acceso. (JP 2, MC 3, EA 3)
+3. **Criterios de Aceptación**
 
-El criterio 4 fue el de mayor dificultad, porque el control de acceso se valida en el servidor.
+   - Dado que el usuario está registrado, cuando ingresa su correo y contraseña correctos, entonces el sistema inicia la sesión y lo lleva a la pantalla principal de su rol. (JP 1, MC 2, EA 2)
+   - Dado que el usuario ingresa un correo o una contraseña incorrectos, cuando intenta iniciar sesión, entonces el sistema muestra un mensaje genérico de credenciales inválidas, sin indicar cuál dato falló. (JP 1, MC 1, EA 1)
+   - Dado que el usuario tiene la sesión iniciada, cuando presiona "Cerrar sesión", entonces el sistema finaliza la sesión y lo devuelve a la pantalla de inicio de sesión. (JP 1, MC 1, EA 1)
+   - Dado que un propietario tiene la sesión iniciada, cuando intenta entrar a una función de veterinario o de administrador, entonces el sistema le niega el acceso. (JP 2, MC 3, EA 3)
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP 3, MC 3, EA 3). Sprint 1, del 22/10/2026 al 04/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-01. El control de acceso se valida en el servidor, además de ocultar las opciones en la interfaz. El wireframe de la pantalla de inicio de sesión está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 3 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 3, MC 3, EA 3).
+   - **Dificultad por criterio:** El cuarto criterio fue el de mayor dificultad, porque el control de acceso se valida en el servidor.
+   - **Sprint:** Sprint 1, del 22/10/2026 al 04/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-02, RF-03 y RNF-04.
+   - **Dependencias:** Depende de la HU-01.
+   - **Notas Técnicas:** El control de acceso se valida en el servidor, además de ocultar las opciones en la interfaz.
+   - **Anexos:** El wireframe de la pantalla de inicio de sesión está pendiente.
 
 #### HU-03: Registro de mascotas del propietario
 
-Requerimientos relacionados: RF-05 y RNF-05.
+1. **Título** "Registro de mascotas del propietario"
 
-> Como propietario de mascotas, quiero registrar una o varias mascotas asociadas a mi cuenta con su nombre, especie, raza, sexo, fecha de nacimiento y peso, para que cada una tenga su propia información.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como propietario de mascotas, quiero registrar una o varias mascotas asociadas a mi cuenta con su nombre, especie, raza, sexo, fecha de nacimiento y peso, para que cada una tenga su propia información.
 
-1. Dado que el propietario inició sesión, cuando completa los datos obligatorios y presiona "Guardar", entonces el sistema registra la mascota, la asocia a su cuenta y muestra un mensaje de confirmación. (JP 2, MC 3, EA 3)
-2. Dado que el propietario deja vacío el nombre, la especie o el sexo, cuando intenta guardar, entonces el sistema no registra la mascota y señala los campos faltantes. (JP 1, MC 1, EA 1)
-3. Dado que el propietario ingresa una fecha de nacimiento posterior a la fecha actual o un peso menor o igual a cero, cuando intenta guardar, entonces el sistema muestra un mensaje de error. (JP 1, MC 2, EA 2)
-4. Dado que el propietario ya tiene una mascota registrada, cuando registra otra, entonces ambas aparecen en su lista con información independiente. (JP 1, MC 2, EA 2)
-5. Dado que un usuario no inició sesión, cuando intenta entrar al registro de mascotas, entonces el sistema lo envía a la página de inicio de sesión. (JP 1, MC 1, EA 2)
+3. **Criterios de Aceptación**
 
-El criterio 1 fue el de mayor dificultad, porque requiere la relación entre propietario y mascota en la base de datos.
+   - Dado que el propietario inició sesión, cuando completa los datos obligatorios y presiona "Guardar", entonces el sistema registra la mascota, la asocia a su cuenta y muestra un mensaje de confirmación. (JP 2, MC 3, EA 3)
+   - Dado que el propietario deja vacío el nombre, la especie o el sexo, cuando intenta guardar, entonces el sistema no registra la mascota y señala los campos faltantes. (JP 1, MC 1, EA 1)
+   - Dado que el propietario ingresa una fecha de nacimiento posterior a la fecha actual o un peso menor o igual a cero, cuando intenta guardar, entonces el sistema muestra un mensaje de error. (JP 1, MC 2, EA 2)
+   - Dado que el propietario ya tiene una mascota registrada, cuando registra otra, entonces ambas aparecen en su lista con información independiente. (JP 1, MC 2, EA 2)
+   - Dado que un usuario no inició sesión, cuando intenta entrar al registro de mascotas, entonces el sistema lo envía a la página de inicio de sesión. (JP 1, MC 1, EA 2)
 
-Prioridad P1. Estimación de 5 puntos por planning poker (JP 3, MC 5, EA 5). Sprint 1, del 22/10/2026 al 04/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-02, porque la mascota se asocia al propietario autenticado. Un propietario puede tener muchas mascotas y cada mascota pertenece a un solo propietario. La raza y la fecha de nacimiento son opcionales. El wireframe del formulario está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 5 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 3, MC 5, EA 5).
+   - **Dificultad por criterio:** El primer criterio fue el de mayor dificultad, porque requiere la relación entre propietario y mascota en la base de datos.
+   - **Sprint:** Sprint 1, del 22/10/2026 al 04/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-05 y RNF-05.
+   - **Dependencias:** Depende de la HU-02, porque la mascota se asocia al propietario autenticado.
+   - **Notas Técnicas:** Un propietario puede tener muchas mascotas y cada mascota pertenece a un solo propietario. La raza y la fecha de nacimiento son opcionales.
+   - **Anexos:** El wireframe del formulario está pendiente.
 
 #### HU-04: Consulta y edición de mascotas
 
-Requerimientos relacionados: RF-06, RNF-04 y RNF-05.
+1. **Título** "Consulta y edición de mascotas"
 
-> Como propietario de mascotas, quiero ver la lista de mis mascotas y editar su información, para mantener sus datos actualizados.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como propietario de mascotas, quiero ver la lista de mis mascotas y editar su información, para mantener sus datos actualizados.
 
-1. Dado que el propietario tiene mascotas registradas, cuando entra a "Mis mascotas", entonces el sistema muestra el nombre, la especie y la raza de cada una. (JP 1, MC 1, EA 1)
-2. Dado que el propietario no tiene mascotas, cuando entra a "Mis mascotas", entonces el sistema muestra un mensaje y la opción de registrar una. (JP 1, MC 1, EA 1)
-3. Dado que el propietario edita los datos de una mascota con información válida, cuando presiona "Guardar", entonces el sistema actualiza los datos y muestra un mensaje de confirmación. (JP 1, MC 2, EA 2)
-4. Dado que el propietario deja un campo obligatorio vacío o ingresa un dato inválido, cuando intenta guardar, entonces el sistema aplica las mismas validaciones de la HU-03. (JP 1, MC 1, EA 1)
-5. Dado que un propietario intenta ver o editar una mascota ajena, cuando accede a ella, entonces el sistema le niega el acceso. (JP 2, MC 3, EA 3)
+3. **Criterios de Aceptación**
 
-El criterio 5 fue el de mayor dificultad, porque cada consulta debe verificar que la mascota pertenezca al propietario.
+   - Dado que el propietario tiene mascotas registradas, cuando entra a "Mis mascotas", entonces el sistema muestra el nombre, la especie y la raza de cada una. (JP 1, MC 1, EA 1)
+   - Dado que el propietario no tiene mascotas, cuando entra a "Mis mascotas", entonces el sistema muestra un mensaje y la opción de registrar una. (JP 1, MC 1, EA 1)
+   - Dado que el propietario edita los datos de una mascota con información válida, cuando presiona "Guardar", entonces el sistema actualiza los datos y muestra un mensaje de confirmación. (JP 1, MC 2, EA 2)
+   - Dado que el propietario deja un campo obligatorio vacío o ingresa un dato inválido, cuando intenta guardar, entonces el sistema aplica las mismas validaciones de la HU-03. (JP 1, MC 1, EA 1)
+   - Dado que un propietario intenta ver o editar una mascota ajena, cuando accede a ella, entonces el sistema le niega el acceso. (JP 2, MC 3, EA 3)
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 1, del 22/10/2026 al 04/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-03. El formulario de edición puede reutilizar el de registro. El wireframe de la lista está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 3 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 2, MC 3, EA 3).
+   - **Dificultad por criterio:** El quinto criterio fue el de mayor dificultad, porque cada consulta debe verificar que la mascota pertenezca al propietario.
+   - **Sprint:** Sprint 1, del 22/10/2026 al 04/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-06, RNF-04 y RNF-05.
+   - **Dependencias:** Depende de la HU-03.
+   - **Notas Técnicas:** El formulario de edición puede reutilizar el de registro.
+   - **Anexos:** El wireframe de la lista está pendiente.
 
 #### HU-05: Registro de médicos veterinarios
 
-Requerimientos relacionados: RF-03, RF-04 y RNF-03.
+1. **Título** "Registro de médicos veterinarios"
 
-> Como administrador de la clínica, quiero registrar a los médicos veterinarios con su nombre, correo electrónico y una contraseña inicial, para que puedan ingresar al sistema y atender citas.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como administrador de la clínica, quiero registrar a los médicos veterinarios con su nombre, correo electrónico y una contraseña inicial, para que puedan ingresar al sistema y atender citas.
 
-1. Dado que el administrador inició sesión, cuando completa los datos del veterinario y presiona "Guardar", entonces el sistema crea la cuenta con el rol de médico veterinario. (JP 1, MC 2, EA 2)
-2. Dado que el correo ya está registrado, cuando el administrador intenta guardar, entonces el sistema indica que el correo está en uso. (JP 1, MC 1, EA 1)
-3. Dado que el veterinario fue registrado, cuando inicia sesión, entonces el sistema le muestra las funciones de su rol. (JP 1, MC 2, EA 2)
-4. Dado que un usuario que no es administrador intenta entrar al registro de veterinarios, cuando accede a esa opción, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
+3. **Criterios de Aceptación**
 
-Los criterios tienen una dificultad parecida, porque reutilizan el registro de la HU-01 y el control de acceso de la HU-02.
+   - Dado que el administrador inició sesión, cuando completa los datos del veterinario y presiona "Guardar", entonces el sistema crea la cuenta con el rol de médico veterinario. (JP 1, MC 2, EA 2)
+   - Dado que el correo ya está registrado, cuando el administrador intenta guardar, entonces el sistema indica que el correo está en uso. (JP 1, MC 1, EA 1)
+   - Dado que el veterinario fue registrado, cuando inicia sesión, entonces el sistema le muestra las funciones de su rol. (JP 1, MC 2, EA 2)
+   - Dado que un usuario que no es administrador intenta entrar al registro de veterinarios, cuando accede a esa opción, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
 
-Prioridad P1. Estimación de 2 puntos por planning poker (JP 1, MC 2, EA 2). Sprint 1, del 22/10/2026 al 04/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-02. La cuenta del administrador se crea con datos iniciales al instalar el sistema y no existe un registro público de administradores. El wireframe del panel está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 2 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 1, MC 2, EA 2).
+   - **Dificultad por criterio:** Los criterios tienen una dificultad parecida, porque reutilizan el registro de la HU-01 y el control de acceso de la HU-02.
+   - **Sprint:** Sprint 1, del 22/10/2026 al 04/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-03, RF-04 y RNF-03.
+   - **Dependencias:** Depende de la HU-02.
+   - **Notas Técnicas:** La cuenta del administrador se crea con datos iniciales al instalar el sistema y no existe un registro público de administradores.
+   - **Anexos:** El wireframe del panel está pendiente.
 
 #### HU-06: Agendar una cita para una mascota
 
-Requerimientos relacionados: RF-07 y RNF-05.
+1. **Título** "Agendar una cita para una mascota"
 
-> Como propietario de mascotas, quiero agendar una cita para una de mis mascotas eligiendo un veterinario y una fecha y hora disponibles, para recibir atención sin llamar a la clínica.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como propietario de mascotas, quiero agendar una cita para una de mis mascotas eligiendo un veterinario y una fecha y hora disponibles, para recibir atención sin llamar a la clínica.
 
-1. Dado que el propietario tiene al menos una mascota registrada, cuando selecciona la mascota, el veterinario, la fecha y una hora disponible y confirma, entonces el sistema registra la cita con estado "Programada" y muestra un resumen. (JP 2, MC 3, EA 3)
-2. Dado que el propietario eligió un veterinario y una fecha, cuando el sistema muestra los horarios, entonces solo aparecen las horas libres de ese veterinario. (JP 3, MC 5, EA 5)
-3. Dado que dos propietarios intentan reservar el mismo veterinario a la misma hora, cuando el segundo confirma, entonces el sistema le indica que el horario ya no está disponible. (JP 3, MC 5, EA 5)
-4. Dado que el propietario selecciona una fecha anterior a la actual, cuando intenta continuar, entonces el sistema no lo permite. (JP 1, MC 1, EA 1)
-5. Dado que el propietario no tiene mascotas registradas, cuando entra a agendar una cita, entonces el sistema le indica que primero debe registrar una. (JP 1, MC 1, EA 1)
+3. **Criterios de Aceptación**
 
-Los criterios 2 y 3 fueron los de mayor dificultad, porque requieren calcular los horarios libres y evitar que dos citas ocupen el mismo espacio.
+   - Dado que el propietario tiene al menos una mascota registrada, cuando selecciona la mascota, el veterinario, la fecha y una hora disponible y confirma, entonces el sistema registra la cita con estado "Programada" y muestra un resumen. (JP 2, MC 3, EA 3)
+   - Dado que el propietario eligió un veterinario y una fecha, cuando el sistema muestra los horarios, entonces solo aparecen las horas libres de ese veterinario. (JP 3, MC 5, EA 5)
+   - Dado que dos propietarios intentan reservar el mismo veterinario a la misma hora, cuando el segundo confirma, entonces el sistema le indica que el horario ya no está disponible. (JP 3, MC 5, EA 5)
+   - Dado que el propietario selecciona una fecha anterior a la actual, cuando intenta continuar, entonces el sistema no lo permite. (JP 1, MC 1, EA 1)
+   - Dado que el propietario no tiene mascotas registradas, cuando entra a agendar una cita, entonces el sistema le indica que primero debe registrar una. (JP 1, MC 1, EA 1)
 
-Prioridad P1. Estimación de 8 puntos por planning poker (JP 5, MC 8, EA 8). Sprint 2, del 05/11/2026 al 18/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-03 y de la HU-05. Antes del Sprint 2 el Product Owner debe definir el horario de atención y la duración de cada cita; el equipo propone 30 minutos como valor inicial, sin una fuente que lo respalde. El wireframe de la pantalla de agendamiento está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 8 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 5, MC 8, EA 8).
+   - **Dificultad por criterio:** El segundo y el tercer criterio fueron los de mayor dificultad, porque requieren calcular los horarios libres y evitar que dos citas ocupen el mismo espacio.
+   - **Sprint:** Sprint 2, del 05/11/2026 al 18/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-07 y RNF-05.
+   - **Dependencias:** Depende de la HU-03 y de la HU-05.
+   - **Notas Técnicas:** Antes del Sprint 2 el Product Owner debe definir el horario de atención y la duración de cada cita; el equipo propone 30 minutos como valor inicial, sin una fuente que lo respalde.
+   - **Anexos:** El wireframe de la pantalla de agendamiento está pendiente.
 
 #### HU-07: Cancelar una cita
 
-Requerimientos relacionados: RF-08 y RNF-04.
+1. **Título** "Cancelar una cita"
 
-> Como propietario de mascotas, quiero cancelar una cita programada, para liberar el espacio si no puedo asistir.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como propietario de mascotas, quiero cancelar una cita programada, para liberar el espacio si no puedo asistir.
 
-1. Dado que el propietario tiene una cita "Programada" en una fecha futura, cuando presiona "Cancelar" y confirma, entonces el sistema cambia el estado a "Cancelada" y el horario queda libre. (JP 1, MC 2, EA 2)
-2. Dado que el sistema pide confirmar la cancelación, cuando el propietario desiste, entonces la cita no cambia. (JP 1, MC 1, EA 1)
-3. Dado que la cita está "Atendida" o "Cancelada", cuando el propietario la consulta, entonces la opción de cancelar no aparece. (JP 1, MC 1, EA 2)
-4. Dado que un propietario intenta cancelar una cita ajena, cuando realiza la acción, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
+3. **Criterios de Aceptación**
 
-Los criterios tienen una dificultad baja, porque reutilizan el control de acceso y los estados de la HU-06.
+   - Dado que el propietario tiene una cita "Programada" en una fecha futura, cuando presiona "Cancelar" y confirma, entonces el sistema cambia el estado a "Cancelada" y el horario queda libre. (JP 1, MC 2, EA 2)
+   - Dado que el sistema pide confirmar la cancelación, cuando el propietario desiste, entonces la cita no cambia. (JP 1, MC 1, EA 1)
+   - Dado que la cita está "Atendida" o "Cancelada", cuando el propietario la consulta, entonces la opción de cancelar no aparece. (JP 1, MC 1, EA 2)
+   - Dado que un propietario intenta cancelar una cita ajena, cuando realiza la acción, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
 
-Prioridad P2. Estimación de 2 puntos por planning poker (JP 1, MC 2, EA 2). Sprint 2, del 05/11/2026 al 18/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-06. La cita cancelada se conserva con su estado para mantener el historial. El wireframe está pendiente.
+   - **Prioridad:** Media (P2)
+   - **Estimación propuesta:** 2 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 1, MC 2, EA 2).
+   - **Dificultad por criterio:** Los criterios tienen una dificultad baja, porque reutilizan el control de acceso y los estados de la HU-06.
+   - **Sprint:** Sprint 2, del 05/11/2026 al 18/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-08 y RNF-04.
+   - **Dependencias:** Depende de la HU-06.
+   - **Notas Técnicas:** La cita cancelada se conserva con su estado para mantener el historial.
+   - **Anexos:** El wireframe está pendiente.
 
 #### HU-08: Consulta de citas del veterinario
 
-Requerimientos relacionados: RF-09 y RNF-04.
+1. **Título** "Consulta de citas del veterinario"
 
-> Como médico veterinario, quiero consultar mis citas programadas, para organizar mi jornada.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como médico veterinario, quiero consultar mis citas programadas, para organizar mi jornada.
 
-1. Dado que el veterinario inició sesión, cuando entra a "Mis citas", entonces el sistema muestra sus citas ordenadas por fecha y hora, con el nombre y la especie de la mascota y el nombre del propietario. (JP 2, MC 2, EA 3)
-2. Dado que el veterinario selecciona una fecha, cuando filtra la agenda, entonces el sistema muestra solo las citas de ese día. (JP 1, MC 2, EA 2)
-3. Dado que el veterinario no tiene citas en la fecha elegida, cuando consulta la agenda, entonces el sistema muestra un mensaje. (JP 1, MC 1, EA 1)
-4. Dado que existen citas de otros veterinarios, cuando el veterinario consulta su agenda, entonces solo ve las suyas. (JP 1, MC 2, EA 2)
+3. **Criterios de Aceptación**
 
-El criterio 1 fue el de mayor dificultad, porque la consulta une datos de citas, mascotas y propietarios.
+   - Dado que el veterinario inició sesión, cuando entra a "Mis citas", entonces el sistema muestra sus citas ordenadas por fecha y hora, con el nombre y la especie de la mascota y el nombre del propietario. (JP 2, MC 2, EA 3)
+   - Dado que el veterinario selecciona una fecha, cuando filtra la agenda, entonces el sistema muestra solo las citas de ese día. (JP 1, MC 2, EA 2)
+   - Dado que el veterinario no tiene citas en la fecha elegida, cuando consulta la agenda, entonces el sistema muestra un mensaje. (JP 1, MC 1, EA 1)
+   - Dado que existen citas de otros veterinarios, cuando el veterinario consulta su agenda, entonces solo ve las suyas. (JP 1, MC 2, EA 2)
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 5). Sprint 2, del 05/11/2026 al 18/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-06. Por defecto se muestran las citas del día actual. El wireframe de la agenda está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 3 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 2, MC 3, EA 5).
+   - **Dificultad por criterio:** El primer criterio fue el de mayor dificultad, porque la consulta une datos de citas, mascotas y propietarios.
+   - **Sprint:** Sprint 2, del 05/11/2026 al 18/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-09 y RNF-04.
+   - **Dependencias:** Depende de la HU-06.
+   - **Notas Técnicas:** Por defecto se muestran las citas del día actual.
+   - **Anexos:** El wireframe de la agenda está pendiente.
 
 #### HU-09: Marcar una cita como atendida
 
-Requerimientos relacionados: RF-10 y RNF-04.
+1. **Título** "Marcar una cita como atendida"
 
-> Como médico veterinario, quiero marcar una cita como atendida, para llevar el control de las citas realizadas.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como médico veterinario, quiero marcar una cita como atendida, para llevar el control de las citas realizadas.
 
-1. Dado que el veterinario tiene una cita "Programada" para el día actual, cuando presiona "Marcar como atendida", entonces el estado cambia a "Atendida". (JP 1, MC 2, EA 2)
-2. Dado que la cita está "Cancelada", cuando el veterinario la consulta, entonces la opción no aparece. (JP 1, MC 1, EA 1)
-3. Dado que la cita es de una fecha futura, cuando el veterinario intenta marcarla, entonces el sistema no lo permite. (JP 1, MC 1, EA 2)
-4. Dado que la cita pertenece a otro veterinario, cuando intenta modificarla, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
+3. **Criterios de Aceptación**
 
-Los criterios tienen una dificultad baja, porque se trata de un cambio de estado con validaciones simples.
+   - Dado que el veterinario tiene una cita "Programada" para el día actual, cuando presiona "Marcar como atendida", entonces el estado cambia a "Atendida". (JP 1, MC 2, EA 2)
+   - Dado que la cita está "Cancelada", cuando el veterinario la consulta, entonces la opción no aparece. (JP 1, MC 1, EA 1)
+   - Dado que la cita es de una fecha futura, cuando el veterinario intenta marcarla, entonces el sistema no lo permite. (JP 1, MC 1, EA 2)
+   - Dado que la cita pertenece a otro veterinario, cuando intenta modificarla, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
 
-Prioridad P2. Estimación de 2 puntos por planning poker (JP 1, MC 2, EA 3). Sprint 2, del 05/11/2026 al 18/11/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-08. Al marcar la cita, el sistema puede ofrecer un acceso directo al registro de la consulta de la HU-10. El wireframe está pendiente.
+   - **Prioridad:** Media (P2)
+   - **Estimación propuesta:** 2 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 1, MC 2, EA 3).
+   - **Dificultad por criterio:** Los criterios tienen una dificultad baja, porque se trata de un cambio de estado con validaciones simples.
+   - **Sprint:** Sprint 2, del 05/11/2026 al 18/11/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-10 y RNF-04.
+   - **Dependencias:** Depende de la HU-08.
+   - **Notas Técnicas:** Al marcar la cita, el sistema puede ofrecer un acceso directo al registro de la consulta de la HU-10.
+   - **Anexos:** El wireframe está pendiente.
 
 #### HU-10: Registro de consultas en el expediente
 
-Requerimientos relacionados: RF-11, RNF-04 y RNF-05.
+1. **Título** "Registro de consultas en el expediente"
 
-> Como médico veterinario, quiero registrar una consulta con su motivo, diagnóstico, tratamiento y observaciones en el expediente de la mascota, para documentar la atención.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como médico veterinario, quiero registrar una consulta con su motivo, diagnóstico, tratamiento y observaciones en el expediente de la mascota, para documentar la atención.
 
-1. Dado que el veterinario seleccionó una mascota, cuando completa el motivo, el diagnóstico y el tratamiento y presiona "Guardar", entonces el sistema registra la consulta con la fecha actual y su nombre. (JP 2, MC 3, EA 3)
-2. Dado que el veterinario deja vacío el motivo, el diagnóstico o el tratamiento, cuando intenta guardar, entonces el sistema señala los campos faltantes. (JP 1, MC 1, EA 1)
-3. Dado que la consulta fue registrada, cuando se abre el expediente de la mascota, entonces la consulta aparece en el historial. (JP 1, MC 2, EA 2)
-4. Dado que un propietario intenta registrar una consulta, cuando accede a esa función, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
+3. **Criterios de Aceptación**
 
-El criterio 1 fue el de mayor dificultad, porque crea la estructura del expediente que usan la HU-12 y la HU-13.
+   - Dado que el veterinario seleccionó una mascota, cuando completa el motivo, el diagnóstico y el tratamiento y presiona "Guardar", entonces el sistema registra la consulta con la fecha actual y su nombre. (JP 2, MC 3, EA 3)
+   - Dado que el veterinario deja vacío el motivo, el diagnóstico o el tratamiento, cuando intenta guardar, entonces el sistema señala los campos faltantes. (JP 1, MC 1, EA 1)
+   - Dado que la consulta fue registrada, cuando se abre el expediente de la mascota, entonces la consulta aparece en el historial. (JP 1, MC 2, EA 2)
+   - Dado que un propietario intenta registrar una consulta, cuando accede a esa función, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
 
-Prioridad P1. Estimación de 5 puntos por planning poker (JP 3, MC 5, EA 5). Sprint 3, del 19/11/2026 al 02/12/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-03 y de la HU-05. Las observaciones son opcionales. Una consulta registrada no se elimina. El wireframe del formulario está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 5 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 3, MC 5, EA 5).
+   - **Dificultad por criterio:** El primer criterio fue el de mayor dificultad, porque crea la estructura del expediente que usan la HU-12 y la HU-13.
+   - **Sprint:** Sprint 3, del 19/11/2026 al 02/12/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-11, RNF-04 y RNF-05.
+   - **Dependencias:** Depende de la HU-03 y de la HU-05.
+   - **Notas Técnicas:** Las observaciones son opcionales. Una consulta registrada no se elimina.
+   - **Anexos:** El wireframe del formulario está pendiente.
 
 #### HU-11: Registro de vacunas
 
-Requerimientos relacionados: RF-12 y RNF-05.
+1. **Título** "Registro de vacunas"
 
-> Como médico veterinario, quiero registrar las vacunas aplicadas a una mascota y la fecha de la próxima dosis, para dar seguimiento a su vacunación.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como médico veterinario, quiero registrar las vacunas aplicadas a una mascota y la fecha de la próxima dosis, para dar seguimiento a su vacunación.
 
-1. Dado que el veterinario seleccionó una mascota, cuando ingresa el nombre de la vacuna y la fecha de aplicación y presiona "Guardar", entonces el sistema registra la vacuna en el expediente. (JP 1, MC 2, EA 2)
-2. Dado que la fecha de próxima dosis es anterior o igual a la de aplicación, cuando el veterinario intenta guardar, entonces el sistema muestra un mensaje de error. (JP 1, MC 2, EA 2)
-3. Dado que la vacuna no requiere otra dosis, cuando el veterinario deja vacío ese campo, entonces el sistema guarda el registro sin próxima dosis. (JP 1, MC 1, EA 1)
-4. Dado que la vacuna fue registrada, cuando se abre el expediente, entonces aparece con su fecha de aplicación y su próxima dosis. (JP 1, MC 1, EA 2)
+3. **Criterios de Aceptación**
 
-Los criterios 1 y 2 fueron los de mayor dificultad para Maikel y Eliam, por el manejo de fechas.
+   - Dado que el veterinario seleccionó una mascota, cuando ingresa el nombre de la vacuna y la fecha de aplicación y presiona "Guardar", entonces el sistema registra la vacuna en el expediente. (JP 1, MC 2, EA 2)
+   - Dado que la fecha de próxima dosis es anterior o igual a la de aplicación, cuando el veterinario intenta guardar, entonces el sistema muestra un mensaje de error. (JP 1, MC 2, EA 2)
+   - Dado que la vacuna no requiere otra dosis, cuando el veterinario deja vacío ese campo, entonces el sistema guarda el registro sin próxima dosis. (JP 1, MC 1, EA 1)
+   - Dado que la vacuna fue registrada, cuando se abre el expediente, entonces aparece con su fecha de aplicación y su próxima dosis. (JP 1, MC 1, EA 2)
 
-Prioridad P2. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 3, del 19/11/2026 al 02/12/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-03 y de la HU-05. El nombre de la vacuna se escribe como texto libre; un catálogo de vacunas queda fuera del alcance del curso. El wireframe está pendiente.
+   - **Prioridad:** Media (P2)
+   - **Estimación propuesta:** 3 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 2, MC 3, EA 3).
+   - **Dificultad por criterio:** El primer y el segundo criterio fueron los de mayor dificultad para Maikel y Eliam, por el manejo de fechas.
+   - **Sprint:** Sprint 3, del 19/11/2026 al 02/12/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-12 y RNF-05.
+   - **Dependencias:** Depende de la HU-03 y de la HU-05.
+   - **Notas Técnicas:** El nombre de la vacuna se escribe como texto libre; un catálogo de vacunas queda fuera del alcance del curso.
+   - **Anexos:** El wireframe está pendiente.
 
 #### HU-12: Consulta del historial clínico por el veterinario
 
-Requerimientos relacionados: RF-13 y RNF-04.
+1. **Título** "Consulta del historial clínico por el veterinario"
 
-> Como médico veterinario, quiero consultar el historial completo de una mascota, para conocer sus atenciones anteriores antes de atenderla.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como médico veterinario, quiero consultar el historial completo de una mascota, para conocer sus atenciones anteriores antes de atenderla.
 
-1. Dado que el veterinario busca una mascota, cuando abre su expediente, entonces el sistema muestra los datos de la mascota y del propietario, las consultas y las vacunas. (JP 2, MC 3, EA 3)
-2. Dado que la mascota tiene varias consultas, cuando el veterinario abre el historial, entonces aparecen de la más reciente a la más antigua. (JP 1, MC 1, EA 1)
-3. Dado que la mascota no tiene consultas, cuando el veterinario abre el expediente, entonces el sistema muestra un mensaje. (JP 1, MC 1, EA 1)
-4. Dado que el veterinario está atendiendo una cita, cuando la selecciona en su agenda, entonces puede abrir el expediente de la mascota. (JP 1, MC 2, EA 2)
+3. **Criterios de Aceptación**
 
-El criterio 1 fue el de mayor dificultad, porque reúne datos de cuatro tablas en una sola vista.
+   - Dado que el veterinario busca una mascota, cuando abre su expediente, entonces el sistema muestra los datos de la mascota y del propietario, las consultas y las vacunas. (JP 2, MC 3, EA 3)
+   - Dado que la mascota tiene varias consultas, cuando el veterinario abre el historial, entonces aparecen de la más reciente a la más antigua. (JP 1, MC 1, EA 1)
+   - Dado que la mascota no tiene consultas, cuando el veterinario abre el expediente, entonces el sistema muestra un mensaje. (JP 1, MC 1, EA 1)
+   - Dado que el veterinario está atendiendo una cita, cuando la selecciona en su agenda, entonces puede abrir el expediente de la mascota. (JP 1, MC 2, EA 2)
 
-Prioridad P1. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 3, del 19/11/2026 al 02/12/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-10 y de la HU-11. Como el sistema atiende una sola clínica, cualquier veterinario puede consultar el expediente de cualquier mascota. El wireframe del expediente está pendiente.
+   - **Prioridad:** Alta (P1)
+   - **Estimación propuesta:** 3 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 2, MC 3, EA 3).
+   - **Dificultad por criterio:** El primer criterio fue el de mayor dificultad, porque reúne datos de cuatro tablas en una sola vista.
+   - **Sprint:** Sprint 3, del 19/11/2026 al 02/12/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-13 y RNF-04.
+   - **Dependencias:** Depende de la HU-10 y de la HU-11.
+   - **Notas Técnicas:** Como el sistema atiende una sola clínica, cualquier veterinario puede consultar el expediente de cualquier mascota.
+   - **Anexos:** El wireframe del expediente está pendiente.
 
 #### HU-13: Consulta del historial por el propietario
 
-Requerimientos relacionados: RF-14 y RNF-04.
+1. **Título** "Consulta del historial por el propietario"
 
-> Como propietario de mascotas, quiero consultar el historial de atención y las vacunas de mis mascotas, para conocer su estado de salud.
+2. **Estructura**
 
-Criterios de aceptación:
+   Como propietario de mascotas, quiero consultar el historial de atención y las vacunas de mis mascotas, para conocer su estado de salud.
 
-1. Dado que el propietario inició sesión, cuando abre el historial de una de sus mascotas, entonces el sistema muestra las consultas y vacunas de la más reciente a la más antigua. (JP 1, MC 2, EA 2)
-2. Dado que una vacuna tiene próxima dosis, cuando el propietario consulta el historial, entonces ve esa fecha. (JP 1, MC 1, EA 1)
-3. Dado que el propietario consulta el historial, cuando visualiza la información, entonces solo puede leerla. (JP 1, MC 2, EA 2)
-4. Dado que el propietario intenta consultar una mascota ajena, cuando accede a ella, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
+3. **Criterios de Aceptación**
 
-Los criterios tienen una dificultad baja, porque reutilizan la vista de la HU-12 y el control de acceso de la HU-04.
+   - Dado que el propietario inició sesión, cuando abre el historial de una de sus mascotas, entonces el sistema muestra las consultas y vacunas de la más reciente a la más antigua. (JP 1, MC 2, EA 2)
+   - Dado que una vacuna tiene próxima dosis, cuando el propietario consulta el historial, entonces ve esa fecha. (JP 1, MC 1, EA 1)
+   - Dado que el propietario consulta el historial, cuando visualiza la información, entonces solo puede leerla. (JP 1, MC 2, EA 2)
+   - Dado que el propietario intenta consultar una mascota ajena, cuando accede a ella, entonces el sistema le niega el acceso. (JP 1, MC 2, EA 2)
 
-Prioridad P2. Estimación de 3 puntos por planning poker (JP 2, MC 3, EA 3). Sprint 3, del 19/11/2026 al 02/12/2026.
+4. **Estimación y Prioridad (Metadata de Gestión)**
 
-Depende de la HU-10 y de la HU-11. Puede reutilizar la vista de la HU-12 sin las opciones de edición. El wireframe está pendiente.
+   - **Prioridad:** Media (P2)
+   - **Estimación propuesta:** 3 puntos de historia, acordados por planning poker (votos de la primera ronda: JP 2, MC 3, EA 3).
+   - **Dificultad por criterio:** Los criterios tienen una dificultad baja, porque reutilizan la vista de la HU-12 y el control de acceso de la HU-04.
+   - **Sprint:** Sprint 3, del 19/11/2026 al 02/12/2026.
+
+5. **Notas Adicionales o Anexos**
+
+   - **Requerimientos relacionados:** RF-14 y RNF-04.
+   - **Dependencias:** Depende de la HU-10 y de la HU-11.
+   - **Notas Técnicas:** Puede reutilizar la vista de la HU-12 sin las opciones de edición.
+   - **Anexos:** El wireframe está pendiente.
 
 #### Verificación INVEST
 
@@ -770,3 +900,4 @@ Un impedimento técnico se plantea en la Daily Scrum. Si no se resuelve en 24 ho
 | 1.6 | 20/10/2026 | Incorporación del detalle de las 13 historias de usuario con la plantilla del curso: historia, requerimientos relacionados, criterios de aceptación en formato Dado que, cuando, entonces, prioridad, estimación, dependencias y verificación INVEST. |
 | 1.7 | 04/11/2026 | Revisión de redacción de todo el documento: títulos, formato y fuentes de los datos. Se agregan las fechas del Sprint 1, la velocidad inicial, los límites WIP del tablero, los votos de planning poker de HU-03 a HU-13 y la Sección 07 de comunicaciones. |
 | 1.8 | 04/11/2026 | Cambio del tablero de GitHub Projects a Jira: enlace al tablero del espacio VetCare, justificación de los límites WIP, carga de las historias y tareas del Sprint 1 y regla para mover una tarjeta a Terminado. |
+| 1.9 | 05/11/2026 | Reestructuración del detalle de las 13 historias de usuario con el formato de cinco partes (título, estructura, criterios de aceptación, estimación y prioridad, y notas adicionales o anexos), aplicado también a las historias HU-01 a HU-05 cargadas en Jira. |
