@@ -887,6 +887,84 @@ El alcance, las prioridades y las fechas se deciden con el Product Owner en la S
 
 Un impedimento técnico se plantea en la Daily Scrum. Si no se resuelve en 24 horas, el Scrum Master lo lleva al Product Owner. Un conflicto entre integrantes lo conversan primero las dos personas involucradas. Si no se resuelve en 48 horas, el Scrum Master lo lleva a la Daily, y si continúa se informa al profesor. Los plazos de 24 y 48 horas son acuerdos del equipo.
 
+---
+
+## Sección 08: matriz de riesgos y plan de mitigación
+
+Los riesgos se identificaron en una lluvia de ideas del equipo. Se califican con la matriz de probabilidad e impacto de la Guía del PMBOK (PMI, 2017), con una escala de 1 a 3 para cada eje. La prioridad es el producto de ambos valores: de 6 a 9 es alta, 3 y 4 se vigilan, y 1 y 2 se aceptan. Las calificaciones son una estimación del equipo. Los riesgos se revisan en cada Sprint Planning y en cada Retrospective.
+
+### Matriz de riesgos
+
+| ID | Nombre | Descripción | Categoría | Tipo | Probabilidad | Impacto | Prioridad | Dueño |
+| --- | --- | --- | --- | --- | :---: | :---: | :---: | --- |
+| R1 | Ausencia de Pablo | Si Jose Pablo, que es el que más sabe y es el Product Owner, se ausenta, Maikel y Eliam avanzan más lento en las partes difíciles. | Equipo | Amenaza | 2 | 3 | 6 | Maikel |
+| R2 | Fallo de cálculos de horarios | Si el cálculo de horarios libres o el bloqueo de reservas duplicadas de la HU-06 falla, dos citas pueden ocupar el mismo espacio. | Técnico | Amenaza | 2 | 3 | 6 | Jose Pablo |
+| R3 | Error en acceso de rol | Si el control de acceso por rol tiene un error, un propietario puede ver mascotas o citas ajenas. | Técnico | Amenaza | 2 | 3 | 6 | Eliam |
+| R4 | Ninguna clínica participa | Si ninguna clínica acepta participar, o una acepta y se retira antes de terminar el curso, los flujos de citas y expediente no se validan con usuarios reales y pueden no ajustarse al trabajo de una clínica. | Tercero | Amenaza | 3 | 2 | 6 | Jose Pablo |
+| R5 | Desconocimiento del framework | Si los integrantes no conocen lo suficiente el framework elegido, las tareas toman más horas que las estimadas y quedan historias sin terminar al cierre del Sprint. | Equipo | Amenaza | 3 | 2 | 6 | Maikel |
+| R6 | Modificación del mismo archivo | Si dos integrantes modifican los mismos archivos y los integran sin revisar, se generan conflictos en Git o se pierde código de la rama principal. | Técnico | Amenaza | 2 | 2 | 4 | Eliam |
+| R7 | Plan gratuito | Si el plan gratuito de alojamiento o de base de datos cambia sus condiciones o suspende el servicio, el sistema queda fuera de línea en la Sprint Review. | Tercero | Amenaza | 1 | 3 | 3 | Maikel |
+| O1 | Clínicas interesadas | Si una clínica que revisa el sistema se interesa en usarlo después del curso, el proyecto puede seguir como piloto. | Negocio | Oportunidad | 1 | 2 | 2 | Jose Pablo |
+
+### Mapa de calor
+
+![Matriz de probabilidad e impacto](docs/matriz_riesgos.png)
+
+Cinco riesgos quedan en la zona de alta prioridad. R6 y R7 se vigilan. O1 es la única oportunidad y queda en la zona de aceptar.
+
+### Plan de mitigación
+
+La estrategia de respuesta sigue las opciones de la Guía del PMBOK (PMI, 2017): evitar, transferir, mitigar o aceptar para las amenazas, y explotar, compartir, mejorar o aceptar para las oportunidades.
+
+| ID | Estrategia | Acciones concretas | Ítem en el backlog |
+| --- | --- | --- | --- |
+| R1 | Mitigar | Jose Pablo documenta en el repositorio el modelo de datos y la estructura del proyecto. En la HU-06 trabaja en pareja con Maikel o Eliam. | M-01 |
+| R2 | Mitigar | La base de datos impide dos citas del mismo veterinario en la misma fecha y hora. Se prueban reservas simultáneas con datos ficticios. | M-02, M-03 |
+| R3 | Mitigar | Se arma una lista de pruebas de permisos por rol, que incluye cambiar el identificador de una mascota en la dirección para intentar ver una ajena. Se aplica a cada historia antes de pasarla a Terminado. | M-04 |
+| R4 | Mitigar | Jose Pablo contacta una clínica o un veterinario para que revise el sistema al cierre del Sprint 2 y del Sprint 3. | M-05 |
+| R5 | Mitigar | Jose Pablo da una sesión sobre el framework a Maikel y Eliam antes de empezar la HU-06. | M-06 |
+| R6 | Mitigar | Los cambios entran a la rama principal por pull request, revisado por otro integrante. | M-07 |
+| R7 | Mitigar | Se guarda en el repositorio el script que crea la base de datos y se hace un respaldo semanal de los datos ficticios. | M-08 |
+| O1 | Aceptar | Si una clínica muestra interés, se conversa con ella al cierre del curso. No requiere acciones en el backlog. | Ninguno |
+
+| ID | Disparador | Plan de contingencia | Fecha de revisión | Riesgo residual |
+| --- | --- | --- | --- | --- |
+| R1 | Jose Pablo avisa una ausencia de más de dos días o falta a dos Daily seguidas. | Maikel reparte tareas de menor dificultad y las decisiones de alcance se consultan a Jose Pablo por mensaje. | 19/11/2026 | P 1, I 2, prioridad 2 |
+| R2 | Una prueba muestra dos citas con el mismo veterinario y la misma hora, o una hora ocupada aparece como libre. | La HU-06 no se da por terminada y se corrige al inicio del Sprint 3. | 18/11/2026 | P 1, I 3, prioridad 3 |
+| R3 | Una prueba logra abrir una mascota o una cita de otro propietario. | La historia vuelve a En progreso y no se presenta en la Sprint Review. | Cierre de cada Sprint | P 1, I 3, prioridad 3 |
+| R4 | Al 18/11/2026 no hay una clínica confirmada, o la clínica deja de responder durante una semana. | Jose Pablo valida los flujos como representante de la clínica y se deja constancia en este documento. | 18/11/2026 | P 2, I 2, prioridad 4 |
+| R5 | El burndown queda por encima del ideal en dos registros seguidos. | Se conversa con el Product Owner para pasar una historia P2 (HU-07 o HU-09) al Sprint siguiente. | 18/11/2026 | P 2, I 1, prioridad 2 |
+| R6 | Un conflicto de integración borra código o alguien sube cambios directo a la rama principal. | Se recupera la versión anterior desde el historial de Git. | 18/11/2026 | P 1, I 2, prioridad 2 |
+| R7 | El proveedor anuncia cambios en el plan gratuito, o el sistema no responde 24 horas antes de una Sprint Review. | La Sprint Review se hace con el sistema corriendo en la computadora de un integrante. | Antes de cada Sprint Review | P 1, I 1, prioridad 1 |
+| O1 | Una clínica pregunta si puede seguir usando el sistema. | No aplica. | 02/12/2026 | No aplica |
+
+Los umbrales de los disparadores (dos días, dos Daily, una semana, 24 horas) son acuerdos del equipo y no vienen de una fuente externa.
+
+### Adquisiciones críticas
+
+| Adquisición | Proveedor | Tipo de contrato | Plan de salida |
+| --- | --- | --- | --- |
+| Alojamiento y base de datos | Por definir, en plan gratuito | Términos de uso del plan gratuito, sin costo | Con el script de la base de datos y los respaldos del repositorio, el sistema se puede montar en otro proveedor o en una computadora local. |
+| Repositorio de código | GitHub, plan gratuito | Términos de uso del plan gratuito, sin costo | Cada integrante tiene una copia completa del repositorio en su computadora. |
+| Tablero de trabajo | Jira Software de Atlassian, plan gratuito | Términos de uso del plan gratuito, sin costo | Las historias y tareas se exportan a un archivo CSV y se pasan a otro tablero, como GitHub Projects. |
+
+### Tareas de mitigación para el Sprint 2
+
+Estas tareas se agregan al Sprint Backlog del Sprint 2, del 05/11/2026 al 18/11/2026.
+
+| ID | Riesgo | Tarea | Responsable | Horas estimadas |
+| --- | --- | --- | --- | :---: |
+| M-01 | R1 | Documentar el modelo de datos y la estructura del proyecto en el repositorio. | Jose Pablo Soto | 2 |
+| M-02 | R2 | Agregar en la base de datos la restricción que impide dos citas del mismo veterinario a la misma hora. | Jose Pablo Soto | 1 |
+| M-03 | R2 | Probar reservas simultáneas con datos ficticios. | Eliam Araya | 2 |
+| M-04 | R3 | Preparar la lista de pruebas de permisos por rol. | Eliam Araya | 2 |
+| M-05 | R4 | Contactar una clínica o un veterinario para revisar el sistema. | Jose Pablo Soto | 1 |
+| M-06 | R5 | Dar una sesión sobre el framework a Maikel y Eliam. | Jose Pablo Soto | 2 |
+| M-07 | R6 | Configurar la rama principal para que solo reciba cambios por pull request revisado. | Maikel Chaves | 1 |
+| M-08 | R7 | Guardar el script de la base de datos y programar un respaldo semanal. | Maikel Chaves | 2 |
+
+En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
+
 ## Historial de actualizaciones
 
 | Versión | Fecha | Descripción de la actualización |
@@ -901,3 +979,4 @@ Un impedimento técnico se plantea en la Daily Scrum. Si no se resuelve en 24 ho
 | 1.7 | 04/11/2026 | Revisión de redacción de todo el documento: títulos, formato y fuentes de los datos. Se agregan las fechas del Sprint 1, la velocidad inicial, los límites WIP del tablero, los votos de planning poker de HU-03 a HU-13 y la Sección 07 de comunicaciones. |
 | 1.8 | 04/11/2026 | Cambio del tablero de GitHub Projects a Jira: enlace al tablero del espacio VetCare, justificación de los límites WIP, carga de las historias y tareas del Sprint 1 y regla para mover una tarjeta a Terminado. |
 | 1.9 | 05/11/2026 | Reestructuración del detalle de las 13 historias de usuario con el formato de cinco partes (título, estructura, criterios de aceptación, estimación y prioridad, y notas adicionales o anexos), aplicado también a las historias HU-01 a HU-05 cargadas en Jira. |
+| 1.10 | 08/11/2026 | Incorporación de la Sección 08: matriz de riesgos con ocho riesgos, mapa de calor, plan de mitigación, adquisiciones críticas y tareas de mitigación para el Sprint 2. |
