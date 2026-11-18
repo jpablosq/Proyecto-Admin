@@ -63,7 +63,7 @@ Las tareas pendientes son T-12 (corrección del control de acceso en la edición
 | Daily 4 | 8 | 9 | 12 |
 | Cierre | 10 | 0 | 4 |
 
-El avance real quedó por encima del ideal desde la Daily 1. El atraso inicial vino de las tareas T-01 y T-02 (modelo de datos y configuración del proyecto), que tomaron más horas de las estimadas porque Maikel y Eliam no conocían el framework (riesgo R5).
+El avance real quedó por encima del ideal desde la Daily 1. El atraso inicial vino de las tareas T-01 y T-02 (modelo de datos y configuración del proyecto), que tomaron más horas de las estimadas porque la estimación no consideró que el framework era nuevo para dos integrantes (riesgo R5).
 
 #### Impedimentos registrados
 
@@ -95,7 +95,9 @@ Se demostró con datos ficticios el flujo completo de las historias terminadas: 
 
 ## Parte 2: Sprint Retrospective
 
-Duración: 20 minutos. Formato: Empezar, Dejar de, Continuar (Start, Stop, Continue). Cada integrante escribió sus notas por separado durante 5 minutos, luego se agruparon y se votaron las más importantes.
+Duración: 45 minutos, dentro del máximo de 1,5 horas que corresponde a un Sprint de dos semanas (la Guía de Scrum fija 3 horas para un Sprint de un mes). Formato: Empezar, Dejar de, Continuar (Start, Stop, Continue). Cada integrante escribió sus notas por separado durante 5 minutos, luego se agruparon y se votaron las más importantes.
+
+Se inspeccionó cómo trabajó el equipo en cuatro aspectos: personas, interacciones, procesos y herramientas. Al inicio se acordó que la Retrospective es un espacio seguro: se discute el proceso y no se buscan culpables, por eso las notas hablan de prácticas y no de personas.
 
 ### Notas del equipo
 
@@ -125,7 +127,14 @@ Duración: 20 minutos. Formato: Empezar, Dejar de, Continuar (Start, Stop, Conti
 | A2 | Registrar el burndown en cada Daily y, si queda por encima del ideal en dos registros seguidos, avisar al Product Owner ese mismo día. | Maikel Chaves | 19/11/2026 | La tabla de burndown no tiene registros vacíos y, si se activa la alerta, queda anotada en el registro de impedimentos. |
 | A3 | Configurar la rama principal para que solo reciba cambios por pull request revisado por otro integrante (M-07). | Maikel Chaves | 21/11/2026 | La regla está activa en GitHub y los cambios del siguiente Sprint aparecen como pull requests aprobados. |
 
-Las acciones se revisan al inicio de la siguiente Retrospective.
+Las tres acciones tienen dueño, fecha y una forma de verificarlas. Entran al Sprint Backlog del siguiente Sprint como tareas, con su responsable en Jira, y se revisan al inicio de la siguiente Retrospective.
+
+| Aspecto inspeccionado | Hallazgo | Acción relacionada |
+| --- | --- | --- |
+| Personas | La experiencia con el framework está concentrada en un integrante. | Se mantiene el trabajo en pareja (Continuar). |
+| Interacciones | El atraso del burndown no se comunicó a tiempo al Product Owner. | A2 |
+| Procesos | Las pruebas de permisos se dejaban para el final del Sprint. | A1 |
+| Herramientas | La rama principal acepta cambios sin revisión. | A3 |
 
 ---
 
