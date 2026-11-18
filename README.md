@@ -298,6 +298,21 @@ La Guía del PMBOK (PMI, 2017) llama factores ambientales de la empresa a las co
 | Disponibilidad de usuarios para pruebas | Afecta la calidad de la validación |
 | Calendario académico | Limita el tiempo y el alcance posible |
 
+### Estructura organizacional
+
+La Guía del PMBOK (PMI, 2017) distingue estructuras funcionales, matriciales y orientadas a proyectos según la autoridad que tiene el director de proyecto. Como todavía no hay una clínica confirmada, la estructura de la clínica es una suposición del equipo. Una clínica pequeña suele tener una estructura funcional. La dirección (I1) decide sobre los recursos y la puesta en uso, y el personal tiene tareas fijas de atención. En ese contexto el equipo tiene poca autoridad dentro de la clínica y depende de que la dirección apruebe los cambios y dé acceso a los usuarios.
+
+Dentro del curso el equipo trabaja como una estructura orientada a proyectos. Los tres integrantes deciden cómo organizar el trabajo, con la autoridad repartida entre Product Owner, Scrum Master y Developers. El profesor (I6) cumple un papel parecido al de una PMO de control: define el formato del expediente y las fechas de entrega, pero no dirige el trabajo del equipo.
+
+### Restricciones conocidas
+
+| Tipo | Restricción |
+| --- | --- |
+| Tiempo | El proyecto termina con el ciclo III-2026. Se trabaja en Sprints de dos semanas y la fecha final del curso no cambia. |
+| Presupuesto | No hay presupuesto en dinero. Se usan herramientas y servicios en planes gratuitos, y el recurso disponible es el tiempo del equipo, 47 horas por Sprint. |
+| Tecnología | El sistema es una aplicación web responsive (RNF-01) con el código en GitHub (RNF-06). Durante el desarrollo solo se usan datos ficticios (RNF-07). El framework y el proveedor de alojamiento están por definir. |
+| Personas | El equipo tiene tres integrantes y Jose Pablo es el que tiene más experiencia técnica. No hay una clínica confirmada que aporte usuarios para las pruebas. |
+
 ### Lean Canvas
 
 La tabla usa la plantilla Lean Canvas de Ash Maurya (2012).
@@ -995,3 +1010,4 @@ El acta del cierre del Sprint 1 está en [docs/acta-sprint-1.md](docs/acta-sprin
 | 1.9 | 05/11/2026 | Reestructuración del detalle de las 13 historias de usuario con el formato de cinco partes (título, estructura, criterios de aceptación, estimación y prioridad, y notas adicionales o anexos), aplicado también a las historias HU-01 a HU-05 cargadas en Jira. |
 | 1.10 | 08/11/2026 | Incorporación de la Sección 08: matriz de riesgos con ocho riesgos, mapa de calor, plan de mitigación, adquisiciones críticas y tareas de mitigación para el Sprint 2. |
 | 1.11 | 18/11/2026 | Incorporación de la Sección 09 y del Acta de Sprint Review y Sprint Retrospective del Sprint 1 (docs/acta-sprint-1.md): Incremento contra la Definición de Terminado, velocidad, burndown, impedimentos, adaptación del Product Backlog y tres acciones de mejora con dueño y fecha. |
+| 1.12 | 18/11/2026 | Revisión de la Semana 2: se agregan al análisis de entorno la estructura organizacional y las restricciones conocidas de tiempo, presupuesto, tecnología y personas. |
