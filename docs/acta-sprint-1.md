@@ -25,7 +25,9 @@ Sprint Goal: Que un propietario pueda crear su cuenta, iniciar sesión y registr
 
 ## Parte 1: Sprint Review
 
-Duración: 30 minutos. La Guía de Scrum (Schwaber y Sutherland, 2020) define la Review como el evento en que se inspecciona el Incremento y se adapta el Product Backlog.
+Duración: 45 minutos, dentro del máximo de 2 horas que corresponde a un Sprint de dos semanas (la Guía de Scrum fija 4 horas para un Sprint de un mes). La Guía de Scrum (Schwaber y Sutherland, 2020) define la Review como el evento en que se inspecciona el Incremento y se adapta el Product Backlog.
+
+Fue una sesión de trabajo y no una presentación de diapositivas: se usó el sistema con datos ficticios frente a los interesados, se recogieron sus comentarios y los cambios se anotaron en el Product Backlog durante la misma sesión.
 
 ### 1. Incremento frente a la Definición de Terminado
 
@@ -90,6 +92,23 @@ Se demostró con datos ficticios el flujo completo de las historias terminadas: 
 | Nueva HU-14 | "Como administrador, quiero ver la lista de médicos veterinarios registrados, para comprobar que no estén duplicados." Prioridad P2, 1 punto por estimar en planning poker. |
 | Ajuste de capacidad | Con la HU-04 se suman 3 puntos al trabajo pendiente. Como la velocidad real fue de 13, el Product Owner decide que, si el burndown vuelve a quedar por encima del ideal en dos registros, la HU-07 (P2) pasa al Sprint siguiente, según el plan de contingencia de R5. |
 | Velocidad para planificar | Se usa 13 puntos, la velocidad real, en lugar del supuesto inicial de 15. Si se mantiene, se confirma la necesidad del Sprint 4 (03/12/2026 al 16/12/2026). |
+
+Los comentarios de la clínica no se tratan como un fracaso del Sprint. Son el producto ajustándose a lo que necesita el usuario, y por eso entraron al backlog en la misma Review.
+
+### 5. Decisiones sobre prioridades, fechas y presupuesto
+
+| Tema | Decisión | Quién decide |
+| --- | --- | --- |
+| Prioridades | La HU-04 va primero en el siguiente Sprint. La HU-14 queda como P2, después de las historias de citas. | Product Owner |
+| Fechas | Se mantiene el plan de tres Sprints. El Sprint 4 (03/12/2026 al 16/12/2026) queda como reserva si la velocidad sigue en 13 puntos. La fecha final del curso no cambia. | Product Owner, con el visto bueno del profesor |
+| Presupuesto | El proyecto no tiene presupuesto en dinero; el recurso es el tiempo del equipo. Se mantienen 47 horas por Sprint entre los tres integrantes y los servicios en planes gratuitos. | Equipo, con el Product Owner |
+
+### 6. Resumen: qué se mostró, qué se aceptó y qué cambia
+
+| Qué se mostró | Qué se aceptó | Qué cambia |
+| --- | --- | --- |
+| Registro de propietarios, inicio y cierre de sesión con acceso por rol, registro de varias mascotas y registro de veterinarios por el administrador. | HU-01, HU-02, HU-03 y HU-05 (13 puntos), porque cumplen la Definición de Terminado. | La HU-04 vuelve al backlog con el criterio nuevo de la lista de especies. |
+| La edición de mascotas y el resultado de su prueba de permisos. | La HU-04 no se acepta. | Se crea la HU-14 y la planificación usa una velocidad de 13 puntos. |
 
 ---
 
