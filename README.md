@@ -965,6 +965,20 @@ Estas tareas se agregan al Sprint Backlog del Sprint 2, del 05/11/2026 al 18/11/
 
 En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
 
+---
+
+## Sección 09: Acta de Sprint Review y Sprint Retrospective
+
+El acta del cierre del Sprint 1 está en [docs/acta-sprint-1.md](docs/acta-sprint-1.md). Registra el Incremento revisado contra la Definición de Terminado, las métricas y el burndown del Sprint, la retroalimentación, los cambios al Product Backlog y las acciones de mejora de la Retrospective.
+
+| Elemento | Resultado del Sprint 1 |
+| --- | --- |
+| Historias terminadas | HU-01, HU-02, HU-03 y HU-05 |
+| Velocidad | 13 de 16 puntos planificados |
+| Historia que vuelve al backlog | HU-04, porque falló la prueba de permisos sobre mascotas ajenas (riesgo R3) |
+| Historia nueva | HU-14, lista de médicos veterinarios para el administrador (P2) |
+| Acciones de mejora | A1: pruebas de permisos en cada historia (Eliam, 20/11/2026). A2: burndown en cada Daily con aviso al Product Owner (Maikel, 19/11/2026). A3: rama principal protegida con pull request (Maikel, 21/11/2026). |
+
 ## Historial de actualizaciones
 
 | Versión | Fecha | Descripción de la actualización |
@@ -980,3 +994,4 @@ En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
 | 1.8 | 04/11/2026 | Cambio del tablero de GitHub Projects a Jira: enlace al tablero del espacio VetCare, justificación de los límites WIP, carga de las historias y tareas del Sprint 1 y regla para mover una tarjeta a Terminado. |
 | 1.9 | 05/11/2026 | Reestructuración del detalle de las 13 historias de usuario con el formato de cinco partes (título, estructura, criterios de aceptación, estimación y prioridad, y notas adicionales o anexos), aplicado también a las historias HU-01 a HU-05 cargadas en Jira. |
 | 1.10 | 08/11/2026 | Incorporación de la Sección 08: matriz de riesgos con ocho riesgos, mapa de calor, plan de mitigación, adquisiciones críticas y tareas de mitigación para el Sprint 2. |
+| 1.11 | 18/11/2026 | Incorporación de la Sección 09 y del Acta de Sprint Review y Sprint Retrospective del Sprint 1 (docs/acta-sprint-1.md): Incremento contra la Definición de Terminado, velocidad, burndown, impedimentos, adaptación del Product Backlog y tres acciones de mejora con dueño y fecha. |
