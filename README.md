@@ -6,7 +6,7 @@ Universidad Técnica Nacional, Sede San Carlos
 
 Curso: Administración de Proyectos Informáticos, III-26, SC-02
 
-Profesor: Deiver Cubero Molina
+Profesor: Yesenia Calvo Araya
 
 Estudiantes: Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado
 
@@ -244,6 +244,29 @@ Los ajustes de interfaz o de flujo que no alteran los compromisos se priorizan p
 Un enfoque solo predictivo haría difícil incorporar los cambios que aparezcan al probar el sistema con usuarios. Uno solo adaptativo daría menos estructura para los compromisos académicos y el alcance ya definido. El híbrido mantiene una planificación verificable y deja espacio para ajustar el producto durante el desarrollo.
 
 El documento original no identifica una clínica concreta, un presupuesto, un proveedor ni un calendario detallado. Estas decisiones y la disponibilidad de usuarios deben confirmarse antes de cerrar la planificación. Lo descrito en esta sección son propuestas y no acuerdos ya tomados.
+
+### Ciclo de vida del proyecto
+
+El problema sale de lo que el equipo conoce sobre el manejo de la información en clínicas veterinarias, como se explica en la sección Problema. Desde ahí el proyecto pasa por cuatro fases, ordenadas según los grupos de procesos de la Norma para la Dirección de Proyectos (PMI, 2017).
+
+| Fase | Fechas | Qué se hace | Resultado |
+| --- | --- | --- | --- |
+| Inicio | 16/09/2026 al 29/09/2026 (semanas 1 y 2) | Se definen el problema, el proyecto, los objetivos y los interesados. | Problema, objetivos, registro y mapa de interesados |
+| Planificación | 30/09/2026 al 21/10/2026 (semanas 3 a 6) | Se elige el enfoque, se arma y estima el Product Backlog y se planifica el Sprint 1. | Enfoque híbrido, Product Backlog, plan de Sprints y Sprint Backlog del Sprint 1 |
+| Ejecución por Sprints | 22/10/2026 al 02/12/2026 | Tres Sprints de dos semanas: usuarios y mascotas, citas y expediente. Si la velocidad no alcanza, se usa el Sprint 4, hasta el 16/12/2026. | Un Incremento terminado al final de cada Sprint |
+| Cierre | Al terminar el último Sprint | Última Sprint Review, entrega del sistema y del expediente al profesor y actualización del historial. | Sistema funcionando con datos ficticios y expediente completo |
+
+El proyecto del curso termina en la fase de cierre. Si una clínica quiere usar el sistema después (oportunidad O1), haría falta una transición a operación con capacitación, alojamiento propio y soporte. Esa transición queda fuera del alcance del curso.
+
+Cada Sprint repite en pequeño los cinco grupos de procesos, según la relación que se presentó en la Semana 3 del curso.
+
+| Grupo de procesos | Evento en VetCare |
+| --- | --- |
+| Inicio | Refinamiento del Product Backlog y elección del enfoque del Sprint |
+| Planificación | Sprint Planning: Sprint Goal, historias y tareas con horas |
+| Ejecución | Trabajo diario y Daily Scrum |
+| Monitoreo y control | Tablero en Jira, burndown y Sprint Review |
+| Cierre | Sprint Retrospective, con acciones de mejora para el siguiente Sprint |
 
 ## Justificación y alcance
 
