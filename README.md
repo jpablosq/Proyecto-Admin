@@ -6,7 +6,7 @@ Universidad Técnica Nacional, Sede San Carlos
 
 Curso: Administración de Proyectos Informáticos, III-26, SC-02
 
-Profesor: Deiver Cubero Molina
+Profesor: Yesenia Calvo Araya
 
 Estudiantes: Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado
 
@@ -245,6 +245,29 @@ Un enfoque solo predictivo haría difícil incorporar los cambios que aparezcan 
 
 El documento original no identifica una clínica concreta, un presupuesto, un proveedor ni un calendario detallado. Estas decisiones y la disponibilidad de usuarios deben confirmarse antes de cerrar la planificación. Lo descrito en esta sección son propuestas y no acuerdos ya tomados.
 
+### Ciclo de vida del proyecto
+
+El problema sale de lo que el equipo conoce sobre el manejo de la información en clínicas veterinarias, como se explica en la sección Problema. Desde ahí el proyecto pasa por cuatro fases, ordenadas según los grupos de procesos de la Norma para la Dirección de Proyectos (PMI, 2017).
+
+| Fase | Fechas | Qué se hace | Resultado |
+| --- | --- | --- | --- |
+| Inicio | 16/09/2026 al 29/09/2026 (semanas 1 y 2) | Se definen el problema, el proyecto, los objetivos y los interesados. | Problema, objetivos, registro y mapa de interesados |
+| Planificación | 30/09/2026 al 21/10/2026 (semanas 3 a 6) | Se elige el enfoque, se arma y estima el Product Backlog y se planifica el Sprint 1. | Enfoque híbrido, Product Backlog, plan de Sprints y Sprint Backlog del Sprint 1 |
+| Ejecución por Sprints | 22/10/2026 al 02/12/2026 | Tres Sprints de dos semanas: usuarios y mascotas, citas y expediente. Si la velocidad no alcanza, se usa el Sprint 4, hasta el 16/12/2026. | Un Incremento terminado al final de cada Sprint |
+| Cierre | Al terminar el último Sprint | Última Sprint Review, entrega del sistema y del expediente al profesor y actualización del historial. | Sistema funcionando con datos ficticios y expediente completo |
+
+El proyecto del curso termina en la fase de cierre. Si una clínica quiere usar el sistema después (oportunidad O1), haría falta una transición a operación con capacitación, alojamiento propio y soporte. Esa transición queda fuera del alcance del curso.
+
+Cada Sprint repite en pequeño los cinco grupos de procesos, según la relación que se presentó en la Semana 3 del curso.
+
+| Grupo de procesos | Evento en VetCare |
+| --- | --- |
+| Inicio | Refinamiento del Product Backlog y elección del enfoque del Sprint |
+| Planificación | Sprint Planning: Sprint Goal, historias y tareas con horas |
+| Ejecución | Trabajo diario y Daily Scrum |
+| Monitoreo y control | Tablero en Jira, burndown y Sprint Review |
+| Cierre | Sprint Retrospective, con acciones de mejora para el siguiente Sprint |
+
 ## Justificación y alcance
 
 Las clínicas veterinarias suelen tener la información de clientes y mascotas dispersa en documentos físicos, hojas de cálculo y otros medios. Esto dificulta consultar historiales, organizar citas y dar seguimiento a vacunas y tratamientos. VetCare se propone como un sistema web que centraliza esa información y le da a cada mascota su propio expediente. Para la versión del curso, el alcance queda así:
@@ -297,6 +320,21 @@ La Guía del PMBOK (PMI, 2017) llama factores ambientales de la empresa a las co
 | Distribución del equipo (presencial o remoto) | Condiciona la coordinación entre los tres integrantes |
 | Disponibilidad de usuarios para pruebas | Afecta la calidad de la validación |
 | Calendario académico | Limita el tiempo y el alcance posible |
+
+### Estructura organizacional
+
+La Guía del PMBOK (PMI, 2017) distingue estructuras funcionales, matriciales y orientadas a proyectos según la autoridad que tiene el director de proyecto. Como todavía no hay una clínica confirmada, la estructura de la clínica es una suposición del equipo. Una clínica pequeña suele tener una estructura funcional. La dirección (I1) decide sobre los recursos y la puesta en uso, y el personal tiene tareas fijas de atención. En ese contexto el equipo tiene poca autoridad dentro de la clínica y depende de que la dirección apruebe los cambios y dé acceso a los usuarios.
+
+Dentro del curso el equipo trabaja como una estructura orientada a proyectos. Los tres integrantes deciden cómo organizar el trabajo, con la autoridad repartida entre Product Owner, Scrum Master y Developers. El profesor (I6) cumple un papel parecido al de una PMO de control: define el formato del expediente y las fechas de entrega, pero no dirige el trabajo del equipo.
+
+### Restricciones conocidas
+
+| Tipo | Restricción |
+| --- | --- |
+| Tiempo | El proyecto termina con el ciclo III-2026. Se trabaja en Sprints de dos semanas y la fecha final del curso no cambia. |
+| Presupuesto | No hay presupuesto en dinero. Se usan herramientas y servicios en planes gratuitos, y el recurso disponible es el tiempo del equipo, 47 horas por Sprint. |
+| Tecnología | El sistema es una aplicación web responsive (RNF-01) con el código en GitHub (RNF-06). Durante el desarrollo solo se usan datos ficticios (RNF-07). El framework y el proveedor de alojamiento están por definir. |
+| Personas | El equipo tiene tres integrantes y Jose Pablo es el que tiene más experiencia técnica. No hay una clínica confirmada que aporte usuarios para las pruebas. |
 
 ### Lean Canvas
 
@@ -912,6 +950,8 @@ Los riesgos se identificaron en una lluvia de ideas del equipo. Se califican con
 
 Cinco riesgos quedan en la zona de alta prioridad. R6 y R7 se vigilan. O1 es la única oportunidad y queda en la zona de aceptar.
 
+
+
 ### Plan de mitigación
 
 La estrategia de respuesta sigue las opciones de la Guía del PMBOK (PMI, 2017): evitar, transferir, mitigar o aceptar para las amenazas, y explotar, compartir, mejorar o aceptar para las oportunidades.
@@ -948,6 +988,116 @@ Los umbrales de los disparadores (dos días, dos Daily, una semana, 24 horas) so
 | Repositorio de código | GitHub, plan gratuito | Términos de uso del plan gratuito, sin costo | Cada integrante tiene una copia completa del repositorio en su computadora. |
 | Tablero de trabajo | Jira Software de Atlassian, plan gratuito | Términos de uso del plan gratuito, sin costo | Las historias y tareas se exportan a un archivo CSV y se pasan a otro tablero, como GitHub Projects. |
 
+## Sección 09: Acta de Sprint Review y Sprint Retrospective del Sprint 1
+
+### Datos generales
+
+| Elemento | Detalle |
+| --- | --- |
+| Sprint evaluado | Sprint 1, del 22/10/2026 al 04/11/2026 |
+| Fecha de la sesión | 18/11/2026 (simulación en clase, Semana 9) |
+| Sprint Goal | Que un propietario pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre propietarios, médicos veterinarios y administrador. |
+| Product Owner | Jose Pablo Soto Quesada |
+| Scrum Master (facilitador) | Maikel Chaves Salas |
+| Developers | Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado |
+| Redacción del acta | Edgar Eliam Araya Alvarado |
+
+Todavía no hay una clínica confirmada (riesgo R4). Por eso, en esta sesión Jose Pablo representa a la clínica (I1, I2 e I3), según el plan de contingencia de R4. Toda la demostración se hizo con datos ficticios (RNF-07).
+
+### Parte 1. Sprint Review
+
+#### Incremento presentado contra la Definición de Terminado
+
+Criterios de la Definición de Terminado (DoD): (1) cumple sus criterios de aceptación; (2) está integrado en la rama principal; (3) lo probó un integrante distinto de quien lo desarrolló, con pruebas de permisos; (4) no tiene errores conocidos; (5) está documentado.
+
+| Historia | Puntos | DoD 1 | DoD 2 | DoD 3 | DoD 4 | DoD 5 | Resultado |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | --- |
+| HU-01 Registro de propietarios | 3 | Sí | Sí | Sí | Sí | Sí | Terminada |
+| HU-02 Inicio y cierre de sesión con acceso por rol | 3 | Sí | Sí | Sí | Sí | Sí | Terminada |
+| HU-03 Registro de mascotas del propietario | 5 | Sí | Sí | Sí | Sí | Sí | Terminada |
+| HU-04 Consulta y edición de mascotas | 3 | No | Sí | Sí | No | Sí | No terminada |
+| HU-05 Registro de médicos veterinarios | 2 | Sí | Sí | Sí | Sí | Sí | Terminada |
+
+**Qué pasó con la HU-04:** en la prueba de permisos se cambió el identificador de la mascota en la dirección y un propietario logró abrir el formulario de edición de una mascota ajena. Falla el quinto criterio de aceptación. Esto activa el disparador del riesgo R3: la historia vuelve a En progreso y no se presenta como terminada.
+
+#### Qué se mostró, qué se aceptó y qué cambia
+
+| Qué se mostró | Decisión del Product Owner | Qué cambia |
+| --- | --- | --- |
+| Registro de un propietario, validación de campos y correo repetido | Aceptado | Nada |
+| Inicio de sesión con los tres roles y bloqueo de un propietario en funciones de veterinario | Aceptado | Nada |
+| Registro de dos mascotas para el mismo propietario | Aceptado, con observación | Se pide que la lista muestre también la edad calculada (nueva historia, P2) |
+| Lista y edición de mascotas | No aceptado | La HU-04 pasa al siguiente Sprint con prioridad P1 |
+| Registro de un veterinario por el administrador | Aceptado | Nada |
+
+**Sprint Goal:** cumplido de forma parcial. El propietario puede crear su cuenta, iniciar sesión y registrar mascotas con acceso por rol, pero todavía no puede editarlas de forma segura.
+
+#### Métricas del Sprint
+
+| Métrica | Valor |
+| --- | --- |
+| Puntos comprometidos | 16 |
+| Puntos terminados (velocidad real) | 13 (HU-01, HU-02, HU-03 y HU-05) |
+| Velocidad supuesta | 15 (rango de 12 a 18) |
+| Tareas terminadas | 14 de 16 (87,5 %). Quedan T-12 y T-13 |
+| Horas planificadas | 47 |
+| Horas pendientes al cierre | 5 |
+
+#### Burndown real
+
+| Registro | Día del Sprint | Horas pendientes ideales | Horas pendientes reales |
+| --- | :---: | :---: | :---: |
+| Inicio | 0 | 47 | 47 |
+| Daily 1 | 2 | 38 | 41 |
+| Daily 2 | 4 | 28 | 33 |
+| Daily 3 | 6 | 19 | 24 |
+| Daily 4 | 8 | 9 | 14 |
+| Cierre | 10 | 0 | 5 |
+
+Desde la Daily 1 el avance real quedó por encima del ideal. Según la regla del mecanismo de seguimiento, en la Daily 2 el equipo revisó la causa: la configuración inicial del proyecto (T-02) y el control de acceso (T-07) tomaron más horas de las estimadas. Esto coincide con el riesgo R5 (desconocimiento del framework).
+
+#### Registro de impedimentos del Sprint 1
+
+| Fecha | Impedimento | Responsable | Acción | Estado |
+| --- | --- | --- | --- | --- |
+| 24/10/2026 | El proyecto no levantaba en la computadora de Eliam por diferencias de versión de la base de datos. | Maikel | Se documentaron en el README las versiones y los pasos de instalación. | Resuelto el 26/10/2026 |
+| 28/10/2026 | Dudas sobre cómo validar el rol en el servidor (T-07). | Maikel | Jose Pablo trabajó una sesión en pareja con Eliam. | Resuelto el 29/10/2026 |
+| 30/10/2026 | El tablero de GitHub Projects no permitía controlar los límites WIP como se había acordado. | Maikel | Se migró el tablero a Jira (versión 1.8 del documento). | Resuelto el 04/11/2026 |
+| 03/11/2026 | La prueba de permisos de la HU-04 permitió abrir una mascota ajena. | Eliam | La HU-04 vuelve a En progreso y se corrige en el siguiente Sprint. | Abierto |
+
+#### Adaptación del Product Backlog
+
+| Cambio | Motivo |
+| --- | --- |
+| La HU-04 (3 puntos) pasa al siguiente Sprint como primera historia, con prioridad P1. | No cumplió la Definición de Terminado. |
+| Nueva historia HU-14: "Como propietario, quiero ver la edad de cada mascota en mi lista, para no tener que calcularla". P2, 1 punto. | Retroalimentación del representante de la clínica. |
+| La HU-07 (cancelar cita, P2, 2 puntos) pasa al Sprint 4 (03/12/2026 al 16/12/2026). | La velocidad real (13) quedó por debajo de 15, por lo que se activa el Sprint 4 previsto en el plan de Sprints. |
+| La velocidad de referencia para planificar pasa de 15 a 13 puntos. | Se reemplaza el supuesto por el dato real, como indica el plan de Sprints. |
+
+### Parte 2. Sprint Retrospective
+
+**Formato elegido:** Start / Stop / Continue.
+**Regla de la sesión:** se discute el proceso y no se busca culpables.
+
+| Empezar (Start) | Dejar de hacer (Stop) | Seguir haciendo (Continue) |
+| --- | --- | --- |
+| Correr las pruebas de permisos antes de pasar una tarea a En pruebas, no solo al final. | Estimar las tareas técnicas nuevas sin preguntarle antes a quien conoce el framework. | Que nadie pruebe su propio código. |
+| Revisar el burndown en la misma Daily y no solo registrarlo. | Dejar preguntas bloqueantes sin responder en el chat durante más de un día. | Las Daily cortas de lunes, miércoles y viernes. |
+| Hacer sesiones cortas en pareja con Jose Pablo en las tareas difíciles. | Mover tarjetas tarde: hubo tareas terminadas que seguían en En progreso. | Documentar los pasos de instalación en el repositorio. |
+
+#### Acciones de mejora
+
+| ID | Acción concreta | Dueño | Fecha | Cómo se verifica |
+| --- | --- | --- | --- | --- |
+| A1 | Antes de mover una tarea a En pruebas, quien la desarrolló aplica la lista de pruebas de permisos (M-04), incluido el cambio de identificador en la dirección, y deja el resultado como comentario en la tarjeta de Jira. | Eliam Araya | Desde el 19/11/2026 | En la siguiente Review, todas las tarjetas terminadas tienen el comentario. |
+| A2 | Si el burndown queda por encima del ideal en dos registros seguidos, Maikel convoca ese mismo día una conversación de 15 minutos con el Product Owner y anota la decisión en el registro de impedimentos. | Maikel Chaves | Desde el 20/11/2026 | El registro de impedimentos muestra la conversación cada vez que se cumple la condición. |
+| A3 | Jose Pablo da una sesión de una hora en pareja cada martes con Maikel o Eliam sobre la tarea de mayor dificultad de la semana. | Jose Pablo Soto | Primera sesión el 24/11/2026 | El tablero muestra la tarea trabajada en pareja y la Daily del miércoles lo confirma. |
+
+Las tres acciones entran al Sprint Backlog del siguiente Sprint y se revisan en su Retrospective. A1 refuerza la mitigación de R3; A2 aplica la regla del burndown; A3 reduce los riesgos R1 y R5.
+
+---
+
+
 ### Tareas de mitigación para el Sprint 2
 
 Estas tareas se agregan al Sprint Backlog del Sprint 2, del 05/11/2026 al 18/11/2026.
@@ -965,6 +1115,10 @@ Estas tareas se agregan al Sprint Backlog del Sprint 2, del 05/11/2026 al 18/11/
 
 En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
 
+---
+
+
+
 ## Historial de actualizaciones
 
 | Versión | Fecha | Descripción de la actualización |
@@ -980,3 +1134,5 @@ En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
 | 1.8 | 04/11/2026 | Cambio del tablero de GitHub Projects a Jira: enlace al tablero del espacio VetCare, justificación de los límites WIP, carga de las historias y tareas del Sprint 1 y regla para mover una tarjeta a Terminado. |
 | 1.9 | 05/11/2026 | Reestructuración del detalle de las 13 historias de usuario con el formato de cinco partes (título, estructura, criterios de aceptación, estimación y prioridad, y notas adicionales o anexos), aplicado también a las historias HU-01 a HU-05 cargadas en Jira. |
 | 1.10 | 08/11/2026 | Incorporación de la Sección 08: matriz de riesgos con ocho riesgos, mapa de calor, plan de mitigación, adquisiciones críticas y tareas de mitigación para el Sprint 2. |
+| 1.11 | 18/11/2026 | Incorporación de la Sección 09 y del Acta de Sprint Review y Sprint Retrospective del Sprint 1 (docs/acta-sprint-1.md): Incremento contra la Definición de Terminado, velocidad, burndown, impedimentos, adaptación del Product Backlog y tres acciones de mejora con dueño y fecha. |
+| 1.12 | 18/11/2026 | Revisión de la Semana 2: se agregan al análisis de entorno la estructura organizacional y las restricciones conocidas de tiempo, presupuesto, tecnología y personas. |
