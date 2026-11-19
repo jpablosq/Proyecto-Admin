@@ -1117,7 +1117,21 @@ En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
 
 ---
 
+<<<<<<< HEAD
 
+=======
+## Sección 09: Acta de Sprint Review y Sprint Retrospective
+
+El acta del cierre del Sprint 1 está en [docs/acta-sprint-1.md](docs/acta-sprint-1.md). Registra el Incremento revisado contra la Definición de Terminado, las métricas y el burndown del Sprint, la retroalimentación, los cambios al Product Backlog y las acciones de mejora de la Retrospective.
+
+| Elemento | Resultado del Sprint 1 |
+| --- | --- |
+| Historias terminadas | HU-01, HU-02, HU-03 y HU-05 |
+| Velocidad | 13 de 16 puntos planificados |
+| Historia que vuelve al backlog | HU-04, porque falló la prueba de permisos sobre mascotas ajenas (riesgo R3) |
+| Historia nueva | HU-14, lista de médicos veterinarios para el administrador (P2) |
+| Acciones de mejora | A1: pruebas de permisos en cada historia (Eliam, 20/11/2026). A2: burndown en cada Daily con aviso al Product Owner (Maikel, 19/11/2026). A3: rama principal protegida con pull request (Maikel, 21/11/2026). |
+>>>>>>> e1422c6baf35b14799be767895ff4da72f27a696
 
 ## Historial de actualizaciones
 
