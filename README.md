@@ -1012,10 +1012,10 @@ En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
 | Elemento | Detalle |
 | --- | --- |
 | Sprint evaluado | Sprint 1, del 22/10/2026 al 04/11/2026 |
-| Fecha de la sesión | 18/11/2026 (simulación en clase, Semana 9) |
+| Fecha de la sesión | 18/11/2026  |
 | Sprint Goal | Que un propietario pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre propietarios, médicos veterinarios y administrador. |
 | Product Owner | Jose Pablo Soto Quesada |
-| Scrum Master (facilitador) | Maikel Chaves Salas |
+| Scrum Master  | Maikel Chaves Salas |
 | Developers | Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado |
 | Interesados presentes | Representante de la clínica (I1, I2 e I3): Jose Pablo Soto Quesada. Profesor (I6): observador. |
 | Redacción del acta | Edgar Eliam Araya Alvarado |
@@ -1055,7 +1055,7 @@ Criterios de la Definición de Terminado (DoD): (1) cumple sus criterios de acep
 | Tema | Decisión |
 | --- | --- |
 | Prioridades | La HU-04 es la primera historia del Sprint 3 (P1). La HU-14 entra como P2. |
-| Fechas | La HU-04 y la HU-14 van al Sprint 3 (19/11/2026 al 02/12/2026). La HU-07, la HU-12 y la HU-13 pasan al Sprint 4 (03/12/2026 al 16/12/2026). La fecha final del curso no cambia. |
+| Fechas | La HU-04 y la HU-14 van al Sprint 3 (19/11/2026 al 02/12/2026). La HU-07, la HU-12 y la HU-13 pasan al Sprint 4 (03/12/2026 al 16/12/2026).  |
 | Presupuesto | No hay presupuesto en dinero. Se mantienen las 47 horas por Sprint; las 6 horas pendientes de la HU-04 se hacen dentro de ellas, y las horas de la HU-14 se estiman en el Sprint Planning. |
 
 #### Métricas del Sprint
