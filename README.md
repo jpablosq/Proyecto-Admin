@@ -988,6 +988,23 @@ Los umbrales de los disparadores (dos días, dos Daily, una semana, 24 horas) so
 | Repositorio de código | GitHub, plan gratuito | Términos de uso del plan gratuito, sin costo | Cada integrante tiene una copia completa del repositorio en su computadora. |
 | Tablero de trabajo | Jira Software de Atlassian, plan gratuito | Términos de uso del plan gratuito, sin costo | Las historias y tareas se exportan a un archivo CSV y se pasan a otro tablero, como GitHub Projects. |
 
+### Tareas de mitigación para el Sprint 2
+
+Estas tareas se agregan al Sprint Backlog del Sprint 2, del 05/11/2026 al 18/11/2026.
+
+| ID | Riesgo | Tarea | Responsable | Horas estimadas |
+| --- | --- | --- | --- | :---: |
+| M-01 | R1 | Documentar el modelo de datos y la estructura del proyecto en el repositorio. | Jose Pablo Soto | 2 |
+| M-02 | R2 | Agregar en la base de datos la restricción que impide dos citas del mismo veterinario a la misma hora. | Jose Pablo Soto | 1 |
+| M-03 | R2 | Probar reservas simultáneas con datos ficticios. | Eliam Araya | 2 |
+| M-04 | R3 | Preparar la lista de pruebas de permisos por rol. | Eliam Araya | 2 |
+| M-05 | R4 | Contactar una clínica o un veterinario para revisar el sistema. | Jose Pablo Soto | 1 |
+| M-06 | R5 | Dar una sesión sobre el framework a Maikel y Eliam. | Jose Pablo Soto | 2 |
+| M-07 | R6 | Configurar la rama principal para que solo reciba cambios por pull request revisado. | Maikel Chaves | 1 |
+| M-08 | R7 | Guardar el script de la base de datos y programar un respaldo semanal. | Maikel Chaves | 2 |
+
+En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
+
 ## Sección 09: Acta de Sprint Review y Sprint Retrospective del Sprint 1
 
 ### Datos generales
@@ -1000,9 +1017,10 @@ Los umbrales de los disparadores (dos días, dos Daily, una semana, 24 horas) so
 | Product Owner | Jose Pablo Soto Quesada |
 | Scrum Master (facilitador) | Maikel Chaves Salas |
 | Developers | Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado |
+| Interesados presentes | Representante de la clínica (I1, I2 e I3): Jose Pablo Soto Quesada. Profesor (I6): observador. |
 | Redacción del acta | Edgar Eliam Araya Alvarado |
 
-Todavía no hay una clínica confirmada (riesgo R4). Por eso, en esta sesión Jose Pablo representa a la clínica (I1, I2 e I3), según el plan de contingencia de R4. Toda la demostración se hizo con datos ficticios (RNF-07).
+Todavía no hay una clínica confirmada (riesgo R4). Por eso, en esta sesión Jose Pablo representa a la clínica, según el plan de contingencia de R4. Como también es el Product Owner, la aceptación de cada historia se decide contra sus criterios de aceptación y la Definición de Terminado, que prueba un integrante distinto de quien la desarrolló. Toda la demostración se hizo con datos ficticios (RNF-07).
 
 ### Parte 1. Sprint Review
 
@@ -1018,7 +1036,7 @@ Criterios de la Definición de Terminado (DoD): (1) cumple sus criterios de acep
 | HU-04 Consulta y edición de mascotas | 3 | No | Sí | Sí | No | Sí | No terminada |
 | HU-05 Registro de médicos veterinarios | 2 | Sí | Sí | Sí | Sí | Sí | Terminada |
 
-**Qué pasó con la HU-04:** en la prueba de permisos se cambió el identificador de la mascota en la dirección y un propietario logró abrir el formulario de edición de una mascota ajena. Falla el quinto criterio de aceptación. Esto activa el disparador del riesgo R3: la historia vuelve a En progreso y no se presenta como terminada.
+**Qué pasó con la HU-04:** en la prueba de permisos se cambió el identificador de la mascota en la dirección y un propietario logró abrir el formulario de edición de una mascota ajena. Falla el quinto criterio de aceptación. Esto activa el disparador del riesgo R3: la historia vuelve a En progreso y no se presenta como terminada en la Review. Solo se informó el resultado de la prueba.
 
 #### Qué se mostró, qué se aceptó y qué cambia
 
@@ -1026,11 +1044,19 @@ Criterios de la Definición de Terminado (DoD): (1) cumple sus criterios de acep
 | --- | --- | --- |
 | Registro de un propietario, validación de campos y correo repetido | Aceptado | Nada |
 | Inicio de sesión con los tres roles y bloqueo de un propietario en funciones de veterinario | Aceptado | Nada |
-| Registro de dos mascotas para el mismo propietario | Aceptado, con observación | Se pide que la lista muestre también la edad calculada (nueva historia, P2) |
-| Lista y edición de mascotas | No aceptado | La HU-04 pasa al siguiente Sprint con prioridad P1 |
+| Registro de dos mascotas para el mismo propietario | Aceptado, con observación | Se pide que la lista muestre también la edad calculada (nueva historia HU-14, P2) |
 | Registro de un veterinario por el administrador | Aceptado | Nada |
+| Lista y edición de mascotas (HU-04): solo se informó el resultado de la prueba, no se presentó como terminada | No aceptado | La HU-04 pasa al Sprint 3 como primera historia, con prioridad P1 |
 
 **Sprint Goal:** cumplido de forma parcial. El propietario puede crear su cuenta, iniciar sesión y registrar mascotas con acceso por rol, pero todavía no puede editarlas de forma segura.
+
+#### Decisiones sobre prioridades, fechas y presupuesto
+
+| Tema | Decisión |
+| --- | --- |
+| Prioridades | La HU-04 es la primera historia del Sprint 3 (P1). La HU-14 entra como P2. |
+| Fechas | La HU-04 y la HU-14 van al Sprint 3 (19/11/2026 al 02/12/2026). La HU-07, la HU-12 y la HU-13 pasan al Sprint 4 (03/12/2026 al 16/12/2026). La fecha final del curso no cambia. |
+| Presupuesto | No hay presupuesto en dinero. Se mantienen las 47 horas por Sprint; las 6 horas pendientes de la HU-04 se hacen dentro de ellas, y las horas de la HU-14 se estiman en el Sprint Planning. |
 
 #### Métricas del Sprint
 
@@ -1041,7 +1067,7 @@ Criterios de la Definición de Terminado (DoD): (1) cumple sus criterios de acep
 | Velocidad supuesta | 15 (rango de 12 a 18) |
 | Tareas terminadas | 14 de 16 (87,5 %). Quedan T-12 y T-13 |
 | Horas planificadas | 47 |
-| Horas pendientes al cierre | 5 |
+| Horas pendientes al cierre | 6 (T-12: 4 horas y T-13: 2 horas) |
 
 #### Burndown real
 
@@ -1052,7 +1078,7 @@ Criterios de la Definición de Terminado (DoD): (1) cumple sus criterios de acep
 | Daily 2 | 4 | 28 | 33 |
 | Daily 3 | 6 | 19 | 24 |
 | Daily 4 | 8 | 9 | 14 |
-| Cierre | 10 | 0 | 5 |
+| Cierre | 10 | 0 | 6 |
 
 Desde la Daily 1 el avance real quedó por encima del ideal. Según la regla del mecanismo de seguimiento, en la Daily 2 el equipo revisó la causa: la configuración inicial del proyecto (T-02) y el control de acceso (T-07) tomaron más horas de las estimadas. Esto coincide con el riesgo R5 (desconocimiento del framework).
 
@@ -1063,16 +1089,34 @@ Desde la Daily 1 el avance real quedó por encima del ideal. Según la regla del
 | 24/10/2026 | El proyecto no levantaba en la computadora de Eliam por diferencias de versión de la base de datos. | Maikel | Se documentaron en el README las versiones y los pasos de instalación. | Resuelto el 26/10/2026 |
 | 28/10/2026 | Dudas sobre cómo validar el rol en el servidor (T-07). | Maikel | Jose Pablo trabajó una sesión en pareja con Eliam. | Resuelto el 29/10/2026 |
 | 30/10/2026 | El tablero de GitHub Projects no permitía controlar los límites WIP como se había acordado. | Maikel | Se migró el tablero a Jira (versión 1.8 del documento). | Resuelto el 04/11/2026 |
-| 03/11/2026 | La prueba de permisos de la HU-04 permitió abrir una mascota ajena. | Eliam | La HU-04 vuelve a En progreso y se corrige en el siguiente Sprint. | Abierto |
+| 03/11/2026 | La prueba de permisos de la HU-04 permitió abrir una mascota ajena. | Eliam | La HU-04 vuelve a En progreso y se corrige en el Sprint 3. | Abierto |
 
 #### Adaptación del Product Backlog
 
+La tabla del Product Backlog de la Sección 05 muestra el estado inicial. Estos son los cambios que salen de la Review:
+
 | Cambio | Motivo |
 | --- | --- |
-| La HU-04 (3 puntos) pasa al siguiente Sprint como primera historia, con prioridad P1. | No cumplió la Definición de Terminado. |
-| Nueva historia HU-14: "Como propietario, quiero ver la edad de cada mascota en mi lista, para no tener que calcularla". P2, 1 punto. | Retroalimentación del representante de la clínica. |
-| La HU-07 (cancelar cita, P2, 2 puntos) pasa al Sprint 4 (03/12/2026 al 16/12/2026). | La velocidad real (13) quedó por debajo de 15, por lo que se activa el Sprint 4 previsto en el plan de Sprints. |
+| La HU-04 (3 puntos) pasa al Sprint 3 como primera historia, con prioridad P1. | No cumplió la Definición de Terminado. |
+| Nueva historia HU-14: "Como propietario, quiero ver la edad de cada mascota en mi lista, para no tener que calcularla". RF-06, P2, 1 punto. Su detalle de cinco partes se redacta en el Sprint Planning del Sprint 3. | Retroalimentación del representante de la clínica. |
+| La HU-07 (cancelar cita, P2, 2 puntos) pasa al Sprint 4 (03/12/2026 al 16/12/2026). | La velocidad real (13) quedó por debajo de 15, por lo que se activa el Sprint 4 previsto. Es el plan de contingencia del riesgo R5. |
+| La HU-12 y la HU-13 (3 puntos cada una) pasan al Sprint 4. | Con la HU-04 y la HU-14, el Sprint 3 llegaría a 18 puntos y la velocidad de referencia es 13. |
 | La velocidad de referencia para planificar pasa de 15 a 13 puntos. | Se reemplaza el supuesto por el dato real, como indica el plan de Sprints. |
+
+Plan de Sprints actualizado:
+
+| Sprint | Fechas | Historias | Puntos |
+| --- | --- | --- | :---: |
+| Sprint 1 | 22/10/2026 al 04/11/2026 | HU-01, HU-02, HU-03 y HU-05 terminadas | 13 |
+| Sprint 2 | 05/11/2026 al 18/11/2026 | HU-06, HU-08, HU-09 | 13 |
+| Sprint 3 | 19/11/2026 al 02/12/2026 | HU-04, HU-14, HU-10, HU-11 | 12 |
+| Sprint 4 | 03/12/2026 al 16/12/2026 | HU-07, HU-12, HU-13 | 8 |
+
+Las dependencias se mantienen: la HU-12 y la HU-13 dependen de la HU-10 y la HU-11 (Sprint 3), y la HU-07 depende de la HU-06 (Sprint 2).
+
+#### Actualización de riesgos
+
+En este Sprint se activaron los disparadores de R3 (acceso por rol, HU-04) y R5 (burndown por encima del ideal en dos registros seguidos). Se aplicaron sus planes de contingencia. La matriz de riesgos de la Sección 08 se revisa en el Sprint Planning del Sprint 3.
 
 ### Parte 2. Sprint Retrospective
 
@@ -1093,45 +1137,7 @@ Desde la Daily 1 el avance real quedó por encima del ideal. Según la regla del
 | A2 | Si el burndown queda por encima del ideal en dos registros seguidos, Maikel convoca ese mismo día una conversación de 15 minutos con el Product Owner y anota la decisión en el registro de impedimentos. | Maikel Chaves | Desde el 20/11/2026 | El registro de impedimentos muestra la conversación cada vez que se cumple la condición. |
 | A3 | Jose Pablo da una sesión de una hora en pareja cada martes con Maikel o Eliam sobre la tarea de mayor dificultad de la semana. | Jose Pablo Soto | Primera sesión el 24/11/2026 | El tablero muestra la tarea trabajada en pareja y la Daily del miércoles lo confirma. |
 
-Las tres acciones entran al Sprint Backlog del siguiente Sprint y se revisan en su Retrospective. A1 refuerza la mitigación de R3; A2 aplica la regla del burndown; A3 reduce los riesgos R1 y R5.
-
----
-
-
-### Tareas de mitigación para el Sprint 2
-
-Estas tareas se agregan al Sprint Backlog del Sprint 2, del 05/11/2026 al 18/11/2026.
-
-| ID | Riesgo | Tarea | Responsable | Horas estimadas |
-| --- | --- | --- | --- | :---: |
-| M-01 | R1 | Documentar el modelo de datos y la estructura del proyecto en el repositorio. | Jose Pablo Soto | 2 |
-| M-02 | R2 | Agregar en la base de datos la restricción que impide dos citas del mismo veterinario a la misma hora. | Jose Pablo Soto | 1 |
-| M-03 | R2 | Probar reservas simultáneas con datos ficticios. | Eliam Araya | 2 |
-| M-04 | R3 | Preparar la lista de pruebas de permisos por rol. | Eliam Araya | 2 |
-| M-05 | R4 | Contactar una clínica o un veterinario para revisar el sistema. | Jose Pablo Soto | 1 |
-| M-06 | R5 | Dar una sesión sobre el framework a Maikel y Eliam. | Jose Pablo Soto | 2 |
-| M-07 | R6 | Configurar la rama principal para que solo reciba cambios por pull request revisado. | Maikel Chaves | 1 |
-| M-08 | R7 | Guardar el script de la base de datos y programar un respaldo semanal. | Maikel Chaves | 2 |
-
-En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
-
----
-
-<<<<<<< HEAD
-
-=======
-## Sección 09: Acta de Sprint Review y Sprint Retrospective
-
-El acta del cierre del Sprint 1 está en [docs/acta-sprint-1.md](docs/acta-sprint-1.md). Registra el Incremento revisado contra la Definición de Terminado, las métricas y el burndown del Sprint, la retroalimentación, los cambios al Product Backlog y las acciones de mejora de la Retrospective.
-
-| Elemento | Resultado del Sprint 1 |
-| --- | --- |
-| Historias terminadas | HU-01, HU-02, HU-03 y HU-05 |
-| Velocidad | 13 de 16 puntos planificados |
-| Historia que vuelve al backlog | HU-04, porque falló la prueba de permisos sobre mascotas ajenas (riesgo R3) |
-| Historia nueva | HU-14, lista de médicos veterinarios para el administrador (P2) |
-| Acciones de mejora | A1: pruebas de permisos en cada historia (Eliam, 20/11/2026). A2: burndown en cada Daily con aviso al Product Owner (Maikel, 19/11/2026). A3: rama principal protegida con pull request (Maikel, 21/11/2026). |
->>>>>>> e1422c6baf35b14799be767895ff4da72f27a696
+Las tres acciones entran al Sprint Backlog del Sprint 3 y se revisan en su Retrospective. A1 refuerza la mitigación de R3; A2 aplica la regla del burndown; A3 reduce los riesgos R1 y R5.
 
 ## Historial de actualizaciones
 
