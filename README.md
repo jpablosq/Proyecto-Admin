@@ -1603,9 +1603,12 @@ Como resultado de la incorporación de dos profesionales y la replanificación d
 
 | ID | Riesgo | Tarea | Responsable | Esfuerzo | Estado |
 | --- | --- | --- | --- | --- | --- |
-| M-09 | R8 | Realizar una inducción técnica a Daniel y Valeria, verificar sus accesos y revisar las herramientas y la documentación del proyecto. | Maikel Chaves | Por estimar | Pendiente de registrar en Jira |
-| M-10 | R9 | Revisar el avance del Sprint 3 frente a la capacidad efectiva y documentar las decisiones de priorización o traslado de historias. | Maikel Chaves y Jose Pablo Soto | Por estimar | Pendiente de registrar en Jira |
-| M-11 | R10 | Registrar las horas contratadas, calcular los costos proyectados y verificar las autorizaciones de posibles ampliaciones presupuestarias. | Jose Pablo Soto | Por estimar | Pendiente de registrar en Jira |
+
+| ID | Riesgo | Tarea | Responsable | Esfuerzo | Estado |
+| --- | --- | --- | --- | --- | --- |
+| M-09 | R8 | Realizar una inducción técnica a Daniel y Valeria, verificar sus accesos y revisar las herramientas y la documentación del proyecto. | Maikel Chaves | Por estimar | Registrada en Jira ([VET-25](https://josepablonet.atlassian.net/browse/VET-25)). Por hacer. |
+| M-10 | R9 | Revisar el avance del Sprint 3 frente a la capacidad efectiva y documentar las decisiones de priorización o traslado de historias. | Maikel Chaves y Jose Pablo Soto | Por estimar | Registrada en Jira ([VET-26](https://josepablonet.atlassian.net/browse/VET-26)). Por hacer. |
+| M-11 | R10 | Registrar las horas contratadas, calcular los costos proyectados y verificar las autorizaciones de posibles ampliaciones presupuestarias. | Jose Pablo Soto | Por estimar | Registrada en Jira ([VET-27](https://josepablonet.atlassian.net/browse/VET-27)). Por hacer. |
 
 #### Criterios de seguimiento
 
@@ -1615,11 +1618,11 @@ Como resultado de la incorporación de dos profesionales y la replanificación d
 
 Las tareas M-09, M-10 y M-11 constituyen acciones propuestas de mitigación. No se considerarán ejecutadas hasta contar con evidencias.
 
-Su esfuerzo está pendiente de estimación. Antes de incorporarlas al Sprint Backlog, el equipo deberá determinar si forman parte de las actividades generales ya planificadas o si requieren horas adicionales.
+Las tres tareas ya están incorporadas al Sprint Backlog del Sprint 3 en Jira. Su esfuerzo permanece pendiente de estimación. Antes de agregar horas adicionales, el equipo deberá comprobar si estas actividades están contempladas dentro de las tareas generales T3-20 y T3-22, para evitar duplicaciones.
 
 No se sumarán automáticamente a las 79 horas de asignación objetivo del Sprint 3, para evitar contabilizar dos veces el mismo trabajo.
 
-Una vez registradas en Jira, se actualizarán sus responsables, estimaciones y estados.
+Las incidencias se encuentran registradas en Jira con sus responsables asignados y estado "Tareas por hacer". Las estimaciones se actualizarán después de conciliar el esfuerzo con la capacidad planificada del Sprint 3.
 
 #### Trazabilidad de las tareas de mitigación en Jira
 
@@ -1631,7 +1634,7 @@ Las tareas de mitigación identificadas durante la replanificación del 23/11/20
 | M-10 | R9 — Sobrecarga del Sprint 3 | [VET-26](https://josepablonet.atlassian.net/browse/VET-26) |
 | M-11 | R10 — Incremento de costos | [VET-27](https://josepablonet.atlassian.net/browse/VET-27) |
 
-Las referencias deberán sustituirse por los identificadores reales asignados por Jira.
+Los identificadores VET-25, VET-26 y VET-27 corresponden a las incidencias reales y verificadas en Jira. Las tres tareas forman parte del Sprint 3 y permanecen pendientes de ejecución.
 
 El estado, el responsable y el esfuerzo de cada incidencia se consultarán en el tablero del proyecto. Las tareas de mitigación no se considerarán ejecutadas sin las evidencias correspondientes.
 
@@ -2142,10 +2145,11 @@ La distribución consolidada de las 14 historias y sus 46 puntos se encuentra en
 
 | Sprint | Fechas | Historias | Puntos planificados | Estado |
 | --- | --- | --- | ---: | --- |
-| Sprint 1 | 22/10/2026 al 04/11/2026 | HU-01, HU-02, HU-03 y HU-05 | 13 | Cerrado: 13 puntos |
-| Sprint 2 | 05/11/2026 al 18/11/2026 | HU-06, HU-08 y HU-09 | 13 | Cerrado en el escenario: 11 puntos terminados y 2 pendientes |
-| Sprint 3 | 19/11/2026 al 02/12/2026 | HU-04, HU-07, HU-10, HU-11, HU-12, HU-13 y HU-14 | 20 | Replanificación propuesta |
-| Sprint 4 | 03/12/2026 al 16/12/2026 | HU-09 y otras historias pendientes, si las hubiera | 2 + contingencias | Planificado como contingencia |
+| Sprint 1 | 22/10/2026 al 04/11/2026 | HU-01, HU-02, HU-03 y HU-05 | 13 | Resultado registrado en el acta: 13 puntos. Cierre y evidencias técnicas pendientes de conciliar en Jira. |
+| Sprint 2 | 05/11/2026 al 18/11/2026 | HU-06 y HU-08 | 11 | Resultado del escenario de planificación. Pendiente de verificación técnica y cierre en Jira. |
+| Sprint 3 | 19/11/2026 al 02/12/2026 | HU-04, HU-07, HU-10, HU-11, HU-12, HU-13 y HU-14 | 20 | Replanificación registrada en Jira. Ejecución y aceptación pendientes de verificar. |
+| Sprint 4 | 03/12/2026 al 16/12/2026 | HU-09 y otras historias pendientes, si las hubiera | 2 | Contingencia planificada. |
+| **Total** | | **14 historias** | **46** | **Product Backlog actualizado** |
 
 
 #### Seguimiento del Sprint 2
