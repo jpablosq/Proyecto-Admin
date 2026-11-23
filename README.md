@@ -1478,7 +1478,9 @@ Los riesgos se identificaron en una lluvia de ideas del equipo. Se califican con
 
 Con la actualización del 23/11/2026, siete riesgos se clasifican con prioridad alta: R1, R2, R3, R4, R5, R8 y R9. Los riesgos R6, R7 y R10 requieren seguimiento. O1 se mantiene como oportunidad aceptada.
 
-La imagen del mapa de calor representa la evaluación inicial de riesgos. Se encuentra pendiente de actualización para incorporar visualmente R8, R9 y R10. La tabla anterior constituye el registro consolidado vigente.
+El mapa de calor presenta la evaluación consolidada de los riesgos de VetCare, actualizada al 23/11/2026. Incluye los diez riesgos identificados (R1-R10) y la oportunidad O1, ubicados según su probabilidad e impacto.
+
+La representación visual y la matriz de riesgos utilizan la misma escala de valoración. Los riesgos R1, R2, R3, R4, R5, R8 y R9 requieren atención prioritaria, mientras que R6, R7 y R10 permanecen bajo seguimiento.
 
 ### Plan de mitigación
 
@@ -1493,9 +1495,9 @@ La estrategia de respuesta sigue las opciones de la Guía del PMBOK (PMI, 2017):
 | R5 | Mitigar | Jose Pablo da una sesión sobre el framework a Maikel y Eliam antes de empezar la HU-06. | M-06 |
 | R6 | Mitigar | Los cambios entran a la rama principal por pull request, revisado por otro integrante. | M-07 |
 | R7 | Mitigar | Se guarda en el repositorio el script que crea la base de datos y se hace un respaldo semanal de los datos ficticios. | M-08 |
-| R8 | Mitigar | Maikel coordina una inducción técnica para Daniel y Valeria, verifica sus accesos a las herramientas y organiza sesiones de trabajo conjunto para facilitar su incorporación. | Pendiente de registrar |
-| R9 | Mitigar | Jose Pablo y Maikel revisan el avance del Sprint 3, priorizan las historias esenciales y trasladan al Sprint 4 las historias que no puedan finalizarse cumpliendo la Definition of Done. | Pendiente de registrar |
-| R10 | Mitigar | Jose Pablo controla las horas contratadas y compara el gasto proyectado con el presupuesto aprobado. Cualquier ampliación de horas o presupuesto requiere autorización previa. | Pendiente de registrar |
+| R8 | Mitigar | Maikel coordina una inducción técnica para Daniel y Valeria, verifica sus accesos a las herramientas y organiza sesiones de trabajo conjunto para facilitar su incorporación. | M-09 |
+| R9 | Mitigar | Jose Pablo y Maikel revisan el avance del Sprint 3, priorizan las historias esenciales y trasladan al Sprint 4 las historias que no puedan finalizarse cumpliendo la Definition of Done. | M-10 |
+| R10 | Mitigar | Jose Pablo controla las horas contratadas y compara el gasto proyectado con el presupuesto aprobado. Cualquier ampliación de horas o presupuesto requiere autorización previa. | M-11 |
 | O1 | Aceptar | Si una clínica muestra interés, se conversa con ella al cierre del curso. No requiere acciones en el backlog. | Ninguno |
 
 | ID | Disparador | Plan de contingencia | Fecha de revisión | Riesgo residual |
@@ -1592,6 +1594,48 @@ Estas tareas se agregan al Sprint Backlog del Sprint 2, del 05/11/2026 al 18/11/
 | M-08 | R7 | Guardar el script de la base de datos y programar un respaldo semanal. | Maikel Chaves | 2 |
 
 En total son 13 horas: 6 de Jose Pablo, 4 de Eliam y 3 de Maikel.
+
+### Tareas de mitigación propuestas para el Sprint 3
+
+**Fecha de identificación:** 23/11/2026.
+
+Como resultado de la incorporación de dos profesionales y la replanificación del Sprint 3, se identifican tres nuevas actividades preventivas.
+
+| ID | Riesgo | Tarea | Responsable | Esfuerzo | Estado |
+| --- | --- | --- | --- | --- | --- |
+| M-09 | R8 | Realizar una inducción técnica a Daniel y Valeria, verificar sus accesos y revisar las herramientas y la documentación del proyecto. | Maikel Chaves | Por estimar | Pendiente de registrar en Jira |
+| M-10 | R9 | Revisar el avance del Sprint 3 frente a la capacidad efectiva y documentar las decisiones de priorización o traslado de historias. | Maikel Chaves y Jose Pablo Soto | Por estimar | Pendiente de registrar en Jira |
+| M-11 | R10 | Registrar las horas contratadas, calcular los costos proyectados y verificar las autorizaciones de posibles ampliaciones presupuestarias. | Jose Pablo Soto | Por estimar | Pendiente de registrar en Jira |
+
+#### Criterios de seguimiento
+
+- **M-09:** Se verificará mediante el registro de inducción, la confirmación de accesos y la identificación de posibles impedimentos.
+- **M-10:** Se verificará mediante el tablero de Jira, la revisión del avance y el registro de decisiones que afecten el Sprint Backlog.
+- **M-11:** Se verificará mediante el registro de horas, la comparación de costos y las autorizaciones correspondientes.
+
+Las tareas M-09, M-10 y M-11 constituyen acciones propuestas de mitigación. No se considerarán ejecutadas hasta contar con evidencias.
+
+Su esfuerzo está pendiente de estimación. Antes de incorporarlas al Sprint Backlog, el equipo deberá determinar si forman parte de las actividades generales ya planificadas o si requieren horas adicionales.
+
+No se sumarán automáticamente a las 79 horas de asignación objetivo del Sprint 3, para evitar contabilizar dos veces el mismo trabajo.
+
+Una vez registradas en Jira, se actualizarán sus responsables, estimaciones y estados.
+
+#### Trazabilidad de las tareas de mitigación en Jira
+
+Las tareas de mitigación identificadas durante la replanificación del 23/11/2026 se registran y supervisan mediante el tablero de Jira del proyecto VetCare.
+
+| Tarea | Riesgo relacionado | Incidencia en Jira |
+| --- | --- | --- |
+| M-09 | R8 — Adaptación de los nuevos integrantes | [VET-25](https://josepablonet.atlassian.net/browse/VET-25) |
+| M-10 | R9 — Sobrecarga del Sprint 3 | [VET-26](https://josepablonet.atlassian.net/browse/VET-26) |
+| M-11 | R10 — Incremento de costos | [VET-27](https://josepablonet.atlassian.net/browse/VET-27) |
+
+Las referencias deberán sustituirse por los identificadores reales asignados por Jira.
+
+El estado, el responsable y el esfuerzo de cada incidencia se consultarán en el tablero del proyecto. Las tareas de mitigación no se considerarán ejecutadas sin las evidencias correspondientes.
+
+Las estimaciones de estas actividades deberán conciliarse con las tareas existentes del Sprint 3 antes de modificar la asignación objetivo de 79 horas.
 
 ## Sección 09: Calidad y Definition of Done
 
@@ -1889,7 +1933,9 @@ Criterios de la Definición de Terminado (DoD): (1) cumple sus criterios de acep
 | --- | --- |
 | Prioridades | La HU-04 es la primera historia del Sprint 3 (P1). La HU-14 entra como P2. |
 | Fechas | La HU-04 y la HU-14 van al Sprint 3 (19/11/2026 al 02/12/2026). La HU-07, la HU-12 y la HU-13 pasan al Sprint 4 (03/12/2026 al 16/12/2026).  |
-| Presupuesto | No hay presupuesto en dinero. Se mantienen las 47 horas por Sprint; las 6 horas pendientes de la HU-04 se hacen dentro de ellas, y las horas de la HU-14 se estiman en el Sprint Planning. |
+| Presupuesto | Al momento de esta revisión, el 18/11/2026, el proyecto todavía contemplaba únicamente a los tres integrantes originales, con una capacidad de 47 horas por Sprint y sin costos de contratación definidos. La ampliación del equipo y su presupuesto se incorporaron posteriormente, el 23/11/2026, mediante la solicitud CR-02. Los costos actualizados se documentan en la Sección 07. |
+
+**Nota de trazabilidad:** Las decisiones anteriores corresponden a la planificación documentada el 18/11/2026. La redistribución de historias del Sprint 3, la incorporación de los dos profesionales contratados y los cambios presupuestarios realizados el 23/11/2026 se registran posteriormente en el apartado "Replanificación de Sprints por ampliación del equipo". Esta actualización reemplaza la planificación anterior para las iteraciones pendientes, sin modificar el registro histórico del Sprint 1.
 
 ##### Métricas del Sprint
 
@@ -1936,7 +1982,11 @@ La tabla del Product Backlog de la Sección 05 muestra el estado inicial. Estos 
 | La HU-12 y la HU-13 (3 puntos cada una) pasan al Sprint 4. | Con la HU-04 y la HU-14, el Sprint 3 llegaría a 18 puntos y la velocidad de referencia es 13. |
 | La velocidad de referencia para planificar pasa de 15 a 13 puntos. | Se reemplaza el supuesto por el dato real, como indica el plan de Sprints. |
 
-Plan de Sprints actualizado:
+**Plan de Sprints posterior a la Sprint Review del 18/11/2026 (versión histórica):**
+
+La siguiente distribución corresponde a las decisiones documentadas después de la revisión del Sprint 1. Se conserva como evidencia de la evolución de la planificación.
+
+Este cronograma fue reemplazado por la replanificación del 23/11/2026, realizada tras la ampliación del equipo. Por lo tanto, no representa la distribución vigente de las historias pendientes.
 
 | Sprint | Fechas | Historias | Puntos |
 | --- | --- | --- | :---: |
@@ -1986,9 +2036,11 @@ El objetivo de esta revisión es concentrar las historias pendientes en el Sprin
 
 **Historias seleccionadas:** HU-04, HU-07, HU-10, HU-11, HU-12, HU-13 y HU-14.
 
-**Puntos comprometidos:** 20.
+**Puntos incluidos en la replanificación:** 20.
 
-**Capacidad planificada:** 79 horas.
+**Asignación objetivo:** 79 horas distribuidas entre los cinco integrantes.
+
+**Capacidad efectiva del Sprint 3:** Pendiente de confirmar según las horas ejecutadas antes del 23/11/2026 y la disponibilidad real del equipo durante el periodo restante.
 
 La distribución de tareas considera las competencias de los integrantes, las dependencias entre historias y la necesidad de realizar pruebas por una persona distinta de quien desarrolla cada funcionalidad.
 
@@ -2033,6 +2085,32 @@ La capacidad de 79 horas corresponde a un Sprint completo con los cinco integran
 
 Las horas asignadas representan la distribución objetivo de trabajo y se ajustarán si la disponibilidad efectiva es inferior a la capacidad estimada.
 
+#### Validación de la capacidad efectiva del Sprint 3
+
+**Fecha de corte de la replanificación:** 23/11/2026.
+
+La asignación de 79 horas representa el esfuerzo objetivo de las 22 tareas del Sprint 3. No debe interpretarse automáticamente como capacidad disponible o trabajo ejecutado.
+
+Los integrantes originales participaron en el Sprint desde el 19/11/2026. Daniel Rojas y Valeria Méndez se incorporaron a la planificación el 23/11/2026, por lo que su disponibilidad debe verificarse para el periodo restante.
+
+| Integrante | Horas asignadas en el plan | Horas ejecutadas al corte | Horas disponibles para el resto del Sprint |
+| --- | ---: | --- | --- |
+| Jose Pablo Soto Quesada | 14 | Pendiente de confirmar | Pendiente de confirmar |
+| Maikel Chaves Salas | 16 | Pendiente de confirmar | Pendiente de confirmar |
+| Edgar Eliam Araya Alvarado | 17 | Pendiente de confirmar | Pendiente de confirmar |
+| Daniel Rojas | 16 | No aplica antes de su incorporación | Pendiente de confirmar |
+| Valeria Méndez | 16 | No aplica antes de su incorporación | Pendiente de confirmar |
+| **Total** | **79** | **Pendiente** | **Pendiente** |
+
+La capacidad efectiva se determinará sumando las horas ya ejecutadas y las horas de trabajo disponibles confirmadas para el periodo restante.
+
+No se realizará una reducción proporcional automática de las 16 horas asignadas a cada profesional contratado, porque su disponibilidad puede distribuirse de distintas maneras durante los días restantes del Sprint.
+
+Si la capacidad confirmada resulta insuficiente, los Developers revisarán la viabilidad de las tareas y negociarán con el Product Owner los ajustes necesarios para proteger el Sprint Goal.
+
+Los puntos de historia no se convertirán directamente en horas. La estimación de 20 puntos representa tamaño relativo y complejidad, mientras que las 79 horas corresponden al esfuerzo de las tareas planificadas.
+
+Los valores definitivos se actualizarán cuando se disponga de los registros de trabajo y de la disponibilidad confirmada.
 
 #### Dependencias y orden de ejecución
 
@@ -2048,11 +2126,19 @@ El Scrum Master dará seguimiento al avance mediante el tablero de Jira y el reg
 
 Cada historia deberá cumplir sus criterios de aceptación y la Definition of Done antes de pasar a Terminado.
 
-La planificación contempla 20 puntos y 79 horas de capacidad. Estos valores constituyen el compromiso y las estimaciones del Sprint, no resultados completados.
+La replanificación incluye 20 puntos de historia y una asignación objetivo de 79 horas. Estos valores son estimaciones y no representan trabajo terminado ni capacidad efectiva confirmada. El seguimiento del Sprint verificará las horas disponibles, el esfuerzo ejecutado y el cumplimiento de la Definition of Done.
 
 Al finalizar el Sprint se registrarán las historias terminadas, la velocidad alcanzada, las desviaciones de esfuerzo y las acciones de mejora correspondientes.
 
-#### Plan de Sprints revisado
+#### Plan de Sprints revisado al 23/11/2026
+
+Esta planificación reemplaza la distribución histórica del 18/11/2026 y considera la ampliación del equipo a cinco integrantes.
+
+El Sprint 2 contempló originalmente 13 puntos, de los cuales 11 se consideran completados en el escenario de planificación y 2 corresponden a la HU-09 trasladada al Sprint 4.
+
+Por tanto, los 2 puntos de la HU-09 no deben contabilizarse dos veces al calcular el alcance total del producto.
+
+La distribución consolidada de las 14 historias y sus 46 puntos se encuentra en el Release Plan de la Sección 07. Ese cronograma constituye la referencia de planificación vigente al 23/11/2026, sujeta a validación de capacidad y resultados.
 
 | Sprint | Fechas | Historias | Puntos planificados | Estado |
 | --- | --- | --- | ---: | --- |
@@ -2184,6 +2270,132 @@ Este registro permite dar seguimiento a las decisiones relevantes de VetCare y c
 Las decisiones se registran según las actas y los documentos de planificación disponibles.
 
 Una decisión documentada no constituye, por sí sola, evidencia de que una funcionalidad haya sido implementada o probada.
+
+### Trazabilidad de historias y tareas en Jira
+
+**Fecha de revisión:** 23/11/2026.
+
+Esta sección relaciona los identificadores internos del Product Backlog de VetCare con las incidencias reales del proyecto en Jira, para facilitar el seguimiento de las historias, sus estimaciones, los Sprints asignados y las evidencias pendientes.
+
+#### Correspondencia de historias de usuario
+
+| Historia | Incidencia en Jira | Sprint vigente | Puntos |
+| --- | --- | --- | ---: |
+| HU-01 | [VET-3](https://josepablonet.atlassian.net/browse/VET-3) | Sprint 1 | 3 |
+| HU-02 | [VET-7](https://josepablonet.atlassian.net/browse/VET-7) | Sprint 1 | 3 |
+| HU-03 | [VET-11](https://josepablonet.atlassian.net/browse/VET-11) | Sprint 1 | 5 |
+| HU-04 | [VET-15](https://josepablonet.atlassian.net/browse/VET-15) | Sprint 3 | 3 |
+| HU-05 | [VET-18](https://josepablonet.atlassian.net/browse/VET-18) | Sprint 1 | 2 |
+| HU-06 | [VET-28](https://josepablonet.atlassian.net/browse/VET-28) | Sprint 2 | 8 |
+| HU-07 | [VET-29](https://josepablonet.atlassian.net/browse/VET-29) | Sprint 3 | 2 |
+| HU-08 | [VET-30](https://josepablonet.atlassian.net/browse/VET-30) | Sprint 2 | 3 |
+| HU-09 | [VET-31](https://josepablonet.atlassian.net/browse/VET-31) | Sprint 4 | 2 |
+| HU-10 | [VET-32](https://josepablonet.atlassian.net/browse/VET-32) | Sprint 3 | 5 |
+| HU-11 | [VET-33](https://josepablonet.atlassian.net/browse/VET-33) | Sprint 3 | 3 |
+| HU-12 | [VET-34](https://josepablonet.atlassian.net/browse/VET-34) | Sprint 3 | 3 |
+| HU-13 | [VET-35](https://josepablonet.atlassian.net/browse/VET-35) | Sprint 3 | 3 |
+| HU-14 | [VET-36](https://josepablonet.atlassian.net/browse/VET-36) | Sprint 3 | 1 |
+| **Total** | **14 historias** | | **46** |
+
+La distribución de las historias corresponde a la planificación revisada del 23/11/2026.
+
+Los 13 puntos del Sprint 1 corresponden al resultado documentado en su acta. Los 11 puntos del Sprint 2 representan un escenario de planificación y no constituyen evidencia técnica verificada.
+
+Las historias del Sprint 3 y Sprint 4 permanecen sujetas a la ejecución, las pruebas de aceptación y la Definition of Done.
+
+Los estados de Jira se actualizarán únicamente cuando existan evidencias suficientes que respalden el avance real.
+
+#### Correspondencia de tareas del Sprint 3
+
+**Periodo:** 19/11/2026 al 02/12/2026.
+
+Las siguientes tareas corresponden al Sprint Backlog detallado del Sprint 3. Se conserva su identificador interno, historia relacionada, responsable previsto y estimación original, incorporando la clave de la incidencia correspondiente en Jira.
+
+| ID | Historia | Incidencia en Jira | Responsable previsto | Horas |
+| --- | --- | --- | --- | ---: |
+| T3-01 | HU-04 | [VET-16](https://josepablonet.atlassian.net/browse/VET-16) | Eliam Araya | 6 |
+| T3-02 | HU-04 | [VET-17](https://josepablonet.atlassian.net/browse/VET-17) | Maikel Chaves | 3 |
+| T3-03 | HU-07 | [VET-37](https://josepablonet.atlassian.net/browse/VET-37) | Maikel Chaves | 5 |
+| T3-04 | HU-07 | [VET-38](https://josepablonet.atlassian.net/browse/VET-38) | Valeria Méndez | 2 |
+| T3-05 | HU-10 | [VET-39](https://josepablonet.atlassian.net/browse/VET-39) | Jose Pablo Soto | 4 |
+| T3-06 | HU-10 | [VET-40](https://josepablonet.atlassian.net/browse/VET-40) | Daniel Rojas | 7 |
+| T3-07 | HU-10 | [VET-41](https://josepablonet.atlassian.net/browse/VET-41) | Valeria Méndez | 4 |
+| T3-08 | HU-10 | [VET-42](https://josepablonet.atlassian.net/browse/VET-42) | Maikel Chaves | 4 |
+| T3-09 | HU-10 | [VET-43](https://josepablonet.atlassian.net/browse/VET-43) | Eliam Araya | 3 |
+| T3-10 | HU-11 | [VET-44](https://josepablonet.atlassian.net/browse/VET-44) | Daniel Rojas | 5 |
+| T3-11 | HU-11 | [VET-45](https://josepablonet.atlassian.net/browse/VET-45) | Valeria Méndez | 3 |
+| T3-12 | HU-11 | [VET-46](https://josepablonet.atlassian.net/browse/VET-46) | Jose Pablo Soto | 2 |
+| T3-13 | HU-12 | [VET-47](https://josepablonet.atlassian.net/browse/VET-47) | Daniel Rojas | 4 |
+| T3-14 | HU-12 | [VET-48](https://josepablonet.atlassian.net/browse/VET-48) | Jose Pablo Soto | 5 |
+| T3-15 | HU-12 | [VET-49](https://josepablonet.atlassian.net/browse/VET-49) | Eliam Araya | 3 |
+| T3-16 | HU-13 | [VET-50](https://josepablonet.atlassian.net/browse/VET-50) | Valeria Méndez | 5 |
+| T3-17 | HU-13 | [VET-51](https://josepablonet.atlassian.net/browse/VET-51) | Eliam Araya | 2 |
+| T3-18 | HU-14 | [VET-52](https://josepablonet.atlassian.net/browse/VET-52) | Valeria Méndez | 2 |
+| T3-19 | HU-14 | [VET-53](https://josepablonet.atlassian.net/browse/VET-53) | Eliam Araya | 1 |
+| T3-20 | General | [VET-54](https://josepablonet.atlassian.net/browse/VET-54) | Maikel Chaves | 4 |
+| T3-21 | General | [VET-55](https://josepablonet.atlassian.net/browse/VET-55) | Eliam Araya | 2 |
+| T3-22 | General | [VET-56](https://josepablonet.atlassian.net/browse/VET-56) | Jose Pablo Soto | 3 |
+| **Total** | | **22 tareas** | | **79** |
+
+Las tareas T3-01 y T3-02 reutilizan las incidencias originales T-12 y T-13 del Sprint 1, ahora replanificadas para corregir y verificar los permisos de HU-04. Sus estimaciones actualizadas sustituyen las originales, evitando duplicar horas.
+
+Las tareas T3-20, T3-21 y T3-22 corresponden a actividades generales del Sprint y no tienen una historia de usuario padre.
+
+Las 32 horas previstas para Daniel Rojas y Valeria Méndez ya están incluidas en las 79 horas planificadas. Sus incidencias permanecen sin asignación formal en Jira hasta que ambos dispongan de cuentas autorizadas.
+
+Las estimaciones representan trabajo planificado, no horas ejecutadas. La capacidad efectiva del Sprint 3 deberá verificarse considerando la fecha de incorporación de los nuevos integrantes.
+
+#### Trazabilidad de las tareas de mitigación
+
+**Fecha de revisión:** 23/11/2026.
+
+Las tareas de mitigación de los riesgos R8, R9 y R10 están registradas en Jira como actividades del Sprint 3. Su objetivo es dar seguimiento a la incorporación de nuevos integrantes, la capacidad efectiva y el presupuesto del proyecto.
+
+| ID | Riesgo | Acción de mitigación | Incidencia en Jira | Responsable |
+| --- | --- | --- | --- | --- |
+| M-09 | R8 — Adaptación de los nuevos integrantes | Realizar la inducción técnica, verificar accesos y compartir la documentación del proyecto. | [VET-25](https://josepablonet.atlassian.net/browse/VET-25) | Maikel Chaves |
+| M-10 | R9 — Sobrecarga del Sprint 3 | Revisar la capacidad efectiva, el avance de las historias y los ajustes de planificación. | [VET-26](https://josepablonet.atlassian.net/browse/VET-26) | Maikel Chaves |
+| M-11 | R10 — Incremento de costos | Controlar las horas contratadas, los gastos reales y las posibles ampliaciones presupuestarias. | [VET-27](https://josepablonet.atlassian.net/browse/VET-27) | Jose Pablo Soto |
+
+Estas tareas se mantienen como actividades de seguimiento sin puntos de historia. Sus horas están pendientes de estimación y deberán conciliarse con las actividades generales T3-20 y T3-22 antes de incorporarse al total de 79 horas planificadas, para evitar duplicaciones.
+
+Las incidencias VET-22, VET-23 y VET-24 fueron identificadas como duplicados y se encuentran etiquetadas como "NO USAR" en Jira. No forman parte del Sprint Backlog vigente.
+
+#### Verificación de dependencias e impedimentos
+
+Las 14 historias de usuario están relacionadas mediante 19 dependencias registradas en Jira. Estas relaciones permiten identificar las funcionalidades que necesitan otras historias antes de poder considerarse terminadas.
+
+Durante la revisión del 23/11/2026 se identificaron las siguientes situaciones:
+
+| Elemento | Situación documentada | Seguimiento en Jira |
+| --- | --- | --- |
+| HU-04 | Defecto de permisos identificado durante el Sprint 1; pendiente de corrección y pruebas. | [VET-15](https://josepablonet.atlassian.net/browse/VET-15) |
+| HU-06 y HU-08 | Consideradas terminadas únicamente en el escenario del Sprint 2, sin evidencia técnica confirmada. | [VET-28](https://josepablonet.atlassian.net/browse/VET-28) y [VET-30](https://josepablonet.atlassian.net/browse/VET-30) |
+| HU-10 y HU-11 | Requieren verificar las funcionalidades de registro de mascotas y veterinarios. | [VET-32](https://josepablonet.atlassian.net/browse/VET-32) y [VET-33](https://josepablonet.atlassian.net/browse/VET-33) |
+| HU-12 y HU-13 | Dependen del registro de consultas clínicas y vacunas. | [VET-34](https://josepablonet.atlassian.net/browse/VET-34) y [VET-35](https://josepablonet.atlassian.net/browse/VET-35) |
+| HU-14 | Requiere disponer del registro y listado seguro de mascotas. | [VET-36](https://josepablonet.atlassian.net/browse/VET-36) |
+
+Los impedimentos técnicos y riesgos de integración se documentan en la tarea [VET-54](https://josepablonet.atlassian.net/browse/VET-54). El seguimiento de capacidad se registra en [VET-26](https://josepablonet.atlassian.net/browse/VET-26).
+
+Las dependencias pendientes de verificación no representan necesariamente defectos funcionales. Solo HU-04 cuenta con un defecto de permisos documentado en el acta del Sprint 1.
+
+#### Estado de las evidencias técnicas
+
+Las incidencias de Jira incluyen comentarios de conciliación que permiten diferenciar los resultados documentados de las funcionalidades técnicamente verificadas.
+
+Para considerar una historia terminada, deberán existir evidencias suficientes de:
+
+1. Implementación de la funcionalidad y referencia al código o commit correspondiente.
+2. Cumplimiento de los criterios de aceptación.
+3. Pruebas funcionales y de permisos realizadas por un integrante distinto de quien desarrolló la funcionalidad.
+4. Cumplimiento de la Definition of Done aplicable.
+5. Aceptación del Product Owner.
+
+Al momento de esta revisión, el repositorio publicado contiene el expediente README.md y los archivos de la matriz de riesgos. No se encontraron en la rama principal archivos de implementación ni resultados de pruebas que permitan verificar técnicamente los incrementos declarados.
+
+Por lo tanto, los resultados históricos del Sprint 1 y el escenario del Sprint 2 se conservan como referencias documentales, sin modificar los estados reales de Jira hasta reunir las evidencias requeridas.
+
+La trazabilidad se actualizará conforme se incorporen pruebas, referencias al código y resultados de aceptación.
 
 ### Matriz de trazabilidad de evidencias
 
@@ -2436,7 +2648,7 @@ El proyecto se considerará cerrado cuando se hayan consolidado los entregables,
 | 1.8 | 04/11/2026 | Cambio del tablero de GitHub Projects a Jira: enlace al tablero del espacio VetCare, justificación de los límites WIP, carga de las historias y tareas del Sprint 1 y regla para mover una tarjeta a Terminado. |
 | 1.9 | 05/11/2026 | Reestructuración del detalle de las 13 historias de usuario con el formato de cinco partes (título, estructura, criterios de aceptación, estimación y prioridad, y notas adicionales o anexos), aplicado también a las historias HU-01 a HU-05 cargadas en Jira. |
 | 1.10 | 08/11/2026 | Incorporación de la Sección 08: matriz de riesgos con ocho riesgos, mapa de calor, plan de mitigación, adquisiciones críticas y tareas de mitigación para el Sprint 2. |
-| 1.11 | 18/11/2026 | Incorporación de la Sección 09 y del Acta de Sprint Review y Sprint Retrospective del Sprint 1 (docs/acta-sprint-1.md): Incremento contra la Definición de Terminado, velocidad, burndown, impedimentos, adaptación del Product Backlog y tres acciones de mejora con dueño y fecha. |
+| 1.11 | 18/11/2026 | Incorporación del Acta de Sprint Review y Sprint Retrospective del Sprint 1, originalmente ubicada en la Sección 09 y actualmente integrada en la Sección 11 del expediente. Incluye evaluación del Incremento, Definition of Done, velocidad, burndown, impedimentos, adaptación del Product Backlog y acciones de mejora. |
 | 1.12 | 18/11/2026 | Revisión de la Semana 2: se agregan al análisis de entorno la estructura organizacional y las restricciones conocidas de tiempo, presupuesto, tecnología y personas. |
 | 1.13 | 23/11/2026 | Actualización del Project Charter, Product Goal, análisis de interesados, contexto organizacional y gobernanza. Ampliación del Scrum Team mediante contratación de dos desarrolladores, revisión del presupuesto y adquisiciones, replanificación de los Sprints 2 y 3, e identificación de los riesgos R8, R9 y R10. |
-| 1.13 | 23/11/2026 | Reestructuración integral del expediente según las secciones 00 a 12 del Proyecto Incremental. Actualización del Product Backlog a 14 historias y 46 puntos, incorporación de HU-14, ampliación del Scrum Team con Daniel Rojas y Valeria Méndez, revisión del Release Plan, presupuesto y adquisiciones, incorporación de los riesgos R8-R10, propuesta de Definition of Done versión 1.1, matriz RACI, Working Agreements, registro de solicitudes de cambio CR-01 y CR-02, trazabilidad de evidencias y preparación de la Sección 12 para el cierre académico. |
+| 1.14 | 23/11/2026 | Reestructuración integral del expediente según las secciones 00 a 12 del Proyecto Incremental. Actualización del Product Backlog a 14 historias y 46 puntos, incorporación de HU-14, ampliación del Scrum Team con Daniel Rojas y Valeria Méndez, revisión del Release Plan, presupuesto y adquisiciones, incorporación de los riesgos R8-R10, propuesta de Definition of Done versión 1.1, matriz RACI, Working Agreements, registro de solicitudes de cambio CR-01 y CR-02, trazabilidad de evidencias y preparación de la Sección 12 para el cierre académico. |
