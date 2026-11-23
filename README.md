@@ -43,6 +43,42 @@ Desarrollar un sistema web para la gestión de una clínica veterinaria que perm
 9. Implementar diferentes niveles de acceso para clientes y médicos veterinarios, de acuerdo con las funciones que corresponden a cada tipo de usuario.
 10. Realizar pruebas del sistema para verificar el correcto funcionamiento de sus principales módulos y que la información se gestione de manera adecuada.
 
+### Product Goal
+
+Definir una primera versión de VetCare como sistema web de gestión veterinaria, orientada a centralizar la información de propietarios, mascotas, médicos veterinarios, citas y expedientes clínicos.
+
+El producto propuesto deberá contemplar diferentes niveles de acceso según el tipo de usuario, permitir la administración de múltiples mascotas por propietario y mantener un historial clínico independiente para cada paciente.
+
+Durante el proyecto académico, este objetivo servirá para orientar la definición del alcance, la priorización del Product Backlog, la planificación de los Sprints y la evaluación de los resultados documentados.
+
+## Acta de constitución del proyecto (Project Charter)
+
+**Nombre del proyecto:** VetCare — Sistema de gestión de atención veterinaria.
+
+**Tipo de proyecto:** Proyecto académico de Administración de Proyectos Informáticos.
+
+**Justificación:** La información de propietarios, mascotas y atenciones veterinarias puede encontrarse distribuida en registros físicos y herramientas independientes, dificultando su consulta y administración. VetCare propone una solución centralizada para mejorar la organización y trazabilidad de estos datos.
+
+**Objetivo:** Definir y gestionar el proyecto VetCare mediante un enfoque híbrido, utilizando prácticas de dirección de proyectos y Scrum para organizar el alcance, las actividades, las estimaciones, los riesgos y las responsabilidades del equipo.
+
+**Alcance propuesto:** Gestión de propietarios, mascotas, médicos veterinarios, citas y expedientes clínicos, con diferentes niveles de acceso según el rol del usuario.
+
+**Exclusiones:** Facturación, inventario, hospitalización, múltiples sucursales, aplicación móvil nativa e integraciones externas.
+
+**Equipo del proyecto:**
+- Jose Pablo Soto Quesada — Product Owner y Developer.
+- Maikel Chaves Salas — Scrum Master y Developer.
+- Edgar Eliam Araya Alvarado — Developer.
+
+**Enfoque de gestión:** Híbrido, combinando planificación general del proyecto con organización y seguimiento mediante Sprints.
+
+**Restricciones principales:** Calendario académico del III cuatrimestre de 2026, disponibilidad de tres integrantes, recursos tecnológicos gratuitos y ausencia de una clínica confirmada para la validación de requisitos.
+
+**Supuestos:** Los requisitos iniciales representan necesidades identificadas por el equipo y podrán ajustarse conforme avance el análisis del proyecto.
+
+**Entregable documental:** Expediente del Proyecto que integre los artefactos de planificación, seguimiento, control, calidad, riesgos, comunicación, decisiones y cierre.
+
+
 ## Visión a futuro: modelo de negocio
 
 A largo plazo, la plataforma podría ofrecerse como un servicio en la nube por suscripción (SaaS) para clínicas veterinarias, con estos planes:
@@ -66,8 +102,8 @@ El análisis se hace para VetCare, el sistema presentado en la Lección 1, y usa
 | I2. Médicos veterinarios | Consultar y registrar expedientes, diagnósticos, vacunas y tratamientos con rapidez. | 4 | 5 | Favorable |
 | I3. Recepción / administración | Organizar citas y datos de clientes y mascotas; evitar duplicaciones. | 3 | 5 | Neutral |
 | I4. Clientes / propietarios de mascotas | Registrar varias mascotas, gestionar citas y consultar información autorizada. | 2 | 5 | Favorable |
-| I5. Equipo desarrollador: Jose Pablo Soto, Maikel Chaves y Eliam Araya | Disponer de requisitos claros, acceso a usuarios y tiempo para implementar y probar. | 4 | 5 | Favorable |
-| I6. Profesor: Deiver Cubero Molina | Evaluar la coherencia del proyecto, las evidencias y el cumplimiento académico. | 5 | 4 | Favorable |
+| I5. Equipo de desarrollo de VetCare | Contar con requisitos claros, responsabilidades definidas, recursos suficientes y una distribución equilibrada de las tareas. El equipo está conformado por cinco integrantes, incluidos los dos profesionales contratados para fortalecer el desarrollo y las pruebas. | 4 | 5 | Favorable |
+| I6. Profesor: Yesenia Calvo Araya | Evaluar la coherencia del proyecto, las evidencias y el cumplimiento académico. | 5 | 4 | Favorable |
 | I7. Proveedor de alojamiento y base de datos | Contar con requisitos técnicos definidos y condiciones de uso y pago claras. | 4 | 2 | Neutral |
 | I8. Responsable de soporte tecnológico de la clínica | Mantener disponibilidad, accesos, respaldos y resolver incidentes. | 3 | 4 | Neutral |
 | I9. Personal auxiliar veterinario | Consultar los datos necesarios para apoyar la atención según su autorización. | 2 | 3 | Neutral |
@@ -130,17 +166,21 @@ Los requerimientos corresponden a una versión inicial del sistema con fines aca
 
 ## Registro: estrategias de involucramiento
 
-| ID | Estrategia y acción propuesta |
-| --- | --- |
-| I1 | Gestionar de cerca. Reunión quincenal para priorizar necesidades, aprobar alcance y revisar riesgos; solicitar aceptación de cada entrega. |
-| I2 | Gestionar de cerca. Entrevistas iniciales y demostraciones cada dos semanas; validar campos del expediente y flujos clínicos con datos ficticios. |
-| I3 | Gestionar de cerca. Observar el proceso de citas, probar prototipos y capacitar antes del piloto; recoger dificultades de uso. |
-| I4 | Mantener informados. Invitar a un grupo representativo a probar registro, varias mascotas y citas en cada entrega relevante; ofrecer instrucciones sencillas. |
-| I5 | Gestionar de cerca. Planificación semanal, tablero de tareas y revisión quincenal de avances, obstáculos y calidad. |
-| I6 | Gestionar de cerca. Presentar avances en las revisiones del curso, registrar retroalimentación y comprobar la rúbrica antes de las entregas. |
-| I7 | Mantener satisfecho. Confirmar límites, costos, disponibilidad y recuperación antes del despliegue; contactar ante cambios técnicos o incidentes. |
-| I8 | Gestionar de cerca. Acordar accesos, respaldos y recuperación; revisar preparación del entorno antes del piloto y entregar guía de soporte. |
-| I9 | Mantener informados. Consultar en hitos sobre necesidades de apoyo y explicar cambios de flujo; aumentar su participación si se confirma un rol directo en el sistema. |
+| ID | Estrategia y acción propuesta | Responsable del seguimiento |
+| --- | --- | --- |
+| I1 | Gestionar de cerca. Reunión quincenal para priorizar necesidades, aprobar alcance y revisar riesgos; solicitar aceptación de cada entrega. | Jose Pablo Soto |
+| I2 | Gestionar de cerca. Entrevistas iniciales y demostraciones cada dos semanas; validar campos del expediente y flujos clínicos con datos ficticios. | Jose Pablo Soto |
+| I3 | Gestionar de cerca. Observar el proceso de citas, probar prototipos y capacitar antes del piloto; recoger dificultades de uso. | Eliam Araya |
+| I4 | Mantener informados. Invitar a un grupo representativo a probar registro, varias mascotas y citas en cada entrega relevante; ofrecer instrucciones sencillas. | Eliam Araya |
+| I5 | Gestionar de cerca. Planificación semanal, tablero de tareas y revisión quincenal de avances, obstáculos y calidad. | Maikel Chaves |
+| I6 | Gestionar de cerca. Presentar avances en las revisiones del curso, registrar retroalimentación y comprobar la rúbrica antes de las entregas. | Jose Pablo Soto |
+| I7 | Mantener satisfecho. Confirmar límites, costos, disponibilidad y recuperación antes del despliegue; contactar ante cambios técnicos o incidentes. | Maikel Chaves |
+| I8 | Gestionar de cerca. Acordar accesos, respaldos y recuperación; revisar preparación del entorno antes del piloto y entregar guía de soporte. | Maikel Chaves |
+| I9 | Mantener informados. Consultar en hitos sobre necesidades de apoyo y explicar cambios de flujo; aumentar su participación si se confirma un rol directo en el sistema. | Eliam Araya |
+
+Los responsables del seguimiento se asignan de acuerdo con las funciones propuestas para el equipo Scrum. Jose Pablo, como Product Owner, coordina la relación con los interesados vinculados a las prioridades del producto y al cumplimiento académico. Maikel, como Scrum Master, da seguimiento a la coordinación del equipo y a los aspectos tecnológicos. Eliam apoya el involucramiento de los usuarios operativos y la documentación de sus necesidades.
+
+Estas asignaciones deberán ser validadas por los tres integrantes del equipo y podrán ajustarse durante la planificación o las retrospectivas de los Sprints.
 
 ## Justificación de valoraciones discutibles
 
@@ -245,7 +285,7 @@ Un enfoque solo predictivo haría difícil incorporar los cambios que aparezcan 
 
 El documento original no identifica una clínica concreta, un presupuesto, un proveedor ni un calendario detallado. Estas decisiones y la disponibilidad de usuarios deben confirmarse antes de cerrar la planificación. Lo descrito en esta sección son propuestas y no acuerdos ya tomados.
 
-### Ciclo de vida del proyecto
+### Sección 04: Ciclo de vida del proyecto y planificación del primer Sprint
 
 El problema sale de lo que el equipo conoce sobre el manejo de la información en clínicas veterinarias, como se explica en la sección Problema. Desde ahí el proyecto pasa por cuatro fases, ordenadas según los grupos de procesos de la Norma para la Dirección de Proyectos (PMI, 2017).
 
@@ -268,6 +308,37 @@ Cada Sprint repite en pequeño los cinco grupos de procesos, según la relación
 | Monitoreo y control | Tablero en Jira, burndown y Sprint Review |
 | Cierre | Sprint Retrospective, con acciones de mejora para el siguiente Sprint |
 
+El Monitoreo y Control se desarrolla de forma transversal durante todo el ciclo de vida. En VetCare se contempla mediante el seguimiento del tablero de Jira, la revisión del avance frente a las estimaciones, el registro de impedimentos y la evaluación de riesgos y cambios.
+
+Por lo tanto, aunque el ciclo de vida se represente mediante cuatro fases principales, se consideran los cinco grupos de procesos de la dirección de proyectos.
+
+#### Planificación del primer Sprint
+
+El primer Sprint de VetCare se planificó para el periodo del 22 de octubre al 4 de noviembre de 2026, con una duración de dos semanas.
+
+**Sprint Goal:** Que un propietario pueda crear su cuenta, iniciar sesión y registrar y administrar sus mascotas, con acceso diferenciado entre propietarios, médicos veterinarios y administrador.
+
+**Historias seleccionadas:**
+
+| Historia | Descripción | Puntos |
+| --- | --- | ---: |
+| HU-01 | Registro de propietarios | 3 |
+| HU-02 | Inicio y cierre de sesión con acceso por rol | 3 |
+| HU-03 | Registro de mascotas del propietario | 5 |
+| HU-04 | Consulta y edición de mascotas | 3 |
+| HU-05 | Registro de médicos veterinarios | 2 |
+| **Total planificado** | | **16** |
+
+**Justificación de la selección:**
+
+Las historias seleccionadas conforman la base funcional propuesta para VetCare. La gestión de usuarios, roles y mascotas es necesaria antes de abordar la programación de citas y los expedientes clínicos.
+
+Se priorizaron estas historias por sus dependencias y su valor para el Product Goal. El alcance inicial se estimó en 16 puntos de historia.
+
+El desglose de tareas, responsables, horas estimadas y mecanismos de seguimiento se encuentra en la Sección 05 del expediente.
+
+Los resultados del Sprint 1 y sus adaptaciones posteriores se documentan en el Acta de Sprint Review y Retrospective.
+
 ## Justificación y alcance
 
 Las clínicas veterinarias suelen tener la información de clientes y mascotas dispersa en documentos físicos, hojas de cálculo y otros medios. Esto dificulta consultar historiales, organizar citas y dar seguimiento a vacunas y tratamientos. VetCare se propone como un sistema web que centraliza esa información y le da a cada mascota su propio expediente. Para la versión del curso, el alcance queda así:
@@ -286,13 +357,31 @@ Las clínicas veterinarias suelen tener la información de clientes y mascotas d
 
 ## Definición del Scrum Team
 
-Los roles siguen la Guía de Scrum (Schwaber y Sutherland, 2020). Como el equipo es de tres personas, los tres actúan como Developers. Dos integrantes asumen además los roles de Product Owner y Scrum Master, y el tercero se enfoca en el desarrollo, la calidad y la documentación. Se evita que una misma persona sea Product Owner y Scrum Master a la vez, para no mezclar la priorización del producto con la protección de la capacidad del equipo.
+El equipo Scrum de VetCare está conformado por cinco integrantes, organizados según las responsabilidades establecidas en la Guía Scrum (Schwaber y Sutherland, 2020).
+
+Inicialmente, el proyecto contaba con tres integrantes: Jose Pablo Soto Quesada, Maikel Chaves Salas y Edgar Eliam Araya Alvarado. Conforme avanzó la planificación, se identificó la necesidad de aumentar la capacidad de trabajo para atender las historias de usuario, fortalecer las actividades técnicas y cumplir con el cronograma establecido.
+
+Por esta razón, se aprobó la contratación de dos profesionales adicionales: Daniel Rojas, especializado en desarrollo backend, y Valeria Méndez, especializada en desarrollo frontend y aseguramiento de calidad.
+
+Con estas incorporaciones, el equipo quedó conformado de la siguiente manera:
 
 | Integrante | Rol Scrum | Responsabilidades |
 | --- | --- | --- |
-| Jose Pablo Soto Quesada | Product Owner + Developer | Mantener y priorizar el Product Backlog, definir criterios de aceptación y ser el enlace con la clínica y el profesor. |
-| Maikel Chaves Salas | Scrum Master + Developer | Facilitar el proceso, remover impedimentos y mantener el tablero actualizado. |
-| Edgar Eliam Araya Alvarado | Developer | Desarrollar las funcionalidades del Sprint, liderar las pruebas funcionales y de permisos, y mantener actualizada la documentación del proyecto. |
+| Jose Pablo Soto Quesada | Product Owner + Developer | Administrar y priorizar el Product Backlog, definir los criterios de aceptación, coordinar las necesidades de los interesados y apoyar las actividades de desarrollo. |
+| Maikel Chaves Salas | Scrum Master + Developer | Facilitar los eventos Scrum, gestionar impedimentos, mantener actualizado el tablero de seguimiento y participar en las actividades técnicas. |
+| Edgar Eliam Araya Alvarado | Developer | Desarrollar funcionalidades, realizar pruebas funcionales y de permisos y mantener actualizada la documentación del proyecto. |
+| Daniel Rojas | Developer Backend | Diseñar e implementar la lógica del servidor, apoyar la administración de la base de datos y desarrollar los servicios relacionados con usuarios, citas y expedientes clínicos. |
+| Valeria Méndez | Developer Frontend | Diseñar e implementar las interfaces de usuario, mejorar la experiencia de navegación y colaborar en las pruebas funcionales del sistema. |
+
+### Ampliación y distribución del equipo
+
+La contratación de Daniel Rojas y Valeria Méndez responde a la necesidad de distribuir mejor la carga de trabajo, reducir la dependencia de integrantes específicos y fortalecer las áreas de desarrollo y calidad.
+
+La ampliación permite organizar las responsabilidades de acuerdo con las competencias de cada integrante y aumentar la capacidad disponible para los siguientes Sprints.
+
+El Sprint 1 conserva su planificación y resultados originales, correspondientes al equipo inicial de tres personas. La nueva conformación se considera en la planificación de las siguientes iteraciones.
+
+Como parte de esta actualización, se revisarán las estimaciones de esfuerzo, los responsables de las tareas, los costos de personal y el cronograma del proyecto.
 
 ### Roles adicionales para el futuro
 
@@ -321,20 +410,56 @@ La Guía del PMBOK (PMI, 2017) llama factores ambientales de la empresa a las co
 | Disponibilidad de usuarios para pruebas | Afecta la calidad de la validación |
 | Calendario académico | Limita el tiempo y el alcance posible |
 
+### Activos de los procesos de la organización (OPA)
+
+Los activos de los procesos de la organización son documentos, procedimientos, herramientas y conocimientos que pueden reutilizarse para gestionar el proyecto. A diferencia de los factores ambientales, estos recursos pueden actualizarse conforme el equipo adquiere experiencia.
+
+En VetCare se consideran los siguientes activos disponibles o en elaboración dentro del equipo académico:
+
+| Activo | Estado | Aplicación en VetCare |
+| --- | --- | --- |
+| Repositorio de GitHub | Disponible | Centraliza el expediente y conserva el historial de cambios. |
+| Plantillas de historias de usuario | Disponibles | Permiten documentar necesidades, criterios de aceptación, prioridades y estimaciones. |
+| Product Backlog | Disponible | Organiza y prioriza el trabajo propuesto para el proyecto. |
+| Tablero de Jira | Documentado | Permite organizar tareas, responsables y seguimiento de los Sprints. |
+| Matriz de riesgos | Disponible | Registra riesgos, prioridades, responsables y respuestas previstas. |
+| Registro de impedimentos y retrospectivas | Documentado | Recoge dificultades, decisiones y oportunidades de mejora. |
+
+Estos activos se revisan durante la planificación y al cierre de cada Sprint para mantener la consistencia de la documentación y aprovechar las lecciones aprendidas.
+
 ### Estructura organizacional
 
 La Guía del PMBOK (PMI, 2017) distingue estructuras funcionales, matriciales y orientadas a proyectos según la autoridad que tiene el director de proyecto. Como todavía no hay una clínica confirmada, la estructura de la clínica es una suposición del equipo. Una clínica pequeña suele tener una estructura funcional. La dirección (I1) decide sobre los recursos y la puesta en uso, y el personal tiene tareas fijas de atención. En ese contexto el equipo tiene poca autoridad dentro de la clínica y depende de que la dirección apruebe los cambios y dé acceso a los usuarios.
 
 Dentro del curso el equipo trabaja como una estructura orientada a proyectos. Los tres integrantes deciden cómo organizar el trabajo, con la autoridad repartida entre Product Owner, Scrum Master y Developers. El profesor (I6) cumple un papel parecido al de una PMO de control: define el formato del expediente y las fechas de entrega, pero no dirige el trabajo del equipo.
 
+### Gobernanza del proyecto
+
+La gobernanza establece cómo se toman, supervisan y comunican las decisiones relevantes del proyecto. En VetCare se propone una estructura de gobernanza ligera, adaptada al tamaño del equipo y al carácter académico del trabajo.
+
+| Decisión | Responsable | Mecanismo |
+| --- | --- | --- |
+| Definición del Product Goal y prioridades | Product Owner | Revisión del Product Backlog y necesidades identificadas. |
+| Estimación y planificación del Sprint | Developers | Sprint Planning y estimación colaborativa. |
+| Seguimiento e impedimentos | Scrum Master | Tablero de Jira y reuniones de seguimiento. |
+| Calidad y criterios de aceptación | Developers y Product Owner | Verificación de criterios y Definition of Done. |
+| Modificaciones al alcance | Product Owner, en coordinación con el equipo | Evaluación del impacto y registro de solicitudes de cambio. |
+| Cumplimiento académico | Equipo del proyecto y docente | Revisión de las instrucciones, entregables y criterios de evaluación. |
+
+Las decisiones se documentarán cuando afecten el alcance, el cronograma, los recursos o los riesgos del proyecto.
+
+El Product Owner mantiene la responsabilidad sobre las prioridades del producto, mientras que los Developers organizan y estiman el trabajo. El Scrum Master facilita el proceso y da seguimiento a los impedimentos.
+
+La profesora Yesenia Calvo Araya participa como interesada académica, encargada de orientar y evaluar el cumplimiento del curso, sin asumir la dirección operativa del equipo.
+
 ### Restricciones conocidas
 
 | Tipo | Restricción |
 | --- | --- |
 | Tiempo | El proyecto termina con el ciclo III-2026. Se trabaja en Sprints de dos semanas y la fecha final del curso no cambia. |
-| Presupuesto | No hay presupuesto en dinero. Se usan herramientas y servicios en planes gratuitos, y el recurso disponible es el tiempo del equipo, 47 horas por Sprint. |
+| Presupuesto | El proyecto contempla recursos internos y la contratación de dos desarrolladores adicionales. El presupuesto estimado para el equipo ampliado es de ₡193.600 por Sprint, incluida una reserva de contingencia del 10 %. Los servicios de alojamiento, base de datos y gestión del proyecto se mantienen en planes gratuitos. |
 | Tecnología | El sistema es una aplicación web responsive (RNF-01) con el código en GitHub (RNF-06). Durante el desarrollo solo se usan datos ficticios (RNF-07). El framework y el proveedor de alojamiento están por definir. |
-| Personas | El equipo tiene tres integrantes y Jose Pablo es el que tiene más experiencia técnica. No hay una clínica confirmada que aporte usuarios para las pruebas. |
+| Personas | El equipo inició con tres integrantes y posteriormente se amplió a cinco mediante la contratación de dos desarrolladores adicionales. La disponibilidad, asignación de responsabilidades y costos del personal deben considerarse en la planificación de los siguientes Sprints. No se cuenta todavía con una clínica confirmada para la validación de los requisitos. |
 
 ### Lean Canvas
 
@@ -348,7 +473,7 @@ La tabla usa la plantilla Lean Canvas de Ash Maurya (2012).
 | Solución | Módulos de clientes, mascotas, citas y expediente médico con acceso por tipo de usuario. |
 | Canales | Aplicación web desde navegador. |
 | Fuentes de ingreso | No aplica en el curso; se definiría con la clínica si se implementa. |
-| Estructura de costos | Alojamiento, base de datos y tiempo de desarrollo; montos por confirmar. |
+| Estructura de costos | Servicios tecnológicos en planes gratuitos, tiempo del equipo interno y contratación de dos profesionales de desarrollo. El presupuesto estimado del equipo contratado es de ₡193.600 por Sprint completo, incluida la reserva de contingencia. |
 | Métricas clave | Citas gestionadas, expedientes creados y tiempo para consultar un historial. |
 | Ventaja diferenciadora | Relación de un cliente con varias mascotas y expediente individual validado con personal veterinario. |
 
@@ -390,6 +515,48 @@ El Product Backlog se reparte en tres Sprints de dos semanas, según las priorid
 | Sprint 3 | 19/11/2026 al 02/12/2026 | Expediente clínico | HU-10, HU-11, HU-12, HU-13 | 14 |
 
 La velocidad inicial es de 15 puntos por Sprint, con un rango de 12 a 18. Es un supuesto del equipo, porque todavía no hay Sprints terminados, y se reemplaza con los puntos que cumplan la Definición de Terminado al cerrar cada Sprint. Si la velocidad real queda por debajo de 15 puntos, se usa un Sprint 4, del 03/12/2026 al 16/12/2026. El costo estimado es de 47 horas por Sprint entre los tres integrantes; no hay una tarifa definida.
+
+
+#### Capacidad de trabajo y presupuesto del equipo ampliado
+
+La planificación inicial de VetCare contemplaba un equipo de tres integrantes y un esfuerzo estimado de 47 horas por Sprint.
+
+Con la incorporación de Daniel Rojas y Valeria Méndez, se revisó la capacidad de trabajo para las siguientes iteraciones. La nueva distribución contempla 79 horas por Sprint.
+
+| Integrante | Horas disponibles por Sprint |
+| --- | ---: |
+| Jose Pablo Soto Quesada | 14 |
+| Maikel Chaves Salas | 16 |
+| Edgar Eliam Araya Alvarado | 17 |
+| Daniel Rojas | 16 |
+| Valeria Méndez | 16 |
+| **Total** | **79** |
+
+Las horas corresponden a la capacidad planificada del equipo. Las estimaciones se revisarán durante el Sprint Planning y el seguimiento de cada Sprint.
+
+#### Presupuesto de personal
+
+Para estimar los costos de los recursos incorporados se establecen las siguientes tarifas de planificación:
+
+| Recurso | Tarifa por hora | Horas por Sprint | Costo estimado |
+| --- | ---: | ---: | ---: |
+| Daniel Rojas | ₡6.000 | 16 | ₡96.000 |
+| Valeria Méndez | ₡5.000 | 16 | ₡80.000 |
+| **Total** | | **32** | **₡176.000** |
+
+Los tres integrantes iniciales aportan 47 horas de trabajo por Sprint, sin desembolso salarial contemplado en este presupuesto. Su esfuerzo se registra como recurso interno del proyecto.
+
+Se establece una reserva de contingencia equivalente al 10 % del costo de contratación, destinada a cubrir posibles desviaciones de esfuerzo.
+
+| Concepto | Costo por Sprint |
+| --- | ---: |
+| Contratación de personal | ₡176.000 |
+| Reserva de contingencia (10 %) | ₡17.600 |
+| **Presupuesto estimado** | **₡193.600** |
+
+La ampliación del equipo se considera para la planificación revisada a partir del Sprint 3. Los resultados y estimaciones históricas del Sprint 1 permanecen sin modificaciones.
+
+La velocidad de referencia continúa siendo de 13 puntos, según el cierre del Sprint 1. No se incrementará automáticamente por la incorporación de personal; se revisará con los resultados de las siguientes iteraciones.
 
 ### Sprint Backlog del Sprint 1
 
@@ -982,11 +1149,65 @@ Los umbrales de los disparadores (dos días, dos Daily, una semana, 24 horas) so
 
 ### Adquisiciones críticas
 
-| Adquisición | Proveedor | Tipo de contrato | Plan de salida |
-| --- | --- | --- | --- |
-| Alojamiento y base de datos | Por definir, en plan gratuito | Términos de uso del plan gratuito, sin costo | Con el script de la base de datos y los respaldos del repositorio, el sistema se puede montar en otro proveedor o en una computadora local. |
-| Repositorio de código | GitHub, plan gratuito | Términos de uso del plan gratuito, sin costo | Cada integrante tiene una copia completa del repositorio en su computadora. |
-| Tablero de trabajo | Jira Software de Atlassian, plan gratuito | Términos de uso del plan gratuito, sin costo | Las historias y tareas se exportan a un archivo CSV y se pasan a otro tablero, como GitHub Projects. |
+El proyecto VetCare contempla la contratación de servicios profesionales para fortalecer el desarrollo de las funcionalidades y cumplir con el cronograma establecido.
+
+Las adquisiciones incluyen los servicios tecnológicos necesarios para el proyecto y la incorporación de dos profesionales al equipo Scrum.
+
+| Adquisición | Proveedor | Tipo de contrato | Costo estimado | Plan de salida |
+| --- | --- | --- | --- | --- |
+| Alojamiento y base de datos | Proveedor por definir, en plan gratuito | Términos de uso del servicio | ₡0 | Utilizar los respaldos y scripts de la base de datos para trasladar el sistema a otro proveedor. |
+| Repositorio de código | GitHub | Plan gratuito | ₡0 | Mantener copias locales del repositorio y trasladarlo a otra plataforma si fuera necesario. |
+| Tablero de trabajo | Jira Software de Atlassian | Plan gratuito | ₡0 | Exportar las historias y tareas a CSV para trasladarlas a otra herramienta de gestión. |
+| Desarrollo backend | Daniel Rojas | Servicios profesionales por tiempo y materiales | ₡96.000 por Sprint completo | Entregar el código, la documentación técnica y las tareas pendientes al equipo. |
+| Desarrollo frontend y QA | Valeria Méndez | Servicios profesionales por tiempo y materiales | ₡80.000 por Sprint completo | Entregar los componentes desarrollados, los casos de prueba y la documentación correspondiente. |
+
+#### Contratación de personal
+
+**Fecha de revisión de las contrataciones:** 23/11/2026.
+
+Como parte de la revisión de la capacidad del proyecto, se incorporaron dos profesionales adicionales:
+
+- **Daniel Rojas:** contratado para apoyar el desarrollo backend, los servicios del sistema y la integración de la base de datos.
+- **Valeria Méndez:** contratada para apoyar el desarrollo frontend, las interfaces y el aseguramiento de calidad.
+
+La contratación se organiza bajo una modalidad de tiempo y materiales, con tarifas por hora y un límite de horas aprobadas para cada Sprint.
+
+| Profesional | Tarifa por hora | Límite de horas por Sprint | Costo máximo por Sprint |
+| --- | ---: | ---: | ---: |
+| Daniel Rojas | ₡6.000 | 16 | ₡96.000 |
+| Valeria Méndez | ₡5.000 | 16 | ₡80.000 |
+| **Total** | | **32** | **₡176.000** |
+
+#### Control de las contrataciones
+
+El Product Owner, Jose Pablo Soto Quesada, es responsable del seguimiento presupuestario y de autorizar los cambios de alcance que afecten los costos.
+
+El Scrum Master, Maikel Chaves Salas, coordina la incorporación de los profesionales al equipo, facilita su acceso a la información del proyecto y da seguimiento a los impedimentos.
+
+Se establecen las siguientes condiciones de control:
+
+1. Las horas se registran por tarea y por integrante.
+2. El límite autorizado es de 16 horas por profesional para un Sprint completo.
+3. Las horas efectivamente disponibles del Sprint 3 se verifican considerando la fecha de incorporación del personal.
+4. Cualquier ampliación de horas requiere revisión y aprobación del Product Owner.
+5. Los entregables deben cumplir los criterios de aceptación y la Definition of Done.
+6. Al terminar la contratación, cada profesional entrega la documentación y los avances correspondientes.
+
+#### Presupuesto y contingencia
+
+| Concepto | Costo estimado por Sprint completo |
+| --- | ---: |
+| Contratación de Daniel Rojas | ₡96.000 |
+| Contratación de Valeria Méndez | ₡80.000 |
+| Subtotal de contratación | ₡176.000 |
+| Reserva de contingencia (10 %) | ₡17.600 |
+| **Presupuesto total** | **₡193.600** |
+
+La contratación se considera en la replanificación del Sprint 3 y, de ser necesario, en el Sprint 4.
+
+El presupuesto corresponde a un Sprint completo con las horas máximas autorizadas. El costo definitivo dependerá de las horas efectivamente utilizadas.
+
+La reserva de contingencia se destina a atender desviaciones justificadas de esfuerzo o necesidades adicionales previamente autorizadas.
 
 ### Tareas de mitigación para el Sprint 2
 
@@ -1114,9 +1335,203 @@ Plan de Sprints actualizado:
 
 Las dependencias se mantienen: la HU-12 y la HU-13 dependen de la HU-10 y la HU-11 (Sprint 3), y la HU-07 depende de la HU-06 (Sprint 2).
 
+### Replanificación de Sprints por ampliación del equipo
+
+**Fecha de revisión:** 23/11/2026.
+
+Tras la incorporación de Daniel Rojas y Valeria Méndez, se revisó la capacidad disponible y la distribución de historias pendientes.
+
+La planificación original contemplaba un equipo de tres integrantes, con 47 horas disponibles por Sprint. La nueva conformación permite disponer de 79 horas por Sprint.
+
+El objetivo de esta revisión es concentrar las historias pendientes en el Sprint 3, respetando sus dependencias y manteniendo los criterios de calidad establecidos.
+
+#### Sprint Backlog detallado del Sprint 3
+
+**Periodo:** 19/11/2026 al 02/12/2026.
+
+**Sprint Goal:** Completar la gestión de mascotas pendiente, incorporar la cancelación de citas y desarrollar las funcionalidades del expediente clínico, incluyendo consultas, vacunas e historiales, respetando los permisos de acceso establecidos.
+
+**Historias seleccionadas:** HU-04, HU-07, HU-10, HU-11, HU-12, HU-13 y HU-14.
+
+**Puntos comprometidos:** 20.
+
+**Capacidad planificada:** 79 horas.
+
+La distribución de tareas considera las competencias de los integrantes, las dependencias entre historias y la necesidad de realizar pruebas por una persona distinta de quien desarrolla cada funcionalidad.
+
+| ID | Historia | Tarea | Responsable | Horas |
+| --- | --- | --- | --- | ---: |
+| T3-01 | HU-04 | Corregir la validación de propiedad de mascotas en las operaciones de consulta y edición. | Eliam Araya | 6 |
+| T3-02 | HU-04 | Verificar los permisos de acceso y edición de mascotas. | Maikel Chaves | 3 |
+| T3-03 | HU-07 | Implementar la cancelación de citas y sus validaciones. | Maikel Chaves | 5 |
+| T3-04 | HU-07 | Probar la cancelación de citas y las restricciones correspondientes. | Valeria Méndez | 2 |
+| T3-05 | HU-10 | Definir la estructura de datos y las reglas para registrar consultas clínicas. | Jose Pablo Soto | 4 |
+| T3-06 | HU-10 | Desarrollar los servicios para el registro de consultas clínicas. | Daniel Rojas | 7 |
+| T3-07 | HU-10 | Diseñar e implementar el formulario de consultas clínicas. | Valeria Méndez | 4 |
+| T3-08 | HU-10 | Integrar el registro de consultas con el control de acceso. | Maikel Chaves | 4 |
+| T3-09 | HU-10 | Probar el registro de consultas y sus validaciones. | Eliam Araya | 3 |
+| T3-10 | HU-11 | Desarrollar los servicios para registrar vacunas y próximas dosis. | Daniel Rojas | 5 |
+| T3-11 | HU-11 | Implementar la interfaz del registro de vacunas. | Valeria Méndez | 3 |
+| T3-12 | HU-11 | Verificar el registro y la consulta de vacunas. | Jose Pablo Soto | 2 |
+| T3-13 | HU-12 | Implementar el servicio de consulta del historial clínico. | Daniel Rojas | 4 |
+| T3-14 | HU-12 | Implementar la consulta del historial para médicos veterinarios. | Jose Pablo Soto | 5 |
+| T3-15 | HU-12 | Verificar el historial clínico y sus permisos. | Eliam Araya | 3 |
+| T3-16 | HU-13 | Implementar la consulta del historial para propietarios. | Valeria Méndez | 5 |
+| T3-17 | HU-13 | Probar el acceso autorizado al historial de las mascotas. | Eliam Araya | 2 |
+| T3-18 | HU-14 | Incorporar la edad calculada de las mascotas en su listado. | Valeria Méndez | 2 |
+| T3-19 | HU-14 | Verificar el cálculo y la presentación de la edad. | Eliam Araya | 1 |
+| T3-20 | General | Revisar la integración de módulos y resolver impedimentos técnicos. | Maikel Chaves | 4 |
+| T3-21 | General | Ejecutar las pruebas generales de regresión. | Eliam Araya | 2 |
+| T3-22 | General | Actualizar la documentación y preparar el cierre del Sprint. | Jose Pablo Soto | 3 |
+| **Total** | | | | **79** |
+
+#### Distribución de horas por integrante
+
+| Integrante | Horas asignadas |
+| --- | ---: |
+| Jose Pablo Soto | 14 |
+| Maikel Chaves | 16 |
+| Edgar Eliam Araya | 17 |
+| Daniel Rojas | 16 |
+| Valeria Méndez | 16 |
+| **Total** | **79** |
+
+La capacidad de 79 horas corresponde a un Sprint completo con los cinco integrantes disponibles. Para el Sprint 3, la capacidad efectiva deberá comprobarse según la fecha de incorporación de Daniel Rojas y Valeria Méndez y las actividades ya realizadas antes de la replanificación del 23/11/2026.
+
+Las horas asignadas representan la distribución objetivo de trabajo y se ajustarán si la disponibilidad efectiva es inferior a la capacidad estimada.
+
+
+#### Dependencias y orden de ejecución
+
+1. La HU-04 se prioriza para resolver el problema de acceso identificado en el Sprint 1.
+2. La HU-07 requiere que la HU-06 haya completado sus criterios de aceptación.
+3. La HU-10 y la HU-11 establecen la información necesaria para consultar los historiales clínicos.
+4. La HU-12 y la HU-13 se verifican después de disponer de los registros de consultas y vacunas.
+5. La HU-14 puede desarrollarse de forma independiente de las funcionalidades del expediente clínico.
+
+#### Seguimiento del Sprint
+
+El Scrum Master dará seguimiento al avance mediante el tablero de Jira y el registro de impedimentos.
+
+Cada historia deberá cumplir sus criterios de aceptación y la Definition of Done antes de pasar a Terminado.
+
+La planificación contempla 20 puntos y 79 horas de capacidad. Estos valores constituyen el compromiso y las estimaciones del Sprint, no resultados completados.
+
+Al finalizar el Sprint se registrarán las historias terminadas, la velocidad alcanzada, las desviaciones de esfuerzo y las acciones de mejora correspondientes.
+
+#### Plan de Sprints revisado
+
+| Sprint | Fechas | Historias | Puntos planificados | Estado |
+| --- | --- | --- | ---: | --- |
+| Sprint 1 | 22/10/2026 al 04/11/2026 | HU-01, HU-02, HU-03 y HU-05 | 13 | Cerrado: 13 puntos |
+| Sprint 2 | 05/11/2026 al 18/11/2026 | HU-06, HU-08 y HU-09 | 13 | Cerrado en el escenario: 11 puntos terminados y 2 pendientes |
+| Sprint 3 | 19/11/2026 al 02/12/2026 | HU-04, HU-07, HU-10, HU-11, HU-12, HU-13 y HU-14 | 20 | Replanificación propuesta |
+| Sprint 4 | 03/12/2026 al 16/12/2026 | HU-09 y otras historias pendientes, si las hubiera | 2 + contingencias | Planificado como contingencia |
+
+
+#### Seguimiento del Sprint 2
+
+El Sprint 2 se planificó del 5 al 18 de noviembre de 2026, con el objetivo de abordar la gestión de citas veterinarias.
+
+| Historia | Descripción | Puntos | Verificación requerida |
+| --- | --- | ---: | --- |
+| HU-06 | Agendar citas veterinarias | 8 | Validar la disponibilidad de horarios y evitar reservas duplicadas. |
+| HU-08 | Consultar citas del veterinario | 3 | Verificar que cada médico pueda consultar las citas correspondientes. |
+| HU-09 | Marcar citas como atendidas | 2 | Comprobar el cambio de estado y los permisos del veterinario. |
+| **Total planificado** | | **13** | |
+
+El cierre de cada historia se determinará mediante sus criterios de aceptación y la Definition of Done. Las historias que no cumplan ambos requisitos permanecerán pendientes y deberán considerarse en la planificación posterior.
+
+**Dependencias para el Sprint 3:**
+
+- La HU-07 requiere que la HU-06 esté terminada para permitir la cancelación de citas existentes.
+- La HU-08 depende de la disponibilidad de información de las citas registradas.
+- La HU-09 depende de la HU-08 para completar el flujo de atención.
+
+En el escenario de planificación adoptado, la HU-06 se considera terminada al cierre del Sprint 2. Por lo tanto, se cumple la dependencia necesaria para incluir la HU-07 en el Sprint 3. La HU-09 permanece pendiente y se incorpora al Sprint 4.
+
+#### Resultado del Sprint 2 — Escenario de planificación
+
+| Historia | Puntos | Estado |
+| --- | ---: | --- |
+| HU-06 — Agendar citas veterinarias | 8 | Terminada |
+| HU-08 — Consultar citas del veterinario | 3 | Terminada |
+| HU-09 — Marcar citas como atendidas | 2 | No terminada |
+| **Total completado** | **11 de 13** | |
+
+La velocidad considerada para el Sprint 2 es de 11 puntos.
+
+La HU-09 se traslada al Sprint 4, debido a que no alcanzó los criterios establecidos para considerarse terminada.
+
+Las historias HU-06 y HU-08 se consideran completadas dentro de este escenario, por lo que sus dependencias permiten continuar con la planificación de las funcionalidades de citas en el Sprint 3.
+
+El Sprint Goal se considera parcialmente alcanzado.
+
+#### Justificación
+
+La ampliación del equipo permite distribuir el trabajo entre cinco integrantes y atender actividades en paralelo.
+
+Las historias HU-04 y HU-14 se relacionan con la administración de mascotas. La HU-07 depende de la HU-06, prevista en el Sprint 2.
+
+Las historias HU-12 y HU-13 dependen de la HU-10 y la HU-11, por lo que su ejecución deberá respetar ese orden.
+
+La velocidad del Sprint 1 fue de 13 puntos. La planificación de 20 puntos para el Sprint 3 representa una meta de capacidad revisada, no una velocidad demostrada.
+
+La replanificación deberá validarse con el Product Owner y los Developers, considerando el trabajo ya iniciado y la necesidad de proteger el Sprint Goal.
+
+El Sprint 4 permanecerá disponible si existen historias que no cumplan los criterios de aceptación y la Definition of Done al finalizar el Sprint 3.
+
 #### Actualización de riesgos
 
 En este Sprint se activaron los disparadores de R3 (acceso por rol, HU-04) y R5 (burndown por encima del ideal en dos registros seguidos). Se aplicaron sus planes de contingencia. La matriz de riesgos de la Sección 08 se revisa en el Sprint Planning del Sprint 3.
+
+La revisión del 23/11/2026 identifica nuevos riesgos asociados con la ampliación del equipo, el incremento de la capacidad planificada y la redistribución del Product Backlog.
+
+La incorporación de Daniel Rojas y Valeria Méndez fortalece las áreas de desarrollo backend, frontend y pruebas. Sin embargo, también requiere coordinación, integración al proyecto y seguimiento presupuestario.
+
+### Nuevos riesgos identificados
+
+| ID | Riesgo | Descripción | Categoría | Probabilidad | Impacto | Prioridad | Responsable |
+| --- | --- | --- | --- | ---: | ---: | ---: | --- |
+| R8 | Adaptación de los nuevos integrantes | Si los profesionales contratados requieren más tiempo del previsto para conocer el sistema, las tareas del Sprint 3 podrían retrasarse. | Equipo | 2 | 3 | 6 | Maikel Chaves |
+| R9 | Sobrecarga del Sprint 3 | Si las 20 unidades de esfuerzo planificadas superan la capacidad efectiva del equipo, algunas historias podrían quedar incompletas. | Cronograma | 3 | 3 | 9 | Maikel Chaves |
+| R10 | Incremento de costos | Si se necesita utilizar un Sprint 4 completo, aumentará el costo de contratación y podría requerirse una ampliación del presupuesto. | Financiero | 2 | 2 | 4 | Jose Pablo Soto |
+
+La prioridad se calcula multiplicando probabilidad por impacto, utilizando la escala de 1 a 3 establecida en la matriz de riesgos original.
+
+### Estrategias de respuesta
+
+| Riesgo | Estrategia | Acción de mitigación | Responsable |
+| --- | --- | --- | --- |
+| R8 | Mitigar | Realizar una inducción técnica, compartir la documentación del proyecto y organizar sesiones de trabajo conjunto durante las primeras actividades. | Maikel Chaves |
+| R9 | Mitigar | Revisar el avance diariamente, priorizar las historias esenciales y trasladar al Sprint 4 las que no puedan finalizarse cumpliendo la Definition of Done. | Jose Pablo Soto y Maikel Chaves |
+| R10 | Mitigar | Controlar las horas contratadas, comparar el gasto con el presupuesto aprobado y autorizar cualquier ampliación antes de comprometer recursos adicionales. | Jose Pablo Soto |
+
+### Disparadores y planes de contingencia
+
+| Riesgo | Disparador | Plan de contingencia |
+| --- | --- | --- |
+| R8 | Los nuevos integrantes no pueden iniciar sus tareas por falta de accesos, documentación o conocimiento técnico. | Reorganizar las tareas y realizar trabajo conjunto con los integrantes que conocen el proyecto. |
+| R9 | El avance real se mantiene por debajo del necesario para completar las historias comprometidas. | Priorizar las historias de mayor valor y trasladar las tareas pendientes al Sprint 4. |
+| R10 | La proyección de costos supera los ₡193.600 presupuestados para el Sprint 3. | Revisar el alcance pendiente, solicitar aprobación del presupuesto adicional y ajustar la planificación. |
+
+### Revisión de riesgos existentes
+
+**R1 — Ausencia de Jose Pablo:** se mantiene en seguimiento. La contratación de profesionales adicionales reduce la dependencia técnica de una sola persona, pero Jose Pablo continúa siendo responsable de las decisiones del Product Backlog.
+
+**R5 — Desconocimiento del framework:** se mantiene en seguimiento. Daniel y Valeria pueden contribuir con sus conocimientos técnicos, aunque también necesitan familiarizarse con la arquitectura y las herramientas utilizadas.
+
+**R3 — Error en acceso por rol:** continúa siendo prioritario debido al problema identificado en la HU-04 durante el Sprint 1. Las pruebas de autorización deben completarse antes de aceptar esta historia.
+
+### Impacto presupuestario
+
+El presupuesto estimado del equipo ampliado es de ₡193.600 por Sprint, incluida una reserva de contingencia del 10 %.
+
+Si fuera necesario utilizar tanto el Sprint 3 como el Sprint 4 completos con la misma capacidad de contratación, el presupuesto proyectado para ambas iteraciones sería de ₡387.200.
+
+La utilización del Sprint 4 deberá justificarse según las historias pendientes, los resultados de las pruebas y la disponibilidad presupuestaria.
+
+Los riesgos se revisarán durante el seguimiento del Sprint 3 y se actualizarán al finalizar cada Sprint Review y Retrospective.
 
 ### Parte 2. Sprint Retrospective
 
